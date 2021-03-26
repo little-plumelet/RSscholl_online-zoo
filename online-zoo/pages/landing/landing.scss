@@ -73,6 +73,15 @@ $color-orange-gradient:
     line-height: 140%;
 }
 
+@mixin paragraph-bold {
+    font: {
+        family: "Roboto", "sans-serif";
+        weight: 500;
+        size: 1.6rem;
+    }
+    line-height: 140%;
+}
+
 @mixin paragraph-small {
     font: {
         family: "Roboto", "sans-serif";
