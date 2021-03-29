@@ -74,4 +74,90 @@ h1 {
   margin: 1.4rem 0;
   background-image: url("../../assets/icons/logo/logo_2.svg"); }
 
+:root {
+  font-size: 10px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+.wrapper {
+  max-width: 1161px;
+  margin: 0 auto; }
+
+:root {
+  font-size: 10px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+.button {
+  width: 29.8rem;
+  height: 5.4rem;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  border: none;
+  border-radius: 2.5rem;
+  font-family: "Roboto", "sans-serif";
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 140%;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  outline: none; }
+
+.intro {
+  height: 78rem;
+  background-image: url("../../../assets/images/hero/Giant_Panda.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.hero .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+.hero .button {
+  margin-right: 10rem; }
+
+.title {
+  width: 50rem;
+  height: 40rem;
+  margin-top: 8.6rem;
+  margin-bottom: 6rem;
+  position: relative; }
+  .title__text {
+    position: absolute;
+    font-family: "Roboto", "sans-serif";
+    font-weight: 700;
+    font-size: 10.4rem;
+    line-height: 77%;
+    text-transform: uppercase;
+    text-align: center;
+    color: white; }
+    .title__text .text_colored {
+      color: #ffee2e; }
+  .title__circle {
+    width: 46.5rem;
+    height: 46.5rem;
+    position: absolute;
+    top: -7.4rem;
+    left: -7.4rem;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 50%; }
+
 /*# sourceMappingURL=landing.css.map */

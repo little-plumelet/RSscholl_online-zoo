@@ -1,0 +1,17 @@
+@import "./constants";
+@import "./base";
+
+.button {
+    width: 29.8rem;
+    height: 5.4rem;
+    background: $color-orange-gradient;
+    border: none;
+    border-radius: 2.5rem;
+
+    @include button-text;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    
+    outline: none;
+}

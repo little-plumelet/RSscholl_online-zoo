@@ -1,0 +1,55 @@
+@import "../../sass-common-components/constants";
+@import "../../sass-common-components/base";
+@import "../../sass-common-components/wrapper";
+@import "../../sass-common-components/button_rounded";
+
+.intro {
+    height: 78rem;
+    background-image: url("../../../assets/images/hero/Giant_Panda.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .button {
+        margin-right: 10rem;
+    }
+}
+
+.title {
+    width: 50rem;
+    height: 40rem;
+    margin-top: 8.6rem;
+    margin-bottom: 6rem;
+    position: relative;
+
+    &__text {
+        position: absolute;
+        @include h1-text;
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+
+        .text_colored {
+            color: $color-yellow;
+        }
+    }
+    
+    &__circle {
+        width: 46.5rem;
+        height: 46.5rem;
+
+        position: absolute;
+        top: -7.4rem;
+        left: -7.4rem;
+
+        background: $color-orange-gradient;
+        border-radius: 50%;
+    }
+}
