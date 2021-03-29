@@ -1,16 +1,77 @@
 :root {
-  font-size: 10px;
-}
+  font-size: 10px; }
 
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 body {
-  max-width: 1600px;
+  margin: 0; }
+
+.wrapper {
+  max-width: 1161px;
+  margin: 0 auto; }
+
+:root {
+  font-size: 10px; }
+
+* {
   margin: 0;
-}
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+.wrapper {
+  max-width: 1161px;
+  margin: 0 auto; }
+
+h1 {
+  font-size: 0.01rem; }
+
+.header {
+  background-color: #000000; }
+  .header .wrapper {
+    display: flex; }
+  .header__navigation {
+    display: flex; }
+
+.navigation {
+  display: flex;
+  align-items: center;
+  list-style-type: none; }
+  .navigation__item {
+    display: flex;
+    padding-left: 5.8rem; }
+  .navigation__item:first-child {
+    padding-left: 6.3rem; }
+  .navigation__item a {
+    font-family: "Roboto", "sans-serif";
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 140%;
+    color: white;
+    text-decoration: none; }
+  .navigation__item a:hover {
+    cursor: pointer; }
+  .navigation__item a:active {
+    color: #f9804b; }
+  .navigation__item:first-child a {
+    color: #f9804b;
+    pointer-events: none; }
+
+.logo {
+  width: 8.2rem;
+  height: 5.2rem;
+  margin: 1.4rem 0;
+  background-image: url("../../assets/icons/logo/logo_2.svg"); }
+
 /*# sourceMappingURL=landing.css.map */

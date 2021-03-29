@@ -1,0 +1,55 @@
+@import "../common-features/constants";
+@import "../common-features/base";
+@import "../common-features/wrapper";
+
+h1 {
+    font-size: 0.01rem;
+}
+.header {
+    background-color: $color-background-dark;
+
+    .wrapper {
+        display: flex;
+    }
+    &__navigation {
+        display: flex;
+    }
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    &__item {
+        display: flex;
+        padding-left: 5.8rem;
+    }
+    &__item:first-child {
+        padding-left: 6.3rem;
+    }
+    &__item a {
+        @include paragraph;
+        color: white;
+        text-decoration: none;
+    }
+
+    &__item a:hover {
+        cursor: pointer;
+    }
+
+    &__item a:active {
+        color: $color-orange;
+    }
+    
+    &__item:first-child a {
+        color: $color-orange;
+        pointer-events: none;
+    }
+}
+
+.logo {
+    width: 8.2rem;
+    height: 5.2rem;
+    margin: 1.4rem 0;
+    background-image: url("../../assets/icons/logo/logo_2.svg");
+}
