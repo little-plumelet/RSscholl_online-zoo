@@ -121,9 +121,15 @@ body {
   color: white;
   outline: none; }
 
+.button:hover {
+  cursor: pointer; }
+
+.button:active {
+  background: #4b9200; }
+
 .intro {
   height: 78rem;
-  background-image: url("../../../assets/images/hero/Giant_Panda.png");
+  background-image: url("../../assets/images/hero/giant_panda.png");
   background-repeat: no-repeat;
   background-size: cover; }
 

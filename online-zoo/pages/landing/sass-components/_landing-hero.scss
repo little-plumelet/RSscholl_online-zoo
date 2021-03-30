@@ -1,11 +1,11 @@
-@import "../../sass-common-components/constants";
-@import "../../sass-common-components/base";
-@import "../../sass-common-components/wrapper";
-@import "../../sass-common-components/button_rounded";
+@import "../../../sass-common-components/constants";
+@import "../../../sass-common-components/base";
+@import "../../../sass-common-components/wrapper";
+@import "../../../sass-common-components/button_rounded";
 
 .intro {
     height: 78rem;
-    background-image: url("../../../assets/images/hero/Giant_Panda.png");
+    background-image: url("../../assets/images/hero/giant_panda.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
