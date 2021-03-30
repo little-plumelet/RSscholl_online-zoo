@@ -186,7 +186,8 @@ body {
   margin: 0 auto; }
 
 .site-history {
-  margin-bottom: 18rem; }
+  margin-bottom: 18rem;
+  min-height: 40.3rem; }
   .site-history__photo {
     width: 60.9rem;
     height: 40.3rem;
@@ -217,5 +218,92 @@ body {
     letter-spacing: -0.22rem; }
   .site-history .text__paragraph:last-child {
     margin-bottom: 0; }
+
+:root {
+  font-size: 10px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+.wrapper {
+  max-width: 1161px;
+  margin: 0 auto; }
+
+.animals {
+  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.animals-wrapper {
+  width: 160rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center; }
+
+.button-arrow {
+  width: 6.2rem;
+  height: 6.2rem;
+  margin-bottom: 8rem;
+  outline: none;
+  border: none; }
+
+.button-arrow_left {
+  margin-left: 13.8rem;
+  background: url("../../assets/icons/arrow_left.svg"); }
+
+.button-arrow_right {
+  margin-right: 13.8rem;
+  background: url("../../assets/icons/arrow_right.svg"); }
+
+.animals-list {
+  margin-bottom: 6.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-between; }
+
+.animal-card {
+  margin-bottom: 1.5rem;
+  border: 0.1rem solid #fe9013;
+  border-radius: 0.5rem; }
+  .animal-card__figcaption {
+    display: flex;
+    justify-content: space-between; }
+  .animal-card__text {
+    padding: 0.8rem 0 1.4rem 0;
+    margin-left: 1.6rem; }
+  .animal-card__title {
+    font-family: "Roboto", "sans-serif";
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 140%;
+    color: #000000;
+    text-transform: uppercase; }
+  .animal-card__paragraph {
+    font-family: "Roboto", "sans-serif";
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 120%;
+    color: #000000;
+    text-transform: capitalize; }
+  .animal-card__icon {
+    margin-right: 1.2rem; }
+  .animal-card__icon_herbivore {
+    width: 3.3rem;
+    height: 3.7rem;
+    background: url("../../assets/icons/animals-cards/herbivore_icon.svg"); }
+  .animal-card__icon_carnivore {
+    width: 4.8rem;
+    height: 3.8rem;
+    background: url("../../assets/icons/animals-cards/carnivore_icon.svg"); }
 
 /*# sourceMappingURL=landing.css.map */
