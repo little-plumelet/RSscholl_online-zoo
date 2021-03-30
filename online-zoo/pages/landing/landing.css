@@ -57,7 +57,7 @@ h1 {
     font-family: "Roboto", "sans-serif";
     font-weight: 400;
     font-size: 1.6rem;
-    line-height: 140%;
+    line-height: 100%;
     color: white;
     text-decoration: none; }
   .navigation__item a:hover {
@@ -129,6 +129,7 @@ body {
 
 .intro {
   height: 78rem;
+  margin-bottom: 14rem;
   background-image: url("../../assets/images/hero/giant_panda.png");
   background-repeat: no-repeat;
   background-size: cover; }
@@ -165,5 +166,56 @@ body {
     left: -7.4rem;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 50%; }
+
+:root {
+  font-size: 10px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+.wrapper {
+  max-width: 1161px;
+  margin: 0 auto; }
+
+.site-history {
+  margin-bottom: 18rem; }
+  .site-history__photo {
+    width: 60.9rem;
+    height: 40.3rem;
+    float: left;
+    margin-right: 8.7rem;
+    background-image: url("../../assets/images/site-history/bamboo-cap.png"); }
+  .site-history .text__title {
+    margin-bottom: 2rem;
+    font-family: "Roboto", "sans-serif";
+    font-weight: 400;
+    font-size: 4.8rem;
+    line-height: 120%;
+    color: #333b41; }
+  .site-history .text__subtitle {
+    margin-bottom: 3.2rem;
+    font-family: "Roboto", "sans-serif";
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 100%;
+    color: #333b41; }
+  .site-history .text__paragraph {
+    margin-bottom: 5.4rem;
+    font-family: "Roboto", "sans-serif";
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 100%;
+    color: #333b41;
+    letter-spacing: -0.22rem; }
+  .site-history .text__paragraph:last-child {
+    margin-bottom: 0; }
 
 /*# sourceMappingURL=landing.css.map */

@@ -1,0 +1,39 @@
+@import "../../../sass-common-components/constants";
+@import "../../../sass-common-components/base";
+@import "../../../sass-common-components/wrapper";
+
+.site-history {
+    margin-bottom: 18rem;
+    
+    &__photo {
+        width: 60.9rem;
+        height: 40.3rem;
+        float: left;
+        margin-right: 8.7rem;
+
+        background-image: url("../../assets/images/site-history/bamboo-cap.png");
+    }
+
+    .text__title {
+        margin-bottom: 2rem;
+        @include h2;
+        color: $color-black-blue;
+    }
+
+    .text__subtitle {
+        margin-bottom: 3.2rem;
+        @include subtitle;
+        color: $color-black-blue;
+    }
+
+    .text__paragraph {
+        margin-bottom: 5.4rem;
+        @include paragraph;
+        color: $color-black-blue;
+        letter-spacing: -0.22rem;
+    }
+
+    .text__paragraph:last-child {
+        margin-bottom: 0;
+    }
+}
