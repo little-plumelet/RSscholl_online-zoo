@@ -1,0 +1,142 @@
+@import "../../../sass-common-components/button_squared";
+
+.testimonials {
+    &__title {
+        @include h3;
+        color: $color-black-blue;
+        text-align: center;
+
+        margin-bottom: 4.7rem;
+    }
+
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+
+        margin-bottom: 2rem;
+    }
+
+    &-card {
+        width: 26.8rem;
+        border-radius: 2rem;
+        background-color: $color-gray-light;
+        position: relative;
+    }
+
+    //code gradient border from code-pen https://sitist.ru/info-gradient-border.htm
+    &-card:before {
+        content: "";
+        position: absolute;
+        top: -0.2rem;
+        bottom: -0.2rem;
+        left: -0.2rem;
+        right: -0.2rem;
+        background: $color-pink-gradient;
+        border-radius: 2rem;
+        z-index: -1;
+    }
+
+    &-card__heading {
+        display: flex;
+        padding: 1.5rem 0 1.1rem 1.6rem
+    }
+
+    .heading__sign {
+      margin-left: 1rem;
+    }
+    .heading__user-icon-img {
+        width: 3.7rem;
+        height: 3.7rem;
+    }
+
+    .heading__title {
+        @include paragraph;
+        color: $color-background-dark;
+        line-height: 120%;
+        display: block;
+    }
+
+    .heading__location,
+    .heading__day {
+        @include paragraph-small;
+        color: $color-gray-medium;
+    }
+
+    .heading__day:before {
+        content: "•";
+        color: $color-gray-medium;
+    }
+
+    &-card__text {
+        @include paragraph-small;
+        color: $color-gray;
+        margin: 0 1.5rem 1.6rem 1.6rem;
+        height: 30.9rem;
+        overflow: hidden;
+    }
+
+    &-slider {
+        -webkit-appearance: none;
+        appearance: none;
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 3.1rem;
+        width: 59.9rem;
+        height: 0.8rem;
+        border-radius: 0.5rem;
+        background: $color-gray-slider;
+        outline: none;
+    }
+
+    &-slider:before {
+        content: "";
+        position: absolute;
+        top: -0.1rem;
+        bottom: -0.1rem;
+        left: -0.1rem;
+        right: -0.1rem;
+        background: $color-pink-gradient;
+        border-radius: 1rem;
+        z-index: -1;
+    }
+
+    &-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        height: 0.8rem;
+        background: $color-light-orange;
+        cursor: pointer;
+    }
+
+    
+    &-slider::-moz-range-track {
+        border: 0.1rem solid $color-light-orange;
+    }
+
+    &-slider::-moz-range-track::before {
+        content: "";
+        position: absolute;
+        top: -0.1rem;
+        bottom: -0.1rem;
+        left: -0.1rem;
+        right: -0.1rem;
+        background: $color-pink-gradient;
+        border-radius: 1rem;
+        z-index: -1;
+    }
+
+    &-slider::-moz-range-thumb {
+        appearance: none;
+        width: 0.8rem;
+        height: 0.8rem;
+        background: $color-light-orange;
+        border: none;
+
+    }
+
+    &-slider::-moz-range-progress {
+        background-color: $color-light-orange;
+    }
+}

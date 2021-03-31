@@ -1,12 +1,9 @@
-@import "./constants";
-@import "./base";
-
-.button_rounded {
+.button_squared {
     width: 29.8rem;
     height: 5.4rem;
     background: $color-orange-gradient;
     border: none;
-    border-radius: 2.5rem;
+    border-radius: 0.5rem;
 
     @include button-text;
     text-transform: uppercase;
@@ -16,10 +13,10 @@
     outline: none;
 }
 
-.button_rounded:hover {
+.button_squared:hover {
     cursor: pointer;
 }
 
-.button_rounded:active {
+.button_squared:active {
     background: $color-green;
 }
