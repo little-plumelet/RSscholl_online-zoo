@@ -4,6 +4,7 @@
     .wrapper {
         display: grid;
         padding-bottom: 5rem;
+        grid-template-columns: 1fr 2fr 1fr;
 
         .logo {
             grid-area: logo;
@@ -24,9 +25,9 @@
             grid-area: sign;
         }
 
-        grid-template-areas: "logo ...... subscribe subscribe"
-                             "donate .... ...... ..........."
-                             "network nav sign .............";
+        grid-template-areas: "logo ...... subscribe"
+                             "donate .... .........."
+                             "network nav sign";
     }
 
     .logo {
@@ -92,7 +93,9 @@
    
 
     .form-subscribe {
-        margin-left: 49.5rem;
+        //margin-left: 49.5rem;
+        display: flex;
+        flex-direction: column;
 
         &__subtitle {
             @include subtitle;
@@ -103,6 +106,7 @@
 
         &__panel {
             display: flex;
+            justify-content: flex-end;
         }
 
         &__input {
@@ -113,7 +117,7 @@
             width: 22.8rem;
             height: 4.2rem;
             position: relative;
-            border: none;
+            border: solid 0.1rem $color-orange;
             outline: none;
             border-radius: 0.2rem;
             background: $color-background-footer-dark;
@@ -129,8 +133,7 @@
             left: -0.2rem;
             right: -0.2rem;
             z-index: -1;
-            //margin: -$border; /* !importanté */
-            border-radius: 2rem; /* !importanté */
+            border-radius: 2rem;
             background: $color-orange-gradient;
         }
 
@@ -146,6 +149,17 @@
             box-sizing: border-box;
             border-radius: 0.5rem;
         }
+    }
+
+    .sign {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-left: 13.5rem;
+    }
+
+    .sign-item:first-child {
+        margin-bottom: 1rem;
     }
 
     .sign-item {

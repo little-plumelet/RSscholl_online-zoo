@@ -99,7 +99,8 @@ h1 {
   .footer .wrapper {
     display: grid;
     padding-bottom: 5rem;
-    grid-template-areas: "logo ...... subscribe subscribe" "donate .... ...... ..........." "network nav sign ............."; }
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "logo ...... subscribe" "donate .... .........." "network nav sign"; }
     .footer .wrapper .logo {
       grid-area: logo; }
     .footer .wrapper .button_donate {
@@ -108,7 +109,7 @@ h1 {
       grid-area: network; }
     .footer .wrapper .footer__navigation {
       grid-area: nav; }
-    .footer .wrapper .subscribe {
+    .footer .wrapper .form-subscribe {
       grid-area: subscribe; }
     .footer .wrapper .sign {
       grid-area: sign; }
@@ -151,7 +152,8 @@ h1 {
     .footer__navigation .navigation__item:first-child {
       padding-left: 10.1rem; }
   .footer .form-subscribe {
-    margin-left: 49.5rem; }
+    display: flex;
+    flex-direction: column; }
     .footer .form-subscribe__subtitle {
       font-family: "Roboto", "sans-serif";
       font-weight: 400;
@@ -161,7 +163,8 @@ h1 {
       padding-top: 4rem;
       padding-bottom: 1.4rem; }
     .footer .form-subscribe__panel {
-      display: flex; }
+      display: flex;
+      justify-content: flex-end; }
     .footer .form-subscribe__input {
       font-family: "Roboto", "sans-serif";
       font-weight: 400;
@@ -173,7 +176,7 @@ h1 {
       width: 22.8rem;
       height: 4.2rem;
       position: relative;
-      border: none;
+      border: solid 0.1rem #f9804b;
       outline: none;
       border-radius: 0.2rem;
       background: #111115; }
@@ -188,7 +191,6 @@ h1 {
       right: -0.2rem;
       z-index: -1;
       border-radius: 2rem;
-      /* !importanté */
       background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%); }
     .footer .form-subscribe .button__submit_squared {
       font-family: "Roboto", "sans-serif";
@@ -204,6 +206,13 @@ h1 {
       border: 0.1rem solid #333b41;
       box-sizing: border-box;
       border-radius: 0.5rem; }
+  .footer .sign {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 13.5rem; }
+  .footer .sign-item:first-child {
+    margin-bottom: 1rem; }
   .footer .sign-item {
     font-family: "Roboto", "sans-serif";
     font-weight: 400;
