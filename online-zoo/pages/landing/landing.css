@@ -562,8 +562,9 @@ body {
   .feeding-card__icon-zoo {
     width: 8.6rem;
     height: 9.5rem;
-    background: url("../../assets/icons/payment-feeding/zoo.svg");
-    background-repeat: no-repeat; }
+    background: url("../../assets/icons/payment-feeding/zoo.png");
+    background-repeat: no-repeat;
+    background-size: cover; }
   .feeding-card__icon-monkey {
     width: 12.5rem;
     height: 7.2rem;
@@ -696,7 +697,7 @@ body {
     height: 0.7rem;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-    width: 3rem;
+    width: 0.2rem;
     background: #fe9013;
     box-shadow: -100rem 0 0 100rem #fe9013;
     cursor: pointer; }
