@@ -80,37 +80,46 @@
         -webkit-appearance: none;
         appearance: none;
         display: block;
-        position: relative;
+        overflow: hidden;
         margin: 0 auto;
-        margin-bottom: 3.1rem;
         width: 59.9rem;
         height: 0.8rem;
         border-radius: 0.5rem;
         background: $color-gray-slider;
+        border: 0.1rem solid $color-gray-slider;
         outline: none;
     }
 
-    &-slider:before {
-        content: "";
-        position: absolute;
-        top: -0.1rem;
-        bottom: -0.1rem;
-        left: -0.1rem;
-        right: -0.1rem;
+    &-slider-wrapper {
+        width: 60rem;
+        height: 0.9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 3.1rem;
         background: $color-pink-gradient;
         border-radius: 1rem;
-        z-index: -1;
+        // z-index: -1;
     }
 
     &-slider::-webkit-slider-thumb {
         -webkit-appearance: none;
         appearance: none;
-        height: 0.8rem;
+        height: 0.7rem;
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        width: 3rem;
         background: $color-light-orange;
+        box-shadow: -100rem 0 0 100rem $color-light-orange;
         cursor: pointer;
     }
 
-    
+    &-slider::-webkit-progress-value {
+        background-color: $color-light-orange;  
+    }
+
+
     &-slider::-moz-range-track {
         border: 0.1rem solid $color-light-orange;
     }
