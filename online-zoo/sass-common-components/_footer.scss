@@ -1,0 +1,157 @@
+.footer {
+    background-color: $color-background-footer-dark;
+    
+    .wrapper {
+        display: grid;
+        padding-bottom: 5rem;
+
+        .logo {
+            grid-area: logo;
+        }
+        .button_donate {
+            grid-area: donate;
+        }
+        .social-network-list {
+            grid-area: network;
+        }
+        .footer__navigation {
+            grid-area: nav;
+        }
+        .form-subscribe {
+            grid-area: subscribe;
+        }
+        .sign {
+            grid-area: sign;
+        }
+
+        grid-template-areas: "logo ...... subscribe subscribe"
+                             "donate .... ...... ..........."
+                             "network nav sign .............";
+    }
+
+    .logo {
+        margin-top: 4.1rem;
+        margin-bottom: 6.8rem;
+    }
+
+    .button_donate {
+        margin-bottom: 4.1rem;
+    }
+    .social-network-list {
+        list-style-type: none;
+
+        &__item {
+            margin-bottom: 1rem;
+        }
+
+        &__item:last-child {
+            margin-bottom: 0;
+        }
+
+        &__item a {
+            display: flex;
+            align-items: flex-end;
+            @include paragraph;
+            color: white;
+            text-decoration: none;
+            line-height: 140%;
+        }
+
+        .social-network-list__icon {
+            width:2.6rem;
+            height: 2.6rem;
+            margin-right: 1.2rem;
+        }
+
+        .icon_facebook {
+            background: url("../../assets/icons/networks/facebook.svg");
+        }
+
+        .icon_twitter {
+            background: url("../../assets/icons/networks/facebook.svg");
+        }
+
+        .icon_instagram {
+            background: url("../../assets/icons/networks/facebook.svg");
+        }
+
+        .icon_youtube {
+            background: url("../../assets/icons/networks/facebook.svg");
+        }
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: flex-end;
+        .navigation {
+            &__item:first-child {
+                padding-left: 10.1rem;
+            }
+        }
+    }
+   
+
+    .form-subscribe {
+        margin-left: 49.5rem;
+
+        &__subtitle {
+            @include subtitle;
+            color: $color-white;
+            padding-top: 4rem;
+            padding-bottom: 1.4rem;
+        }
+
+        &__panel {
+            display: flex;
+        }
+
+        &__input {
+            @include paragraph;
+            line-height: 140%;
+            padding-left: 1rem;
+            color: $color-gray-medium;
+            width: 22.8rem;
+            height: 4.2rem;
+            position: relative;
+            border: none;
+            outline: none;
+            border-radius: 0.2rem;
+            background: $color-background-footer-dark;
+        }
+
+        &__input:before {
+            width: inherit;
+            height: inherit;
+            content: "";
+            position: absolute;
+            top: -0.2rem;
+            bottom: -0.2rem;
+            left: -0.2rem;
+            right: -0.2rem;
+            z-index: -1;
+            //margin: -$border; /* !importanté */
+            border-radius: 2rem; /* !importanté */
+            background: $color-orange-gradient;
+        }
+
+        .button__submit_squared {
+            @include paragraph;
+            color: #000000;
+            line-height: 140%;
+            width: 12.9rem;
+            height: 4.2rem;
+            margin-left: 1rem;
+            background-color: $color-gray-light;
+            border: 0.1rem solid $color-black-blue;
+            box-sizing: border-box;
+            border-radius: 0.5rem;
+        }
+    }
+
+    .sign-item {
+        @include paragraph;
+        font-weight: 200;
+        color: rgba(255, 255, 255, 0.4);
+    }
+    
+}

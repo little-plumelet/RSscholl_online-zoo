@@ -1,6 +1,7 @@
 @import "../../../sass-common-components/button_squared";
 
 .testimonials {
+    margin-bottom: 18rem;
     &__title {
         @include h3;
         color: $color-black-blue;
