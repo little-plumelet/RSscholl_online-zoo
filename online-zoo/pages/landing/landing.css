@@ -335,12 +335,15 @@ body {
 .site-history {
   margin-bottom: 18rem;
   min-height: 40.3rem; }
+  .site-history .wrapper {
+    display: flex;
+    justify-content: space-between; }
   .site-history__photo {
     width: 60.9rem;
     height: 40.3rem;
-    float: left;
-    margin-right: 8.7rem;
     background-image: url("../../assets/images/site-history/bamboo-cap.png"); }
+  .site-history__text {
+    max-width: 46.51rem; }
   .site-history .text__title {
     margin-bottom: 2rem;
     font-family: "Roboto", "sans-serif";

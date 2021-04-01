@@ -5,14 +5,21 @@
 .site-history {
     margin-bottom: 18rem;
     min-height: 40.3rem;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
     
     &__photo {
         width: 60.9rem;
         height: 40.3rem;
-        float: left;
-        margin-right: 8.7rem;
 
         background-image: url("../../assets/images/site-history/bamboo-cap.png");
+    }
+
+    &__text {
+        max-width: 46.51rem
     }
 
     .text__title {
