@@ -1,0 +1,91 @@
+.map-main {
+    background-color: $color-map-blue-light;
+    padding-bottom: 1.7rem;
+    
+    .map {
+        height: 92.1rem;
+        background: url("../../assets/images/map/map.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .countries {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 48%;
+        left: 16%;
+
+        &__name,
+        .city__name {
+            @include  country-name;
+            color: $color-gray-countries;
+        }
+
+        .Congo {
+            position: relative;
+            top: 13.7%;
+            left: 36%;
+
+            &__icon {
+                position: absolute;
+                top: -95%;
+                left: -1.8%;
+            }
+        }
+
+        .China {
+            position: relative;
+            top: -0.5%;
+            left: 53.6%;
+
+            &__icon_1 {
+                position: absolute;
+                top: -205%;
+                left: 7.6%;
+            }
+            &__icon_2 {
+                position: absolute;
+                top: 60%;
+                left: 7.1%;
+            }
+        }
+
+        .city {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: flex-end;
+
+            &-Los-Angeles {
+                position: absolute;
+                top: 2.6%;
+                left: -0.7%;
+
+                .city__animals_item1 {
+                   position: absolute;
+                   top: 18%;
+                   left: -38%;
+                }
+
+                .city__animals_item2 {
+                    position: absolute;
+                    top: 129%;
+                    left: -8%;
+                }
+            }
+    
+            &-Florida {
+                position: absolute;
+                top: 4.8%;
+                left: 9.3%;
+            }
+
+            &__location-icon {
+                width: 2.56rem;
+                height: 3.2rem;
+                background: url("../../assets/icons/map/location-icon.svg");
+            }
+        }
+
+    }
+}

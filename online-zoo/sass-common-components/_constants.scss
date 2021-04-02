@@ -13,6 +13,7 @@ $color-gray-smoky: #ababab;
 $color-gray-medium: #bdbdbd;
 $color-gray-light: #f1f3f2;
 $color-gray-slider: #f5f7f6;
+$color-gray-countries: #4f5352;
 $color-pink-gradient: 
     linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, 
     rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, 
@@ -25,7 +26,7 @@ $color-peach-gradient:
     #eaf7fe 127.9%, #eaf7fe 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, 
     rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%);
 $color-orange-gradient: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-
+$color-map-blue-light: #eaf7fe;
 $content-width: 1161px; 
 
 @mixin h1-text {
@@ -95,6 +96,15 @@ $content-width: 1161px;
     font: {
         family: "Roboto", "sans-serif";
         weight: 300;
+        size: 1.5rem;
+    }
+    line-height: 120%;
+}
+
+@mixin country-name {
+    font: {
+        family: "Verdana", "sans-serif";
+        weight: 400;
         size: 1.5rem;
     }
     line-height: 120%;
