@@ -1,0 +1,63 @@
+.city-tooltip {
+
+    opacity: 0;
+    transition: 2s;
+
+    visibility: hidden;
+    position: absolute;
+    background-color: $color-white;
+    padding: 1.6rem 1.13rem 1.5rem 1.13rem;
+    border: 0.1rem solid $color-background-dark;
+    border-radius: 0.5rem;
+
+    &__text
+    {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.1rem;
+    }
+    &__line1,
+    &__line2 {
+        @include paragraph;
+        line-height: 140%;
+        color: $color-background-dark;
+    }
+
+    &__online-button {
+        width: 13.6rem;
+        height: 3.1rem;
+        background-color: $color-gray-light;
+        border: none;
+        border-radius: 0.5rem;
+        outline: none;
+
+        @include paragraph;
+        line-height: 140%;
+        color: $color-green;
+        padding: 0.414rem 1.687rem 0.486rem 1.687rem;
+
+    }
+}
+// arrow for the tooltip https://www.w3schools.com/howto/howto_css_tooltip.asp
+.city-tooltip::after {
+    content: "";
+    position: absolute;
+    top: -13%;
+    left: 30%;
+    border-width: 0.8rem;
+    border-style: solid;
+    border-color:  transparent transparent $color-white transparent;
+  }
+
+  .city-tooltip::before {
+    content: "";
+    position: absolute;
+    top: -13.8%;
+    left: 30%;
+    border-width: 0.8rem;
+    border-style: solid;
+    border-color:  transparent transparent $color-background-dark transparent;
+  }
+
+  
+

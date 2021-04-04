@@ -1,3 +1,5 @@
+@import "./map-tooltip";
+
 .map-main {
     background-color: $color-map-blue-light;
     padding-bottom: 1.7rem;
@@ -32,6 +34,23 @@
                 top: -95%;
                 left: -1.8%;
             }
+
+            .city__animals_item1 {
+                position: absolute;
+                top: 110%;
+                left: -1.8%;
+            }
+
+            .city-tooltip {
+                top: 405%;
+                left: -5%;
+            }
+
+            .city__animals_item1:hover ~ .city-tooltip {
+                visibility: visible;
+                opacity: 1;
+                transition: 0.5s;
+            }
         }
 
         .China {
@@ -42,12 +61,41 @@
             &__icon_1 {
                 position: absolute;
                 top: -205%;
-                left: 7.6%;
+                left: 7.55%;
             }
             &__icon_2 {
                 position: absolute;
                 top: 60%;
                 left: 7.1%;
+            }
+
+            .city__animals_item1 {
+                position: absolute;
+                top: -235%;
+                left: 4.3%;
+            }
+
+            .city__animals_item2 {
+                position: absolute;
+                left: 3.8%;
+                top: 135%;
+            }
+
+            .city-tooltip_1 {
+                top: 105%;
+                left: 0%;
+            }
+
+            .city-tooltip_2 {
+                top: 455%;
+                left: 0%;
+            }
+
+            .city__animals_item1:hover ~ .city-tooltip_1,
+            .city__animals_item2:hover ~ .city-tooltip_2 {
+                visibility: visible;
+                opacity: 1;
+                transition: 0.5s;
             }
         }
 
@@ -72,12 +120,47 @@
                     top: 129%;
                     left: -8%;
                 }
+
+                .city__animals_item1:hover,
+                .city__animals_item2:hover {
+                    cursor: pointer;
+                }
+
+                .city-tooltip {
+                    top: 235%;
+                    left: -35%;
+                }
+
+                .city__animals_item1:hover ~ .city-tooltip,
+                .city__animals_item2:hover ~ .city-tooltip {
+                    visibility: visible;
+                    opacity: 1;
+                    transition: 0.5s;
+                }
+
             }
     
             &-Florida {
                 position: absolute;
                 top: 4.8%;
                 left: 9.3%;
+
+                .city__animals_item1 {
+                    position: absolute;
+                    top: 110%;
+                    left: -8%;
+                }
+
+                .city-tooltip {
+                    top: 205%;
+                    left: -35%;
+                }
+
+                .city__animals_item1:hover ~ .city-tooltip {
+                    visibility: visible;
+                    opacity: 1;
+                    transition: 0.5s;
+                }
             }
 
             &__location-icon {

@@ -92,6 +92,27 @@ h1 {
     background-image: url("../../assets/icons/logo/bamboo.svg");
     background-repeat: no-repeat; }
 
+.button_squared {
+  width: 29.8rem;
+  height: 5.4rem;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  border: none;
+  border-radius: 0.5rem;
+  font-family: "Roboto", "sans-serif";
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 140%;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  outline: none; }
+
+.button_squared:hover {
+  cursor: pointer; }
+
+.button_squared:active {
+  background: #4b9200; }
+
 .footer {
   background-color: #111115; }
   .footer .wrapper {
@@ -309,6 +330,59 @@ h1 {
   .footer .sign-item:active {
     color: #4b9200; }
 
+.city-tooltip {
+  opacity: 0;
+  transition: 2s;
+  visibility: hidden;
+  position: absolute;
+  background-color: #ffffff;
+  padding: 1.6rem 1.13rem 1.5rem 1.13rem;
+  border: 0.1rem solid #000000;
+  border-radius: 0.5rem; }
+  .city-tooltip__text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem; }
+  .city-tooltip__line1, .city-tooltip__line2 {
+    font-family: "Roboto", "sans-serif";
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 130%;
+    line-height: 140%;
+    color: #000000; }
+  .city-tooltip__online-button {
+    width: 13.6rem;
+    height: 3.1rem;
+    background-color: #f1f3f2;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    font-family: "Roboto", "sans-serif";
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 130%;
+    line-height: 140%;
+    color: #4b9200;
+    padding: 0.414rem 1.687rem 0.486rem 1.687rem; }
+
+.city-tooltip::after {
+  content: "";
+  position: absolute;
+  top: -13%;
+  left: 30%;
+  border-width: 0.8rem;
+  border-style: solid;
+  border-color: transparent transparent #ffffff transparent; }
+
+.city-tooltip::before {
+  content: "";
+  position: absolute;
+  top: -13.8%;
+  left: 30%;
+  border-width: 0.8rem;
+  border-style: solid;
+  border-color: transparent transparent #000000 transparent; }
+
 .map-main {
   background-color: #eaf7fe;
   padding-bottom: 1.7rem; }
@@ -338,6 +412,17 @@ h1 {
         position: absolute;
         top: -95%;
         left: -1.8%; }
+      .map-main .countries .Congo .city__animals_item1 {
+        position: absolute;
+        top: 110%;
+        left: -1.8%; }
+      .map-main .countries .Congo .city-tooltip {
+        top: 405%;
+        left: -5%; }
+      .map-main .countries .Congo .city__animals_item1:hover ~ .city-tooltip {
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s; }
     .map-main .countries .China {
       position: relative;
       top: -0.5%;
@@ -345,11 +430,30 @@ h1 {
       .map-main .countries .China__icon_1 {
         position: absolute;
         top: -205%;
-        left: 7.6%; }
+        left: 7.55%; }
       .map-main .countries .China__icon_2 {
         position: absolute;
         top: 60%;
         left: 7.1%; }
+      .map-main .countries .China .city__animals_item1 {
+        position: absolute;
+        top: -235%;
+        left: 4.3%; }
+      .map-main .countries .China .city__animals_item2 {
+        position: absolute;
+        left: 3.8%;
+        top: 135%; }
+      .map-main .countries .China .city-tooltip_1 {
+        top: 105%;
+        left: 0%; }
+      .map-main .countries .China .city-tooltip_2 {
+        top: 455%;
+        left: 0%; }
+      .map-main .countries .China .city__animals_item1:hover ~ .city-tooltip_1,
+      .map-main .countries .China .city__animals_item2:hover ~ .city-tooltip_2 {
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s; }
     .map-main .countries .city {
       display: flex;
       flex-direction: row-reverse;
@@ -366,10 +470,32 @@ h1 {
           position: absolute;
           top: 129%;
           left: -8%; }
+        .map-main .countries .city-Los-Angeles .city__animals_item1:hover,
+        .map-main .countries .city-Los-Angeles .city__animals_item2:hover {
+          cursor: pointer; }
+        .map-main .countries .city-Los-Angeles .city-tooltip {
+          top: 235%;
+          left: -35%; }
+        .map-main .countries .city-Los-Angeles .city__animals_item1:hover ~ .city-tooltip,
+        .map-main .countries .city-Los-Angeles .city__animals_item2:hover ~ .city-tooltip {
+          visibility: visible;
+          opacity: 1;
+          transition: 0.5s; }
       .map-main .countries .city-Florida {
         position: absolute;
         top: 4.8%;
         left: 9.3%; }
+        .map-main .countries .city-Florida .city__animals_item1 {
+          position: absolute;
+          top: 110%;
+          left: -8%; }
+        .map-main .countries .city-Florida .city-tooltip {
+          top: 205%;
+          left: -35%; }
+        .map-main .countries .city-Florida .city__animals_item1:hover ~ .city-tooltip {
+          visibility: visible;
+          opacity: 1;
+          transition: 0.5s; }
       .map-main .countries .city__location-icon {
         width: 2.56rem;
         height: 3.2rem;
