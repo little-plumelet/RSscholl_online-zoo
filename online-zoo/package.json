@@ -6,6 +6,7 @@
   "scripts": {
     "style": "sass --watch pages/landing/landing.scss:pages/landing/landing.css",
     "style-map": "sass --watch pages/map/map.scss:pages/map/map.css",
+    "style-zoos-panda": "sass --watch pages/zoos-page/zoos-panda.scss:pages/zoos-page/zoos-panda.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
