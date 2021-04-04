@@ -394,9 +394,72 @@ h1 {
   .map-main .countries {
     width: 100%;
     height: 100%;
-    position: relative;
-    top: 48%;
-    left: 16%; }
+    position: relative; }
+    .map-main .countries-item {
+      position: relative;
+      display: inline-block; }
+      .map-main .countries-item_USA {
+        top: 48%;
+        left: 16%;
+        width: 23rem;
+        height: 10rem; }
+      .map-main .countries-item_Congo {
+        top: 63.5%;
+        left: 32%;
+        width: 5.1rem;
+        height: 7.7rem; }
+        .map-main .countries-item_Congo .Congo__icon {
+          position: absolute;
+          top: -21%;
+          left: -41%; }
+        .map-main .countries-item_Congo .city__animals_item1 {
+          position: absolute;
+          top: 25%;
+          left: -36%; }
+        .map-main .countries-item_Congo .city-tooltip {
+          top: 100%;
+          left: -95%; }
+        .map-main .countries-item_Congo .city__animals_item1:hover ~ .city-tooltip {
+          visibility: visible;
+          opacity: 1;
+          transition: 0.5s; }
+      .map-main .countries-item_China {
+        top: 51.2%;
+        left: 45.1%;
+        width: 11.2rem;
+        height: 11rem; }
+        .map-main .countries-item_China .China__icon_1 {
+          position: absolute;
+          top: -31%;
+          left: 77%; }
+        .map-main .countries-item_China .China__icon_2 {
+          position: absolute;
+          top: 11%;
+          left: 72%; }
+        .map-main .countries-item_China .city__animals_item1 {
+          position: absolute;
+          top: -38%;
+          left: 44%; }
+        .map-main .countries-item_China .city__animals_item2 {
+          position: absolute;
+          left: 37%;
+          top: 23%; }
+        .map-main .countries-item_China .city-tooltip_1 {
+          top: 25%;
+          left: 0%; }
+        .map-main .countries-item_China .city-tooltip_2 {
+          top: 75%;
+          left: 0%; }
+        .map-main .countries-item_China .city__animals_item1:hover ~ .city-tooltip_1,
+        .map-main .countries-item_China .city__animals_item2:hover ~ .city-tooltip_2 {
+          visibility: visible;
+          opacity: 1;
+          transition: 0.5s; }
+    .map-main .countries .cities {
+      width: inherit;
+      height: inherit; }
+    .map-main .countries .city {
+      width: max-content; }
     .map-main .countries__name,
     .map-main .countries .city__name {
       font-family: "Verdana", "sans-serif";
@@ -404,71 +467,21 @@ h1 {
       font-size: 1.5rem;
       line-height: 120%;
       color: #4f5352; }
-    .map-main .countries .Congo {
-      position: relative;
-      top: 13.7%;
-      left: 36%; }
-      .map-main .countries .Congo__icon {
-        position: absolute;
-        top: -95%;
-        left: -1.8%; }
-      .map-main .countries .Congo .city__animals_item1 {
-        position: absolute;
-        top: 110%;
-        left: -1.8%; }
-      .map-main .countries .Congo .city-tooltip {
-        top: 405%;
-        left: -5%; }
-      .map-main .countries .Congo .city__animals_item1:hover ~ .city-tooltip {
-        visibility: visible;
-        opacity: 1;
-        transition: 0.5s; }
-    .map-main .countries .China {
-      position: relative;
-      top: -0.5%;
-      left: 53.6%; }
-      .map-main .countries .China__icon_1 {
-        position: absolute;
-        top: -205%;
-        left: 7.55%; }
-      .map-main .countries .China__icon_2 {
-        position: absolute;
-        top: 60%;
-        left: 7.1%; }
-      .map-main .countries .China .city__animals_item1 {
-        position: absolute;
-        top: -235%;
-        left: 4.3%; }
-      .map-main .countries .China .city__animals_item2 {
-        position: absolute;
-        left: 3.8%;
-        top: 135%; }
-      .map-main .countries .China .city-tooltip_1 {
-        top: 105%;
-        left: 0%; }
-      .map-main .countries .China .city-tooltip_2 {
-        top: 455%;
-        left: 0%; }
-      .map-main .countries .China .city__animals_item1:hover ~ .city-tooltip_1,
-      .map-main .countries .China .city__animals_item2:hover ~ .city-tooltip_2 {
-        visibility: visible;
-        opacity: 1;
-        transition: 0.5s; }
     .map-main .countries .city {
       display: flex;
       flex-direction: row-reverse;
       align-items: flex-end; }
       .map-main .countries .city-Los-Angeles {
         position: absolute;
-        top: 2.6%;
-        left: -0.7%; }
+        top: 20.6%;
+        left: -3.7%; }
         .map-main .countries .city-Los-Angeles .city__animals_item1 {
           position: absolute;
-          top: 18%;
+          top: 25%;
           left: -38%; }
         .map-main .countries .city-Los-Angeles .city__animals_item2 {
           position: absolute;
-          top: 129%;
+          top: 134%;
           left: -8%; }
         .map-main .countries .city-Los-Angeles .city__animals_item1:hover,
         .map-main .countries .city-Los-Angeles .city__animals_item2:hover {
@@ -483,15 +496,15 @@ h1 {
           transition: 0.5s; }
       .map-main .countries .city-Florida {
         position: absolute;
-        top: 4.8%;
-        left: 9.3%; }
+        top: 47%;
+        left: 45%; }
         .map-main .countries .city-Florida .city__animals_item1 {
           position: absolute;
-          top: 110%;
+          top: 100%;
           left: -8%; }
         .map-main .countries .city-Florida .city-tooltip {
           top: 205%;
-          left: -35%; }
+          left: -27%; }
         .map-main .countries .city-Florida .city__animals_item1:hover ~ .city-tooltip {
           visibility: visible;
           opacity: 1;
@@ -500,5 +513,45 @@ h1 {
         width: 2.56rem;
         height: 3.2rem;
         background: url("../../assets/icons/map/location-icon.svg"); }
+
+.map-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  height: 11.8rem;
+  top: -15.3%;
+  left: 15.5%; }
+  .map-buttons__plus, .map-buttons__minus {
+    position: relative;
+    width: 5.4rem;
+    height: 5.4rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    outline: none; }
+  .map-buttons__plus:hover, .map-buttons__minus:hover {
+    cursor: pointer; }
+  .map-buttons .plus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background: url("../../assets/icons/map/plus.svg");
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: center; }
+  .map-buttons .minus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background: url("../../assets/icons/map/minus.svg");
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: center; }
 
 /*# sourceMappingURL=map.css.map */

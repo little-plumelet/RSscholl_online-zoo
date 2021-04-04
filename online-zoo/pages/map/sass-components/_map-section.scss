@@ -15,8 +15,106 @@
         width: 100%;
         height: 100%;
         position: relative;
-        top: 48%;
-        left: 16%;
+
+        &-item {
+            position: relative;
+            display: inline-block;
+
+            &_USA {
+                top:48%;
+                left: 16%;
+                width: 23rem;
+                height: 10rem;
+
+
+            }
+
+            &_Congo {
+                top: 63.5%;
+                left: 32%;
+                width: 5.1rem;
+                height: 7.7rem;
+
+                .Congo__icon {
+                    position: absolute;
+                    top: -21%;
+                    left: -41%;
+                }
+    
+                .city__animals_item1 {
+                    position: absolute;
+                    top: 25%;
+                    left: -36%;
+                }
+    
+                .city-tooltip {
+                    top: 100%;
+                    left: -95%;
+                }
+    
+                .city__animals_item1:hover ~ .city-tooltip {
+                    visibility: visible;
+                    opacity: 1;
+                    transition: 0.5s;
+                }
+            }
+
+            &_China {
+                top: 51.2%;
+                left: 45.1%;
+                width: 11.2rem;
+                height: 11rem;
+
+                .China__icon_1 {
+                    position: absolute;
+                    top: -31%;
+                    left: 77%;
+                }
+                .China__icon_2 {
+                    position: absolute;
+                    top: 11%;
+                    left: 72%;
+                }
+    
+                .city__animals_item1 {
+                    position: absolute;
+                    top: -38%;
+                    left: 44%;
+                }
+    
+                .city__animals_item2 {
+                    position: absolute;
+                    left: 37%;
+                    top: 23%;
+                }
+    
+                .city-tooltip_1 {
+                    top: 25%;
+                    left: 0%;
+                }
+    
+                .city-tooltip_2 {
+                    top: 75%;
+                    left: 0%;
+                }
+    
+                .city__animals_item1:hover ~ .city-tooltip_1,
+                .city__animals_item2:hover ~ .city-tooltip_2 {
+                    visibility: visible;
+                    opacity: 1;
+                    transition: 0.5s;
+                }
+            }
+        }
+
+        .cities {
+            width: inherit;
+            height: inherit;
+        }
+
+        .city {
+            width: max-content;
+        }
 
         &__name,
         .city__name {
@@ -24,80 +122,6 @@
             color: $color-gray-countries;
         }
 
-        .Congo {
-            position: relative;
-            top: 13.7%;
-            left: 36%;
-
-            &__icon {
-                position: absolute;
-                top: -95%;
-                left: -1.8%;
-            }
-
-            .city__animals_item1 {
-                position: absolute;
-                top: 110%;
-                left: -1.8%;
-            }
-
-            .city-tooltip {
-                top: 405%;
-                left: -5%;
-            }
-
-            .city__animals_item1:hover ~ .city-tooltip {
-                visibility: visible;
-                opacity: 1;
-                transition: 0.5s;
-            }
-        }
-
-        .China {
-            position: relative;
-            top: -0.5%;
-            left: 53.6%;
-
-            &__icon_1 {
-                position: absolute;
-                top: -205%;
-                left: 7.55%;
-            }
-            &__icon_2 {
-                position: absolute;
-                top: 60%;
-                left: 7.1%;
-            }
-
-            .city__animals_item1 {
-                position: absolute;
-                top: -235%;
-                left: 4.3%;
-            }
-
-            .city__animals_item2 {
-                position: absolute;
-                left: 3.8%;
-                top: 135%;
-            }
-
-            .city-tooltip_1 {
-                top: 105%;
-                left: 0%;
-            }
-
-            .city-tooltip_2 {
-                top: 455%;
-                left: 0%;
-            }
-
-            .city__animals_item1:hover ~ .city-tooltip_1,
-            .city__animals_item2:hover ~ .city-tooltip_2 {
-                visibility: visible;
-                opacity: 1;
-                transition: 0.5s;
-            }
-        }
 
         .city {
             display: flex;
@@ -106,18 +130,18 @@
 
             &-Los-Angeles {
                 position: absolute;
-                top: 2.6%;
-                left: -0.7%;
+                top: 20.6%;
+                left: -3.7%;
 
                 .city__animals_item1 {
                    position: absolute;
-                   top: 18%;
+                   top: 25%;
                    left: -38%;
                 }
 
                 .city__animals_item2 {
                     position: absolute;
-                    top: 129%;
+                    top: 134%;
                     left: -8%;
                 }
 
@@ -142,18 +166,18 @@
     
             &-Florida {
                 position: absolute;
-                top: 4.8%;
-                left: 9.3%;
+                top: 47%;
+                left: 45%;
 
                 .city__animals_item1 {
                     position: absolute;
-                    top: 110%;
+                    top: 100%;
                     left: -8%;
                 }
 
                 .city-tooltip {
                     top: 205%;
-                    left: -35%;
+                    left: -27%;
                 }
 
                 .city__animals_item1:hover ~ .city-tooltip {
@@ -170,5 +194,56 @@
             }
         }
 
+    }
+}
+
+.map-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    height: 11.8rem;
+    top: -15.3%;
+    left: 15.5%;
+
+    &__plus, 
+    &__minus {
+        position: relative;
+        width: 5.4rem;
+        height: 5.4rem;
+        border: none;
+        border-radius: 0.5rem;
+        background-color: $color-white;
+        outline: none;
+    }
+
+    &__plus:hover, 
+    &__minus:hover {
+        cursor: pointer;
+    }
+
+    .plus {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: inherit;
+        height: inherit;
+        background: url("../../assets/icons/map/plus.svg");
+        background-repeat: no-repeat;
+        background-size: 65%;
+        background-position: center;
+    }
+
+    .minus {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: inherit;
+        height: inherit;
+        background: url("../../assets/icons/map/minus.svg");
+        background-repeat: no-repeat;
+        background-size: 65%;
+        background-position: center;
     }
 }
