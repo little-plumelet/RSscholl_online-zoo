@@ -92,6 +92,15 @@ $content-width: 1161px;
     line-height: 140%;
 }
 
+@mixin paragraph-zoos-bold {
+    font: {
+        family: "Roboto", "sans-serif";
+        weight: 500;
+        size: 2.6rem;
+    }
+    line-height: 140%;
+}
+
 @mixin paragraph-small {
     font: {
         family: "Roboto", "sans-serif";

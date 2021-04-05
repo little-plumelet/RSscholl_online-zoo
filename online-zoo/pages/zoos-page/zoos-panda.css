@@ -330,4 +330,121 @@ h1 {
   .footer .sign-item:active {
     color: #4b9200; }
 
+:root {
+  font-size: 10px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+.button_rounded {
+  width: 29.8rem;
+  height: 5.4rem;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  border: none;
+  border-radius: 2.5rem;
+  font-family: "Roboto", "sans-serif";
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 140%;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  outline: none; }
+
+.button_rounded:hover {
+  cursor: pointer; }
+
+.button_rounded:active {
+  background: #4b9200; }
+
+.panda-cam {
+  margin-bottom: 8rem; }
+  .panda-cam__title {
+    font-family: "Roboto", "sans-serif";
+    font-weight: 400;
+    font-size: 4.8rem;
+    line-height: 120%;
+    color: #333b41;
+    margin: 4rem 0 1rem 0; }
+
+.more-cam {
+  margin-bottom: 14rem; }
+  .more-cam-list {
+    display: flex;
+    justify-content: space-between; }
+
+.panda-description__title {
+  font-family: "Roboto", "sans-serif";
+  font-weight: 400;
+  font-size: 4.8rem;
+  line-height: 120%;
+  font-weight: 500;
+  color: #4b9200;
+  margin-bottom: 2rem; }
+.panda-description__small-info {
+  padding-bottom: 2rem;
+  margin-bottom: 4.1rem;
+  border-bottom: 0.1rem solid #767474; }
+.panda-description__content {
+  display: flex; }
+.panda-description__text {
+  font-family: "Roboto", "sans-serif";
+  font-weight: 500;
+  font-size: 2.6rem;
+  line-height: 140%;
+  color: #ababab;
+  margin-bottom: 4.1rem; }
+.panda-description__photo {
+  padding-right: 7rem; }
+.panda-description__details {
+  margin-bottom: 18rem; }
+  .panda-description__details-paragraph {
+    font-family: "Roboto", "sans-serif";
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 130%;
+    line-height: 140%;
+    color: #000000;
+    padding-bottom: 2rem; }
+  .panda-description__details-subtitle {
+    font-family: "Roboto", "sans-serif";
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 120%;
+    color: #000000;
+    margin-bottom: 1rem; }
+  .panda-description__details .button__read-less_squared {
+    font-family: "Roboto", "sans-serif";
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 130%;
+    color: #000000;
+    line-height: 140%;
+    width: 12.9rem;
+    height: 4.2rem;
+    background-color: #f1f3f2;
+    border: 0.1rem solid #333b41;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    outline: none; }
+
+.donate {
+  margin: 0 auto;
+  padding-bottom: 6rem;
+  min-height: 39rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: url("../../assets/images/zoos-panda/panda_background.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 /*# sourceMappingURL=zoos-panda.css.map */

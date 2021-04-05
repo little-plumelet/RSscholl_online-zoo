@@ -1,0 +1,18 @@
+.panda-cam {
+    margin-bottom: 8rem;
+
+
+    &__title {
+        @include h2;
+        color: $color-black-blue;
+        margin: 4rem 0 1rem 0;
+    }
+}
+
+.more-cam {
+    margin-bottom: 14rem;
+    &-list {
+        display: flex;
+        justify-content: space-between;
+    }
+}
