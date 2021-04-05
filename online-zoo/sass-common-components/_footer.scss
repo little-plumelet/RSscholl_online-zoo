@@ -276,5 +276,10 @@
     .sign-item:active {
         color: $color-green;
     }
+
+    .active > a {
+        color: $color-orange;
+        pointer-events: none;
+    }
     
 }

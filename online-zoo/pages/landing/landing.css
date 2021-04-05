@@ -67,9 +67,10 @@ h1 {
     cursor: pointer; }
   .navigation__item a:active {
     color: #f9804b; }
-  .navigation__item:first-child a {
-    color: #f9804b;
-    pointer-events: none; }
+
+.active > a {
+  color: #f9804b;
+  pointer-events: none; }
 
 .logo {
   width: 8.2rem;
@@ -93,6 +94,27 @@ h1 {
     left: 12%;
     background-image: url("../../assets/icons/logo/bamboo.svg");
     background-repeat: no-repeat; }
+
+.button_squared {
+  width: 29.8rem;
+  height: 5.4rem;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  border: none;
+  border-radius: 0.5rem;
+  font-family: "Roboto", "sans-serif";
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 140%;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  outline: none; }
+
+.button_squared:hover {
+  cursor: pointer; }
+
+.button_squared:active {
+  background: #4b9200; }
 
 .footer {
   background-color: #111115; }

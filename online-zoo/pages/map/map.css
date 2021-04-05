@@ -65,9 +65,10 @@ h1 {
     cursor: pointer; }
   .navigation__item a:active {
     color: #f9804b; }
-  .navigation__item:first-child a {
-    color: #f9804b;
-    pointer-events: none; }
+
+.active > a {
+  color: #f9804b;
+  pointer-events: none; }
 
 .logo {
   width: 8.2rem;
@@ -329,6 +330,9 @@ h1 {
     cursor: pointer; }
   .footer .sign-item:active {
     color: #4b9200; }
+  .footer .active > a {
+    color: #f9804b;
+    pointer-events: none; }
 
 .city-tooltip {
   opacity: 0;

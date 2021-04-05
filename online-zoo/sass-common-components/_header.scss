@@ -41,8 +41,13 @@ h1 {
         color: $color-orange;
     }
     
-    &__item:first-child a {
-        color: $color-orange;
-        pointer-events: none;
-    }
+    // &__item:first-child a {
+    //     color: $color-orange;
+    //     pointer-events: none;
+    // }
+}
+
+.active > a {
+    color: $color-orange;
+    pointer-events: none;
 }
