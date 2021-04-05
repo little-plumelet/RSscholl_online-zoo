@@ -8,6 +8,7 @@
     "style-map": "sass --watch pages/map/map.scss:pages/map/map.css",
     "style-zoos-panda": "sass --watch pages/zoos-page/zoos-panda.scss:pages/zoos-page/zoos-panda.css",
     "style-zoos-eagle": "sass --watch pages/zoos-page-eagle/zoos-eagle.scss:pages/zoos-page-eagle/zoos-eagle.css",
+    "style-zoos-alligator": "sass --watch pages/zoos-page-alligator/zoos-alligator.scss:pages/zoos-page-alligator/zoos-alligator.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
