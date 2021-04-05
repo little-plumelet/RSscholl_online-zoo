@@ -27,4 +27,13 @@ switch (TITLE) {
             element.classList.add("active");
         });
         break;
+
+        case "Online-Zoo. Eagle":
+            document.querySelectorAll(".navigation__item").forEach(element => {
+                element.classList.remove("active");
+            }); 
+            document.querySelectorAll(".navigation__item_zoos").forEach(element => {
+                element.classList.add("active");
+            });
+            break;
 }
