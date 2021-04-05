@@ -332,6 +332,9 @@ h1 {
     cursor: pointer; }
   .footer .sign-item:active {
     color: #4b9200; }
+  .footer .active > a {
+    color: #f9804b;
+    pointer-events: none; }
 
 :root {
   font-size: 10px; }
