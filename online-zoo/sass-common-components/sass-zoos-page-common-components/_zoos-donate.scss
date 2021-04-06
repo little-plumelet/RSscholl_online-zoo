@@ -1,0 +1,32 @@
+.donate {
+    margin: 0 auto;
+    padding-bottom: 6rem;
+    min-height: 39rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.donate_panda {
+    background: url("../../assets/images/zoos-panda/panda_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.donate_alligator {
+    background: url("../../assets/images/zoos-alligator/alligator_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.donate_eagle {
+    background: url("../../assets/images/zoos-eagle/eagle_foto.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.donate_gorilla {
+    background: url("../../assets/images/zoos-gorilla/gorilla-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

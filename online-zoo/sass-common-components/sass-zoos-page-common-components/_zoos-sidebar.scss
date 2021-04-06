@@ -1,0 +1,23 @@
+
+.cam-aside {
+
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 9.9rem;
+        height: 65.2rem;
+        margin-top: 7.2rem;
+        margin-left: 3rem;
+        padding: 1.6rem 0;
+        background: $color-peach-gradient;
+        
+        float: left;
+    }
+
+    &__icon {
+        width: 7.8rem;
+        height: 7.8rem;
+    }
+}

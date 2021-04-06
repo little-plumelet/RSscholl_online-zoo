@@ -1,4 +1,7 @@
-.panda-description {
+.panda-description,
+.eagle-description,
+.alligator-description,
+.gorilla-description {
 
     &__title {
         @include h2;
@@ -56,6 +59,10 @@
             box-sizing: border-box;
             border-radius: 0.5rem;
             outline: none;
+        }
+
+        .button__read-less_squared:hover {
+            cursor: pointer;
         }
 
     }

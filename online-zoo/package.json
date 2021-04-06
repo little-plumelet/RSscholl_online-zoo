@@ -6,9 +6,10 @@
   "scripts": {
     "style": "sass --watch pages/landing/landing.scss:pages/landing/landing.css",
     "style-map": "sass --watch pages/map/map.scss:pages/map/map.css",
-    "style-zoos-panda": "sass --watch pages/zoos-page/zoos-panda.scss:pages/zoos-page/zoos-panda.css",
+    "style-zoos-panda": "sass --watch pages/zoos-page-panda/zoos-panda.scss:pages/zoos-page-panda/zoos-panda.css",
     "style-zoos-eagle": "sass --watch pages/zoos-page-eagle/zoos-eagle.scss:pages/zoos-page-eagle/zoos-eagle.css",
     "style-zoos-alligator": "sass --watch pages/zoos-page-alligator/zoos-alligator.scss:pages/zoos-page-alligator/zoos-alligator.css",
+    "style-zoos-gorilla": "sass --watch pages/zoos-page-gorilla/zoos-gorilla.scss:pages/zoos-page-gorilla/zoos-gorilla.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

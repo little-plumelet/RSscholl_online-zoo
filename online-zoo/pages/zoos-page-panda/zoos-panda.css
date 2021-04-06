@@ -369,9 +369,15 @@ body {
 .button_rounded:active {
   background: #4b9200; }
 
-.panda-cam {
+.panda-cam,
+.eagle-cam,
+.gorilla-cam,
+.alligator-cam {
   margin-bottom: 8rem; }
-  .panda-cam__title {
+  .panda-cam__title,
+  .eagle-cam__title,
+  .gorilla-cam__title,
+  .alligator-cam__title {
     font-family: "Roboto", "sans-serif";
     font-weight: 400;
     font-size: 4.8rem;
@@ -384,16 +390,19 @@ body {
   .more-cam-list {
     display: flex;
     justify-content: space-between; }
+  .more-cam-item:after {
+    position: absolute;
+    content: "Live";
+    width: inherit;
+    height: inherit; }
 
-.panda-cam-aside-wrapper {
-  width: 9.9rem;
-  height: 65.2rem;
-  margin-top: 7.2rem;
-  margin-left: 3rem;
-  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #febdab 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%);
-  float: left; }
+.wrapper_cam {
+  position: relative; }
 
-.panda-description__title {
+.panda-description__title,
+.eagle-description__title,
+.alligator-description__title,
+.gorilla-description__title {
   font-family: "Roboto", "sans-serif";
   font-weight: 400;
   font-size: 4.8rem;
@@ -401,24 +410,42 @@ body {
   font-weight: 500;
   color: #4b9200;
   margin-bottom: 2rem; }
-.panda-description__small-info {
+.panda-description__small-info,
+.eagle-description__small-info,
+.alligator-description__small-info,
+.gorilla-description__small-info {
   padding-bottom: 2rem;
   margin-bottom: 4.1rem;
   border-bottom: 0.1rem solid #767474; }
-.panda-description__content {
+.panda-description__content,
+.eagle-description__content,
+.alligator-description__content,
+.gorilla-description__content {
   display: flex; }
-.panda-description__text {
+.panda-description__text,
+.eagle-description__text,
+.alligator-description__text,
+.gorilla-description__text {
   font-family: "Roboto", "sans-serif";
   font-weight: 500;
   font-size: 2.6rem;
   line-height: 140%;
   color: #ababab;
   margin-bottom: 4.1rem; }
-.panda-description__photo {
+.panda-description__photo,
+.eagle-description__photo,
+.alligator-description__photo,
+.gorilla-description__photo {
   padding-right: 7rem; }
-.panda-description__details {
+.panda-description__details,
+.eagle-description__details,
+.alligator-description__details,
+.gorilla-description__details {
   margin-bottom: 18rem; }
-  .panda-description__details-paragraph {
+  .panda-description__details-paragraph,
+  .eagle-description__details-paragraph,
+  .alligator-description__details-paragraph,
+  .gorilla-description__details-paragraph {
     font-family: "Roboto", "sans-serif";
     font-weight: 400;
     font-size: 1.6rem;
@@ -426,14 +453,20 @@ body {
     line-height: 140%;
     color: #000000;
     padding-bottom: 2rem; }
-  .panda-description__details-subtitle {
+  .panda-description__details-subtitle,
+  .eagle-description__details-subtitle,
+  .alligator-description__details-subtitle,
+  .gorilla-description__details-subtitle {
     font-family: "Roboto", "sans-serif";
     font-weight: 400;
     font-size: 2.4rem;
     line-height: 120%;
     color: #000000;
     margin-bottom: 1rem; }
-  .panda-description__details .button__read-less_squared {
+  .panda-description__details .button__read-less_squared,
+  .eagle-description__details .button__read-less_squared,
+  .alligator-description__details .button__read-less_squared,
+  .gorilla-description__details .button__read-less_squared {
     font-family: "Roboto", "sans-serif";
     font-weight: 400;
     font-size: 1.6rem;
@@ -447,6 +480,11 @@ body {
     box-sizing: border-box;
     border-radius: 0.5rem;
     outline: none; }
+  .panda-description__details .button__read-less_squared:hover,
+  .eagle-description__details .button__read-less_squared:hover,
+  .alligator-description__details .button__read-less_squared:hover,
+  .gorilla-description__details .button__read-less_squared:hover {
+    cursor: pointer; }
 
 .donate {
   margin: 0 auto;
@@ -454,9 +492,67 @@ body {
   min-height: 39rem;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-end; }
+
+.donate_panda {
   background: url("../../assets/images/zoos-panda/panda_background.png");
   background-repeat: no-repeat;
   background-size: cover; }
+
+.donate_alligator {
+  background: url("../../assets/images/zoos-alligator/alligator_background.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.donate_eagle {
+  background: url("../../assets/images/zoos-eagle/eagle_foto.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.donate_gorilla {
+  background: url("../../assets/images/zoos-gorilla/gorilla-background.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.button-arrow {
+  width: 6.2rem;
+  height: 6.2rem;
+  position: absolute;
+  top: 31%;
+  outline: none;
+  border: none; }
+
+.button-arrow:hover {
+  cursor: pointer; }
+
+.button-arrow_left {
+  left: -6.5%;
+  background: url("../../assets/icons/arrow_left.svg"); }
+
+.button-arrow_right {
+  left: 101%;
+  background: url("../../assets/icons/arrow_right.svg"); }
+
+.button-arrow_left:active {
+  background: url("../../assets/icons/arrow_left_active.svg"); }
+
+.button-arrow_right:active {
+  background: url("../../assets/icons/arrow_right_active.svg"); }
+
+.cam-aside-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 9.9rem;
+  height: 65.2rem;
+  margin-top: 7.2rem;
+  margin-left: 3rem;
+  padding: 1.6rem 0;
+  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #febdab 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%);
+  float: left; }
+.cam-aside__icon {
+  width: 7.8rem;
+  height: 7.8rem; }
 
 /*# sourceMappingURL=zoos-panda.css.map */

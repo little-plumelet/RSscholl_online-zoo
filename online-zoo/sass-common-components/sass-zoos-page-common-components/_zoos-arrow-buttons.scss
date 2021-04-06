@@ -1,0 +1,31 @@
+.button-arrow {
+    width: 6.2rem;
+    height: 6.2rem;
+
+    position: absolute;
+    top: 31%;
+    outline: none;
+    border: none;
+}
+
+.button-arrow:hover {
+    cursor: pointer;
+}
+
+.button-arrow_left {
+    left: -6.5%;
+    background: url("../../assets/icons/arrow_left.svg");
+}
+
+.button-arrow_right {
+    left: 101%;
+    background: url("../../assets/icons/arrow_right.svg");
+}
+
+.button-arrow_left:active {
+    background: url("../../assets/icons/arrow_left_active.svg");
+}
+
+.button-arrow_right:active {
+    background: url("../../assets/icons/arrow_right_active.svg");
+}
