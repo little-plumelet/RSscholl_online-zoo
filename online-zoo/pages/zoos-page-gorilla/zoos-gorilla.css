@@ -554,5 +554,7 @@ body {
 .cam-aside__icon {
   width: 7.8rem;
   height: 7.8rem; }
+.cam-aside__icon:hover {
+  cursor: pointer; }
 
 /*# sourceMappingURL=zoos-gorilla.css.map */

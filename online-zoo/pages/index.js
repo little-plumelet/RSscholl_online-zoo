@@ -4,7 +4,8 @@ const TITLE = document.title;
 alert("К сожалению я не успела выполнить ссылки-иконки для переход по страницам животных на странице zoos. \
 Чтобы посмотреть страницы других животных кроме панды используйте, пожалуйста следующие пути: \
 https://rolling-scopes-school.github.io/little-plumelet-JSFE2021Q1/online-zoo/pages/zoos-page-alligator/zoos-alligator.html \
-https://rolling-scopes-school.github.io/little-plumelet-JSFE2021Q1/online-zoo/pages/zoos-page-eagle/zoos-eagle.html")
+https://rolling-scopes-school.github.io/little-plumelet-JSFE2021Q1/online-zoo/pages/zoos-page-eagle/zoos-eagle.html \
+https://rolling-scopes-school.github.io/little-plumelet-JSFE2021Q1/online-zoo/pages/zoos-page-gorilla/zoos-gorilla.html")
 
 switch (TITLE) {
     case "Online-Zoo. Landing":
