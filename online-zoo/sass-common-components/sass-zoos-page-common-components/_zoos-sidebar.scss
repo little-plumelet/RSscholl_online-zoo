@@ -1,5 +1,7 @@
 
 .cam-aside {
+    position: sticky;
+    top: 0;
 
     &-wrapper {
         display: flex;
@@ -8,7 +10,7 @@
         justify-content: space-between;
         width: 9.9rem;
         height: 65.2rem;
-        margin-top: 7.2rem;
+        margin-top: 3rem;
         margin-left: 3rem;
         padding: 1.6rem 0;
         background: $color-peach-gradient;
@@ -19,9 +21,21 @@
     &__icon {
         width: 7.8rem;
         height: 7.8rem;
+        fill: inherit;
     }
 
     &__icon:hover {
         cursor: pointer;
     }
+    
+}
+
+
+use.panda{
+    fill: #ff1166;
+}
+
+svg path,
+svg circle {
+    fill: inherit;
 }

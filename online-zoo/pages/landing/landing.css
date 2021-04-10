@@ -139,7 +139,7 @@ h1 {
     margin-top: 4.1rem;
     margin-bottom: 6.8rem; }
   .footer .button_donate {
-    margin-bottom: 4.1rem; }
+    margin-bottom: 2.1rem; }
   .footer .social-network-list {
     list-style-type: none; }
     .footer .social-network-list__item {
@@ -448,6 +448,7 @@ body {
   margin: 0 auto; }
 
 .site-history {
+  position: relative;
   margin-bottom: 18rem;
   min-height: 40.3rem; }
   .site-history .wrapper {
@@ -474,7 +475,7 @@ body {
     line-height: 120%;
     color: #333b41; }
   .site-history .text__paragraph {
-    margin-bottom: 5.4rem;
+    margin-bottom: 6.4rem;
     font-family: "Roboto", "sans-serif";
     font-weight: 400;
     font-size: 1.6rem;
@@ -484,6 +485,10 @@ body {
   .site-history .text__paragraph:last-child {
     margin-bottom: 0;
     line-height: 120%; }
+  .site-history__decor {
+    position: absolute;
+    right: 0;
+    top: -12rem; }
 
 :root {
   font-size: 10px; }
@@ -504,10 +509,19 @@ body {
   margin: 0 auto; }
 
 .animals {
+  position: relative;
   margin-bottom: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .animals .palm-decor {
+    position: absolute;
+    left: 0;
+    bottom: -10rem; }
+  .animals .strelitzia-decor {
+    position: absolute;
+    right: 0;
+    bottom: -10rem; }
 
 .animals-wrapper {
   width: 160rem;
@@ -615,7 +629,7 @@ body {
     line-height: 130%;
     color: #333b41;
     font-size: 1.2rem;
-    margin-bottom: 5.8rem;
+    margin-bottom: 6.3rem;
     margin-left: 9.9rem; }
   .feeding__paragraph_bold {
     max-width: inherit;
@@ -720,6 +734,7 @@ body {
   background: #4b9200; }
 
 .testimonials {
+  position: relative;
   margin-bottom: 18rem; }
   .testimonials__title {
     font-family: "Roboto", "sans-serif";
@@ -838,5 +853,9 @@ body {
     border: none; }
   .testimonials-slider::-moz-range-progress {
     background-color: #fe9013; }
+  .testimonials .leave-decor {
+    position: absolute;
+    bottom: -28rem;
+    right: 0; }
 
 /*# sourceMappingURL=landing.css.map */

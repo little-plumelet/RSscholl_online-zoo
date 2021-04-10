@@ -539,22 +539,33 @@ body {
 .button-arrow_right:active {
   background: url("../../assets/icons/arrow_right_active.svg"); }
 
-.cam-aside-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 9.9rem;
-  height: 65.2rem;
-  margin-top: 7.2rem;
-  margin-left: 3rem;
-  padding: 1.6rem 0;
-  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #febdab 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%);
-  float: left; }
-.cam-aside__icon {
-  width: 7.8rem;
-  height: 7.8rem; }
-.cam-aside__icon:hover {
-  cursor: pointer; }
+.cam-aside {
+  position: sticky;
+  top: 0; }
+  .cam-aside-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 9.9rem;
+    height: 65.2rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    padding: 1.6rem 0;
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #febdab 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%);
+    float: left; }
+  .cam-aside__icon {
+    width: 7.8rem;
+    height: 7.8rem;
+    fill: inherit; }
+  .cam-aside__icon:hover {
+    cursor: pointer; }
+
+use.panda {
+  fill: #ff1166; }
+
+svg path,
+svg circle {
+  fill: inherit; }
 
 /*# sourceMappingURL=zoos-panda.css.map */

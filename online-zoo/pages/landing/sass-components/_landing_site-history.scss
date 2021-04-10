@@ -3,6 +3,7 @@
 @import "../../../sass-common-components/wrapper";
 
 .site-history {
+    position: relative;
     margin-bottom: 18rem;
     min-height: 40.3rem;
 
@@ -35,7 +36,7 @@
     }
 
     .text__paragraph {
-        margin-bottom: 5.4rem;
+        margin-bottom: 6.4rem;
         @include paragraph;
         font-size: 1.25rem; //временно проблемы с отображением шрифта
         color: $color-black-blue;
@@ -44,5 +45,11 @@
     .text__paragraph:last-child {
         margin-bottom: 0;
         line-height: 120%;
+    }
+
+    &__decor {
+        position: absolute;
+        right: 0;
+        top: -12rem;
     }
 }

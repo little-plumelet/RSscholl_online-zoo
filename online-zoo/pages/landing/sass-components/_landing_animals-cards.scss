@@ -4,10 +4,23 @@
 @import "../../../sass-common-components/wrapper";
 
 .animals {
+    position: relative;
     margin-bottom: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .palm-decor {
+        position: absolute;
+        left: 0;
+        bottom: -10rem;
+    }
+
+    .strelitzia-decor {
+        position: absolute;
+        right: 0;
+        bottom: -10rem;
+    }
 }
 
 .animals-wrapper {
