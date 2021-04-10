@@ -1,7 +1,7 @@
 .city-tooltip {
 
     opacity: 0;
-    transition: 2s;
+    transition: 0.5s;
 
     visibility: hidden;
     position: absolute;
@@ -57,6 +57,11 @@
     border-width: 0.8rem;
     border-style: solid;
     border-color:  transparent transparent $color-background-dark transparent;
+  }
+
+  .city-tooltip:hover {
+      visibility: visible;
+      opacity: 1;
   }
 
   

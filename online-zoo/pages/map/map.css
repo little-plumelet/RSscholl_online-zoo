@@ -137,7 +137,7 @@ h1 {
     margin-top: 4.1rem;
     margin-bottom: 6.8rem; }
   .footer .button_donate {
-    margin-bottom: 4.1rem; }
+    margin-bottom: 2.1rem; }
   .footer .social-network-list {
     list-style-type: none; }
     .footer .social-network-list__item {
@@ -336,7 +336,7 @@ h1 {
 
 .city-tooltip {
   opacity: 0;
-  transition: 2s;
+  transition: 0.5s;
   visibility: hidden;
   position: absolute;
   background-color: #ffffff;
@@ -386,6 +386,10 @@ h1 {
   border-width: 0.8rem;
   border-style: solid;
   border-color: transparent transparent #000000 transparent; }
+
+.city-tooltip:hover {
+  visibility: visible;
+  opacity: 1; }
 
 .map-main {
   background-color: #eaf7fe;
@@ -554,6 +558,20 @@ h1 {
     width: inherit;
     height: inherit;
     background: url("../../assets/icons/map/minus.svg");
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: center; }
+  .map-buttons .plus:active,
+  .map-buttons .minus:active {
+    border: 1px solid #4b9200;
+    border-radius: 0.5rem; }
+  .map-buttons .plus:active {
+    background: url("../../assets/icons/map/plus_active.svg");
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: center; }
+  .map-buttons .minus:active {
+    background: url("../../assets/icons/map/minus_active.svg");
     background-repeat: no-repeat;
     background-size: 65%;
     background-position: center; }

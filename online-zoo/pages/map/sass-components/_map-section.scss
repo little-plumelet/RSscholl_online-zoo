@@ -246,4 +246,24 @@
         background-size: 65%;
         background-position: center;
     }
+
+    .plus:active,
+    .minus:active {
+        border: 1px solid $color-green;
+        border-radius: 0.5rem;
+    }
+
+    .plus:active {
+        background: url("../../assets/icons/map/plus_active.svg");
+        background-repeat: no-repeat;
+        background-size: 65%;
+        background-position: center;
+    }
+
+    .minus:active {
+        background: url("../../assets/icons/map/minus_active.svg");
+        background-repeat: no-repeat;
+        background-size: 65%;
+        background-position: center;
+    }
 }
