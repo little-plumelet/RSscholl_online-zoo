@@ -1,0 +1,36 @@
+.cam-aside__tooltip {
+    opacity: 0;
+    transition: 0.5s;
+    min-width: 12rem;
+    text-align: center;
+
+    position: absolute;
+    top: 20%;
+    left: 118%;
+    @include paragraph;
+    padding: 10px 20px;
+    background-color: $color-gray;
+    border: 2px solid $color-green;
+    border-radius: 1rem;
+    color: white;
+    cursor: initial;
+}
+.cam-aside__tooltip:after { 
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: -12%;
+    border-width: 0.8rem;
+    border-style: solid;
+    border-color:  transparent $color-gray transparent transparent;
+      
+}
+.cam-aside__tooltip:before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: -14%;
+    border-width: 0.8rem;
+    border-style: solid;
+    border-color:  transparent $color-green transparent transparent;
+}

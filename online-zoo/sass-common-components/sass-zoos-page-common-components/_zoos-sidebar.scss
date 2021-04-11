@@ -18,24 +18,176 @@
         float: left;
     }
 
-    &__icon {
-        width: 7.8rem;
-        height: 7.8rem;
-        fill: inherit;
+    &-link {
+        position: relative;
+        text-decoration: none;
+
+        .cam-aside__icon {
+            display: block;
+            width: 7.8rem;
+            height: 7.8rem;
+            border: 2px solid $color-light-orange;
+            border-radius: 50%;
+        }
+    
+        .cam-aside__icon:hover {
+            cursor: pointer;
+        }
     }
 
-    &__icon:hover {
-        cursor: pointer;
+    #icon-gorilla {
+        background: url("../../assets/icons/side-bar/sidebar_icon_gorilla.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #icon-gorilla:hover,
+    #icon-gorilla.active {
+        background: url("../../assets/icons/side-bar/sidebar_icon_gorilla_active.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 2px solid $color-green;
+        border-radius: 50%;
+    }
+    #icon-gorilla.active {
+        cursor: initial;
+    }
+    #icon-gorilla:hover ~ .cam-aside__tooltip {
+        visibility: visible;
+        opacity: 1;
+        transition: 1s;
+    }
+
+    #icon-alligator {
+        background: url("../../assets/icons/side-bar/sidebar_icon_alligator.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #icon-alligator:hover,
+    #icon-alligator.active {
+        background: url("../../assets/icons/side-bar/sidebar_icon_alligator_active.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 2px solid $color-green;
+        border-radius: 50%;
+    }
+    #icon-alligator.active {
+        cursor: initial;
+    }
+    #icon-alligator:hover ~ .cam-aside__tooltip {
+        visibility: visible;
+        opacity: 1;
+        transition: 1s;
+    }
+
+    #icon-panda {
+        background: url("../../assets/icons/side-bar/sidebar_icon_panda.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #icon-panda:hover,
+    #icon-panda.active {
+        background: url("../../assets/icons/side-bar/sidebar_icon_panda_active.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 2px solid $color-green;
+        border-radius: 50%;
+    }
+    #icon-panda.active {
+        cursor: initial;
+    }
+    #icon-panda:hover ~ .cam-aside__tooltip {
+        visibility: visible;
+        opacity: 1;
+        transition: 1s;
+    }
+
+    #icon-eagle {
+        background: url("../../assets/icons/side-bar/sidebar_icon_eagle.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #icon-eagle:hover,
+    #icon-eagle.active {
+        background: url("../../assets/icons/side-bar/sidebar_icon_eagle_active.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 2px solid $color-green;
+        border-radius: 50%;
+    }
+    #icon-eagle.active {
+        cursor: initial;
+    }
+    #icon-eagle:hover ~ .cam-aside__tooltip {
+        visibility: visible;
+        opacity: 1;
+        transition: 1s;
+    }
+
+    #icon-sloth {
+        background: url("../../assets/icons/side-bar/sidebar_icon_sloth.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #icon-sloth:hover,
+    #icon-sloth.active {
+        background: url("../../assets/icons/side-bar/sidebar_icon_sloth_active.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 2px solid $color-green;
+        border-radius: 50%;
+    }
+    #icon-sloth.active {
+        cursor: initial;
+    }
+    #icon-sloth:hover ~ .cam-aside__tooltip {
+        visibility: visible;
+        opacity: 1;
+        transition: 1s;
+    }
+
+    #icon-penguin {
+        background: url("../../assets/icons/side-bar/sidebar_icon_penguin.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #icon-penguin:hover,
+    #icon-penguin.active {
+        background: url("../../assets/icons/side-bar/sidebar_icon_penguin_active.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 2px solid $color-green;
+        border-radius: 50%;
+        transition: 0.3s;
+    }
+    #icon-penguina.active {
+        cursor: initial;
+    }
+    #icon-penguin:hover ~ .cam-aside__tooltip {
+        visibility: visible;
+        opacity: 1;
+        transition: 1s;
+    }
+
+    #icon-arrow-down {
+        background: url("../../assets/icons/side-bar/sidebar_icon_arrow-down.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #icon-arrow-down:hover {
+        background: url("../../assets/icons/side-bar/sidebar_icon_arrow-down_active.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 2px solid $color-green;
+        border-radius: 50%;
     }
     
 }
 
+// use.panda{
+//     fill: #ff1166;
+// }
 
-use.panda{
-    fill: #ff1166;
-}
-
-svg path,
-svg circle {
-    fill: inherit;
-}
+// svg path,
+// svg circle {
+//     fill: inherit;
+// }

@@ -29,11 +29,14 @@ switch (TITLE) {
     case "Online-Zoo. Panda":
         document.querySelectorAll(".navigation__item").forEach(element => {
             element.classList.remove("active");
-        }); 
+        });
         document.querySelectorAll(".navigation__item_zoos").forEach(element => {
             element.classList.add("active");
         });
-        document.getElementsByTagName('svg')[2].classList.add("cam-aside__icon_active");
+        document.querySelectorAll(".cam-aside__icon").forEach(element => {
+            element.classList.remove("active");
+        });
+        document.getElementById("icon-panda").classList.add("active");
         break;
 
     case "Online-Zoo. Eagle":
@@ -43,6 +46,10 @@ switch (TITLE) {
         document.querySelectorAll(".navigation__item_zoos").forEach(element => {
             element.classList.add("active");
         });
+        document.querySelectorAll(".cam-aside__icon").forEach(element => {
+            element.classList.remove("active");
+        });
+        document.getElementById("icon-eagle").classList.add("active");
         break;
     case "Online-Zoo. Alligator":
         document.querySelectorAll(".navigation__item").forEach(element => {
@@ -51,6 +58,10 @@ switch (TITLE) {
         document.querySelectorAll(".navigation__item_zoos").forEach(element => {
             element.classList.add("active");
         });
+        document.querySelectorAll(".cam-aside__icon").forEach(element => {
+            element.classList.remove("active");
+        });
+        document.getElementById("icon-alligator").classList.add("active");
         break;
     case "Online-Zoo. Gorilla":
         document.querySelectorAll(".navigation__item").forEach(element => {
@@ -59,5 +70,9 @@ switch (TITLE) {
         document.querySelectorAll(".navigation__item_zoos").forEach(element => {
             element.classList.add("active");
         });
+        document.querySelectorAll(".cam-aside__icon").forEach(element => {
+            element.classList.remove("active");
+        });
+        document.getElementById("icon-gorilla").classList.add("active");
         break;
 }
