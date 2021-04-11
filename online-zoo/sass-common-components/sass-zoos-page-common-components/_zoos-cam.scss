@@ -17,13 +17,37 @@
     &-list {
         display: flex;
         justify-content: space-between;
-    }
+    
+        &-item{
+            position: relative;
+        }
 
-    &-item:after {
-        position: absolute;
-        content: "Live";
-        width: inherit;
-        height: inherit;
+        &-item:before {
+            position: absolute;
+            content: "LIVE";
+            width: 5.5rem;
+            height: 2.4rem;
+            top: 0.9rem;
+            left: 0.9rem;
+            @include paragraph;
+            line-height: 140%;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 0.5rem;
+            text-align: center;
+            text-transform: uppercase;
+            color: $color-background-dark;
+            z-index: 1;
+        }
+
+        &-item:after {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            cursor: pointer;
+        }
     }
 }
 
