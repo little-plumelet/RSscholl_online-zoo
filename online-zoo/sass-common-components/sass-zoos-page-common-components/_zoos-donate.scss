@@ -1,5 +1,7 @@
 .donate {
     margin: 0 auto;
+    width: 100%;
+    position: relative;
     padding-bottom: 6rem;
     min-height: 39rem;
     display: flex;
@@ -29,4 +31,16 @@
     background: url("../../assets/images/zoos-gorilla/gorilla-background.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.leave-decor {
+    position: absolute;
+    right: 0;
+    bottom: 30rem;
+}
+
+.strelitzia-decor {
+    position: absolute;
+    left: 0;
+    bottom: 39rem;
 }

@@ -7,8 +7,10 @@
 
     &__title {
         @include h2;
+        position: absolute;
+        top: 12rem;
         color: $color-black-blue;
-        margin: 4rem 0 1rem 0;
+        margin-bottom: 1rem;
     }
 }
 

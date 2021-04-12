@@ -554,8 +554,10 @@ body {
   font-weight: 400;
   font-size: 4.8rem;
   line-height: 120%;
+  position: absolute;
+  top: 12rem;
   color: #333b41;
-  margin: 4rem 0 1rem 0;
+  margin-bottom: 1rem;
 }
 
 .more-cam {
@@ -609,6 +611,32 @@ body {
   position: relative;
 }
 
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 11.2rem;
+}
+
+.main-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-content {
+  padding-right: 7.8rem;
+  margin: 0 auto;
+}
+
+.description-wrapper {
+  margin-bottom: 18rem;
+}
+
 .panda-description__title,
 .eagle-description__title,
 .alligator-description__title,
@@ -657,13 +685,6 @@ body {
 .alligator-description__photo,
 .gorilla-description__photo {
   padding-right: 7rem;
-}
-
-.panda-description__details,
-.eagle-description__details,
-.alligator-description__details,
-.gorilla-description__details {
-  margin-bottom: 18rem;
 }
 
 .panda-description__details-paragraph,
@@ -723,13 +744,10 @@ body {
   text-decoration: none;
 }
 
-.leave-decor {
-  position: absolute;
-  right: 0;
-}
-
 .donate {
   margin: 0 auto;
+  width: 100%;
+  position: relative;
   padding-bottom: 6rem;
   min-height: 39rem;
   display: -webkit-box;
@@ -765,6 +783,18 @@ body {
   background: url("../../assets/images/zoos-gorilla/gorilla-background.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.leave-decor {
+  position: absolute;
+  right: 0;
+  bottom: 30rem;
+}
+
+.strelitzia-decor {
+  position: absolute;
+  left: 0;
+  bottom: 39rem;
 }
 
 .button-arrow {
@@ -832,7 +862,15 @@ body {
 .cam-aside {
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 3rem;
+  left: 3rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 10;
 }
 
 .cam-aside-wrapper {
@@ -849,10 +887,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 9.9rem;
-  height: 65.2rem;
-  margin-top: 3rem;
-  margin-left: 3rem;
   padding: 1.6rem 0;
   background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #febdab 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%);
   float: left;

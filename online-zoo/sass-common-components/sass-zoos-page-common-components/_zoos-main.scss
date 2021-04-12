@@ -1,3 +1,24 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 11.2rem;
+}
+.main-wrapper {
+    display: flex;
+    
+    // padding-right: 7.8rem;
+    // margin: 0 auto;
+}
+
+.main-content {
+    padding-right: 7.8rem;
+    margin: 0 auto;
+}
+
+.description-wrapper {
+    margin-bottom: 18rem;
+}
+
 .panda-description,
 .eagle-description,
 .alligator-description,
@@ -33,7 +54,7 @@
     
 
     &__details {
-        margin-bottom: 18rem;
+        
 
         &-paragraph {
             @include paragraph;
@@ -71,9 +92,4 @@
 .description__link {
     color: $color-green;
     text-decoration: none;
-}
-
-.leave-decor {
-    position: absolute;
-    right: 0;
 }
