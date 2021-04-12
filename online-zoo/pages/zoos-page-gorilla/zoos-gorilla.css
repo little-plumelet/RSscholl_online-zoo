@@ -718,6 +718,16 @@ body {
   cursor: pointer;
 }
 
+.description__link {
+  color: #4b9200;
+  text-decoration: none;
+}
+
+.leave-decor {
+  position: absolute;
+  right: 0;
+}
+
 .donate {
   margin: 0 auto;
   padding-bottom: 6rem;
