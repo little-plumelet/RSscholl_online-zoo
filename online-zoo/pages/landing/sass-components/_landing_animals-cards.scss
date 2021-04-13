@@ -72,6 +72,54 @@
     margin-bottom: 2rem;
     border: 0.1rem solid #fe9013;
     border-radius: 0.5rem;
+    overflow: hidden;
+    
+    &__image-wrapper {
+        overflow: hidden;
+        position: relative;
+    } 
+
+    &__image {
+        transition: 0.5s;
+    }
+
+    &__image-overlay {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        position: absolute;
+        bottom: -100%;
+    
+        background: $color-black-blue;
+        opacity: 0.8;
+        text-align: center;
+
+        &-title {
+            @include h3;
+            color: $color-white-frosted;
+        }
+        &-paragraph {
+            @include paragraph;
+            color: $color-white-frosted;
+        }
+    }
+
+    &__image-wrapper:hover {
+        .animal-card__image {
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+
+        .animal-card__image-overlay {
+            transition: 0.5s;
+            bottom: 0;
+        }
+    }
 
     &__figcaption {
         min-height: 5.6rem;
