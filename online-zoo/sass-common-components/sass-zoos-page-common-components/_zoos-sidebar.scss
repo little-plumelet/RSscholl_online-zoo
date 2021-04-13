@@ -12,24 +12,20 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        //width: 9.9rem;
-        //height: 65.2rem;
-        //margin-top: 3rem;
-        //margin-left: 3rem;
-        padding: 1.6rem 0;
+        padding: 1.1rem 0.9rem;
         background: $color-peach-gradient;
-        
-        float: left;
+        border-radius: 0.5rem;
     }
 
     &-link {
         position: relative;
         text-decoration: none;
+        margin: 0.5rem 0;
 
         .cam-aside__icon {
             display: block;
-            width: 7.8rem;
-            height: 7.8rem;
+            width: 8rem;
+            height: 8rem;
             border: 2px solid $color-light-orange;
             border-radius: 50%;
         }

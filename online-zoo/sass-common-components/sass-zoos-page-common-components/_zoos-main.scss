@@ -5,13 +5,10 @@
 }
 .main-wrapper {
     display: flex;
-    
-    // padding-right: 7.8rem;
-    // margin: 0 auto;
 }
 
 .main-content {
-    padding-right: 7.8rem;
+    padding-right: 9.6rem;
     margin: 0 auto;
 }
 
@@ -51,6 +48,13 @@
         padding-right: 7rem;
     }
 
+    &__bage {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 3.9rem
+    }
+
     
 
     &__details {
@@ -58,7 +62,7 @@
 
         &-paragraph {
             @include paragraph;
-            line-height: 140%;
+            line-height: 160%;
             color: $color-background-dark;
             padding-bottom: 2rem;
         }
