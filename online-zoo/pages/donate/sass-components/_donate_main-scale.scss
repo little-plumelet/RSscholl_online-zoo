@@ -1,0 +1,51 @@
+.donate-info__scale {
+    width: 100%;
+    position: relative;
+
+    &-title {
+        @include paragraph;
+        color: $color-background-dark;
+        margin-bottom: 1.7rem;
+    }
+
+    &-wrapper {
+        width: 100%;
+        height: 2.7rem;
+        margin-bottom: 10.8rem;
+        display: flex;
+        background-color: #404950;
+        border-radius: 0.2rem;
+    }
+    
+    &-radio-buttons {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        width: 92rem;
+    }
+        
+    &-radio-buttons:before {
+        position: absolute;
+        top: 45%;
+        content: "";
+        width: 99%;
+        height: 0.2rem;
+        background-color: #72828E;
+        border-radius: 0.2rem;
+    }
+}
+
+.scale-radio-buttons__item {
+     z-index: 1;
+     position: relative;
+
+    &-label {
+        @include paragraph-zoos-bold;
+        color: $color-black-blue;
+        position: absolute;
+        top: 210%;
+        left: -225%;
+    }
+}
