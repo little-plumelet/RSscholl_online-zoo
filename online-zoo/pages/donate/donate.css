@@ -698,6 +698,7 @@ body {
       -ms-grid-row-align: start;
       align-self: start;
   margin-bottom: 0.6rem;
+  position: relative;
 }
 
 .donate-form__input {
@@ -707,6 +708,16 @@ body {
   border-radius: 0.2rem;
   background-color: transparent;
   padding-left: 0.9rem;
+  outline: none;
+}
+
+.donate-form__input-label {
+  position: absolute;
+  top: 25%;
+  right: 3.5%;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.2rem;
+  color: #929699;
 }
 
 .donate-info__radio-buttons {
@@ -725,7 +736,17 @@ body {
 }
 
 .donate-info__radio-buttons .radio-buttons__item-input {
-  display: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #fe9013;
+  border-radius: 50%;
 }
 
 .donate-info__radio-buttons .radio-buttons__item-label {
@@ -738,19 +759,10 @@ body {
   padding-left: 2.6rem;
 }
 
-.donate-info__radio-buttons .radio-buttons__item-label:before {
-  width: 1.6rem;
-  height: 1.6rem;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  border: 1px solid #fe9013;
-  border-radius: 50%;
-}
-
-.donate-info__radio-buttons .radio-buttons__item-input:checked + .donate-info__radio-buttons .radio-buttons__item-label:before {
+.donate-info__radio-buttons .radio-buttons__item-input:checked {
   border: 1px solid #4b9200;
+  background-color: #4b9200;
+  outline: none;
 }
 
 .donate-info__scale {
@@ -804,7 +816,6 @@ body {
 }
 
 .scale-radio-buttons__item {
-  z-index: 1;
   position: relative;
 }
 
@@ -815,7 +826,52 @@ body {
   line-height: 140%;
   color: #333b41;
   position: absolute;
-  top: 210%;
+  top: 255%;
+  left: -295%;
+}
+
+.scale-radio-buttons__item-input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  width: 1rem;
+  height: 1rem;
+  z-index: 1;
+  -webkit-transform: scale(4);
+          transform: scale(4);
+  cursor: pointer;
+}
+
+.scale-radio-buttons__item-icon {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  left: 0;
+  background-color: #ffee2e;
+  border: 1px solid #ffee2e;
+  border-radius: 50%;
+}
+
+.scale-radio-buttons__item-input:checked + .scale-radio-buttons__item-icon:before {
+  content: "";
+  position: absolute;
+  top: -205%;
   left: -225%;
+  border: 2px solid #fe9013;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.scale-radio-buttons__item-input:checked + .scale-radio-buttons__item-icon:after {
+  content: "";
+  position: absolute;
+  top: -90%;
+  left: -95%;
+  border: 2px solid #fe9013;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=donate.css.map */

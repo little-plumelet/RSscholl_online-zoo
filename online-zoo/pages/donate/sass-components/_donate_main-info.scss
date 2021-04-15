@@ -89,6 +89,7 @@
 .donate-form {
     align-self: start;
     margin-bottom: 0.6rem;
+    position: relative;
 
     &__input {
         width: 26.8rem;
@@ -97,6 +98,16 @@
         border-radius: 0.2rem;
         background-color: transparent;
         padding-left: 0.9rem;
+        outline: none;
+    }
+
+    &__input-label {
+        position: absolute;
+        top: 25%;
+        right: 3.5%;
+        font-family: "Roboto", sans-serif;
+        font-size: 2.2rem;
+        color: #929699;
     }
 }
 
@@ -110,31 +121,31 @@
         position: relative;
 
         &-input {
-            display: none;
+          appearance: none;
+          outline: none;
+          width: 1.6rem;
+          height: 1.6rem;
+          position: absolute;
+          top: 0;
+          left: 0;
+          border: 1px solid $color-light-orange;
+          border-radius: 50%;
         }
 
-       &-label {
-           @include paragraph;
-           color: $color-black-blue;
-           margin-right: 5rem;
-           padding-left: 2.6rem;
-       }
-
-        &-label:before {
-            width: 1.6rem;
-            height: 1.6rem;
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            border: 1px solid $color-light-orange;
-            border-radius: 50%;
+        &-label {
+            @include paragraph;
+            color: $color-black-blue;
+            margin-right: 5rem;
+            padding-left: 2.6rem;
         }
 
-        &-input:checked + &-label:before {
+        &-input:checked {
             border: 1px solid $color-green;
+            background-color: $color-green;
+            outline: none;
         }
+
     }
 
-    
+       
 }
