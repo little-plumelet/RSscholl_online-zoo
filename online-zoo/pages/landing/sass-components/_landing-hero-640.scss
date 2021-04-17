@@ -1,0 +1,39 @@
+@media screen and (min-width: 640px) and (max-width:999px) {
+    .intro {
+        height: fit-content;
+        margin-bottom: 6rem;
+
+        .title {
+            width: 25.5rem;
+            height: 20.4rem;
+            margin-top: 5.1rem;
+            margin-bottom: 0;
+
+            &__circle {
+                width: 23.7rem;
+                height: 23.7rem;
+                top: -4.1rem;
+                left: -3.5rem;
+            }
+
+            &__text {
+                font-size: 5.4rem;
+            }
+        }
+
+        .hero {
+
+            .form-button {
+                position: relative;
+                top: -1rem;
+                align-self: start;
+                margin-bottom: 3rem;
+            }
+
+            .button {
+                margin-left: 0;
+            }
+        }
+    }
+}
+    
