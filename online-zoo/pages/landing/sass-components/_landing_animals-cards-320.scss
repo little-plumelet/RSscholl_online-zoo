@@ -1,0 +1,82 @@
+@media screen and (min-width: 320px) and (max-width: 639px) {
+
+    .animals {
+       margin-bottom: 6rem;
+
+
+        .palm-decor {
+            position: absolute;
+            transform: scale(1);
+            left: -6rem;
+            bottom: -10.1rem;
+        }
+    
+        .strelitzia-decor {
+            transform: scale(0.5);
+            position: absolute;
+            right: -9.2rem;
+            bottom: -17rem;
+        }
+    }
+
+    .animals-wrapper {
+        width: $content-width-320;
+    }
+    .button-arrow {
+        position: absolute;
+    }
+
+    .animals-list {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+    .animal-card {
+        margin-bottom: 2rem;
+
+        &__image {
+            width: 28.5rem;
+        }
+
+    
+        &__figcaption {
+            min-height: 0;
+            margin-bottom: 0.6rem;
+        }
+
+        &__text {
+            margin-left: 1.25rem;
+        }
+
+        &__title {
+            font-size: 1.25rem;
+        }
+
+        &__paragraph {
+            font-size: 1.17rem;
+        }
+
+        &__icon {
+            transform: scale(0.8);
+            margin-right: 0.8rem;
+        }
+
+        &__icon_carnivore {
+            margin-right: 0;
+        }
+    }
+
+    .animals-list li:nth-child(3) > .animal-card {
+        margin-right: 2.6rem;
+    }
+
+    .animals-list li:nth-child(5) > .animal-card,
+    .animals-list li:nth-child(6) > .animal-card {
+        display: none;
+    }
+
+    .button-arrow_left,
+    .button-arrow_right {
+        display: none;
+    }
+}
