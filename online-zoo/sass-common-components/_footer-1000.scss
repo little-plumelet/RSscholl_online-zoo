@@ -1,0 +1,34 @@
+@media screen and (min-width: 1000px) and (max-width:1599px) {
+    .footer {
+        .wrapper {
+            padding-left: 1.5rem;
+            grid-template-areas: "logo subscribe subscribe"
+                             "donate   donate    .........."
+                             "network  nav       sign";
+        }
+
+        .form-subscribe {
+
+            &__subtitle {
+                padding-left: 31rem;
+            }
+
+            &__panel {
+                padding-right: 2rem;
+            }
+        }
+
+        &__navigation {
+          
+            .navigation {
+                &__item:first-child {
+                    padding-left: 6.1rem;
+                }
+            }
+        }
+
+        .sign {
+         padding-left: 0;
+        }
+    }
+}

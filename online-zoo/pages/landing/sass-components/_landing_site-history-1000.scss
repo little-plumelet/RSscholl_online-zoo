@@ -1,0 +1,19 @@
+@media screen and (min-width: 1000px) and (max-width:1599px) {
+    .site-history {
+        margin-bottom: 15.2rem;
+
+        &__photo {
+            width: 45.5rem;
+            height: 40.38rem;
+            background-position: center;
+        }
+
+        .text__paragraph {
+            font-size: 1.6rem;
+        }
+
+        &__decor {
+            display: none;
+        }
+    }
+}

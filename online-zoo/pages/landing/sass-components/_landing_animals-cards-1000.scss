@@ -1,0 +1,49 @@
+@media screen and (min-width: 1000px) and (max-width:1599px) {
+
+    .animals {
+        margin-bottom: 14rem;
+
+        .palm-decor {
+
+            height: 20.2rem;
+            bottom: -14rem;
+        }
+    
+        .strelitzia-decor {
+            height: 18rem;
+            bottom: -14rem;
+        }
+    }
+
+    .animals-wrapper {
+        width: $content-width-1000;
+    }
+    .button-arrow {
+        position: absolute;
+    }
+
+    .animals-list {
+        margin-bottom: 0;
+    }
+    .animal-card {
+        margin-bottom: 9.2rem;
+
+        &__image {
+            width: 29.4rem;
+        }
+    }
+
+    .animals-list li:nth-child(4) > .animal-card,
+    .animals-list li:nth-child(5) > .animal-card,
+    .animals-list li:nth-child(6) > .animal-card {
+        margin-bottom: 8.1rem;
+    }
+
+    .button-arrow_left {
+        left: 21.5%;
+    }
+
+    .button-arrow_right {
+        right: 21.5%;
+    }
+}

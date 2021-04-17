@@ -4,3 +4,9 @@
     max-width: $content-width;
     margin: 0 auto;
 }
+
+@media screen and (min-width: 1000px) and (max-width:1599px) {
+    .wrapper {
+        max-width: $content-width-1000;
+    }
+}

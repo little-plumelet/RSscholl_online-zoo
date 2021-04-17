@@ -1,0 +1,37 @@
+@media screen and (min-width: 1000px) and (max-width:1599px) {
+    .feeding {
+        margin-bottom: 10rem;
+        
+        .wrapper {
+            padding: 3rem 0 5rem 0;
+        }
+        &-content {
+            padding: 3.2rem 0 5rem 0;
+        }
+
+        &__title_h2 {
+            margin-bottom: 2rem;
+        }
+
+        &__subtitle {
+            margin-bottom: 2rem;
+            margin-left: 4.9rem;
+        }
+
+        &__paragraph {
+            margin-left: 4.9rem;
+            margin-right: 7.8rem;
+            margin-bottom: 5rem;
+        }
+
+        &__paragraph_bold {
+            margin-bottom: 1rem;
+            margin-left: 4.9rem;
+            margin-right: 7.8rem;
+        }
+
+        &-cards {
+            margin-bottom: 6.7rem;
+        }
+    }
+}

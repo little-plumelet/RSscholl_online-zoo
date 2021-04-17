@@ -21,6 +21,12 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .wrapper {
+    max-width: 940px;
+  }
+}
+
 :root {
   font-size: 10px;
 }
@@ -39,6 +45,12 @@ body {
 .wrapper {
   max-width: 1161px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .wrapper {
+    max-width: 940px;
+  }
 }
 
 h1 {
@@ -522,6 +534,12 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .wrapper {
+    max-width: 940px;
+  }
+}
+
 :root {
   font-size: 10px;
 }
@@ -639,6 +657,12 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .wrapper {
+    max-width: 940px;
+  }
+}
+
 .site-history {
   position: relative;
   margin-bottom: 18rem;
@@ -661,7 +685,7 @@ body {
 }
 
 .site-history__text {
-  max-width: 46.51rem;
+  max-width: 46.5rem;
 }
 
 .site-history .text__title {
@@ -721,6 +745,12 @@ body {
 .wrapper {
   max-width: 1161px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .wrapper {
+    max-width: 940px;
+  }
 }
 
 .animals {
@@ -964,7 +994,6 @@ body {
   font-size: 1.6rem;
   line-height: 130%;
   color: #333b41;
-  font-size: 1.2rem;
   margin-bottom: 6.3rem;
   margin-left: 9.9rem;
 }
@@ -976,7 +1005,6 @@ body {
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 140%;
-  font-size: 1.2rem;
   line-height: 130%;
 }
 
@@ -1306,5 +1334,178 @@ body {
   position: absolute;
   bottom: -28rem;
   right: 0;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .navigation__item {
+    padding-left: 4.8rem;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .footer .wrapper {
+    padding-left: 1.5rem;
+        grid-template-areas: "logo subscribe subscribe" "donate   donate    .........." "network  nav       sign";
+  }
+  .footer .form-subscribe__subtitle {
+    padding-left: 31rem;
+  }
+  .footer .form-subscribe__panel {
+    padding-right: 2rem;
+  }
+  .footer__navigation .navigation__item:first-child {
+    padding-left: 6.1rem;
+  }
+  .footer .sign {
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .intro {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-bottom: 11rem;
+  }
+  .intro .title {
+    width: 40rem;
+    height: 27rem;
+    margin-bottom: 4.8rem;
+  }
+  .intro .title__circle {
+    width: 36.7rem;
+    height: 36.7rem;
+    top: -9.6rem;
+    left: -11.5rem;
+  }
+  .intro .title__text {
+    font-size: 8.5rem;
+    top: -4.2rem;
+    left: -11rem;
+  }
+  .intro .hero {
+    overflow: hidden;
+    padding-bottom: 4.7rem;
+  }
+  .intro .button {
+    margin-right: 10.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .site-history {
+    margin-bottom: 15.2rem;
+  }
+  .site-history__photo {
+    width: 45.5rem;
+    height: 40.38rem;
+    background-position: center;
+  }
+  .site-history .text__paragraph {
+    font-size: 1.6rem;
+  }
+  .site-history__decor {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .animals {
+    margin-bottom: 14rem;
+  }
+  .animals .palm-decor {
+    height: 20.2rem;
+    bottom: -14rem;
+  }
+  .animals .strelitzia-decor {
+    height: 18rem;
+    bottom: -14rem;
+  }
+  .animals-wrapper {
+    width: 940px;
+  }
+  .button-arrow {
+    position: absolute;
+  }
+  .animals-list {
+    margin-bottom: 0;
+  }
+  .animal-card {
+    margin-bottom: 9.2rem;
+  }
+  .animal-card__image {
+    width: 29.4rem;
+  }
+  .animals-list li:nth-child(4) > .animal-card,
+  .animals-list li:nth-child(5) > .animal-card,
+  .animals-list li:nth-child(6) > .animal-card {
+    margin-bottom: 8.1rem;
+  }
+  .button-arrow_left {
+    left: 21.5%;
+  }
+  .button-arrow_right {
+    right: 21.5%;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .testimonials {
+    margin-bottom: 14rem;
+  }
+  .testimonials__title {
+    margin-bottom: 3.2rem;
+  }
+  .testimonials-card {
+    width: 29.3rem;
+  }
+  .testimonials-card:nth-child(4) {
+    display: none;
+  }
+  .testimonials-slider-wrapper {
+    width: 39rem;
+  }
+  .testimonials .leave-decor {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    bottom: -27rem;
+    right: -2.5rem;
+  }
+  .testimonials-slider-wrapper {
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .feeding {
+    margin-bottom: 10rem;
+  }
+  .feeding .wrapper {
+    padding: 3rem 0 5rem 0;
+  }
+  .feeding-content {
+    padding: 3.2rem 0 5rem 0;
+  }
+  .feeding__title_h2 {
+    margin-bottom: 2rem;
+  }
+  .feeding__subtitle {
+    margin-bottom: 2rem;
+    margin-left: 4.9rem;
+  }
+  .feeding__paragraph {
+    margin-left: 4.9rem;
+    margin-right: 7.8rem;
+    margin-bottom: 5rem;
+  }
+  .feeding__paragraph_bold {
+    margin-bottom: 1rem;
+    margin-left: 4.9rem;
+    margin-right: 7.8rem;
+  }
+  .feeding-cards {
+    margin-bottom: 6.7rem;
+  }
 }
 /*# sourceMappingURL=landing.css.map */
