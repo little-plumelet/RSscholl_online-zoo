@@ -769,9 +769,11 @@ body {
 }
 
 .animals .palm-decor {
+  -webkit-transform: scale(2.3);
+          transform: scale(2.3);
   position: absolute;
-  left: 0;
-  bottom: -10rem;
+  left: -3rem;
+  bottom: 3rem;
 }
 
 .animals .strelitzia-decor {
