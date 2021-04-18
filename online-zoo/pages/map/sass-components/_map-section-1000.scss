@@ -1,0 +1,62 @@
+@import "./map-tooltip";
+
+@media screen and (min-width: 1000px) and (max-width:1599px) {
+    .map-main {
+        background-color: $color-map-blue-light;
+        padding-top: 9rem;
+        padding-bottom: 4rem;
+        
+         .map {
+           position: relative;
+            height: 61.8rem;
+            background-size: cover;
+         }
+
+        .countries {
+            
+
+             &-item {
+
+                 &_USA {
+                    transform: scale(0.86);
+                    top:46.5%;
+                    left: 12%;
+                    height: 10rem;
+                 }
+
+                 &_Congo {
+                    transform: scale(0.86);
+                    top: 66.5%;
+                    left: 27%;
+                }
+
+                &_China {
+                    transform: scale(0.86);
+                    top: 50.2%;
+                    left: 40.1%;
+                }
+            }
+        }
+    }
+
+     .map-buttons {
+         position: absolute;
+         right: -1rem;
+        top: 84%;
+    }
+
+    .footer {
+        .wrapper {
+            padding-left: 0;
+        }
+
+        .form-subscribe__panel {
+            padding-right: 3.5rem;
+        }
+
+        .navigation__item:first-child {
+            padding-left: 7.1rem;
+        }
+
+    }
+}

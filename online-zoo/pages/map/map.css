@@ -895,4 +895,670 @@ h1 {
   background-size: 65%;
   background-position: center;
 }
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .navigation__item {
+    padding-left: 4.8rem;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .footer .wrapper {
+    padding-left: 1.5rem;
+        grid-template-areas: "logo subscribe subscribe" "donate   donate    .........." "network  nav       sign";
+  }
+  .footer .form-subscribe__subtitle {
+    padding-left: 31rem;
+  }
+  .footer .form-subscribe__panel {
+    padding-right: 2rem;
+  }
+  .footer__navigation .navigation__item:first-child {
+    padding-left: 6.1rem;
+  }
+  .footer .sign {
+    padding-left: 0;
+  }
+}
+
+.city-tooltip {
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  visibility: hidden;
+  position: absolute;
+  background-color: #ffffff;
+  padding: 1.6rem 1.13rem 1.5rem 1.13rem;
+  border: 0.1rem solid #000000;
+  border-radius: 0.5rem;
+}
+
+.city-tooltip__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1.1rem;
+}
+
+.city-tooltip__line1, .city-tooltip__line2 {
+  font-family: "Roboto", "sans-serif";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 130%;
+  line-height: 140%;
+  color: #000000;
+}
+
+.city-tooltip__online-button {
+  width: 13.6rem;
+  height: 3.1rem;
+  background-color: #f1f3f2;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  font-family: "Roboto", "sans-serif";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 130%;
+  line-height: 140%;
+  color: #4b9200;
+  padding: 0.414rem 1.687rem 0.486rem 1.687rem;
+}
+
+.city-tooltip::after {
+  content: "";
+  position: absolute;
+  top: -13%;
+  left: 30%;
+  border-width: 0.8rem;
+  border-style: solid;
+  border-color: transparent transparent #ffffff transparent;
+}
+
+.city-tooltip::before {
+  content: "";
+  position: absolute;
+  top: -13.8%;
+  left: 30%;
+  border-width: 0.8rem;
+  border-style: solid;
+  border-color: transparent transparent #000000 transparent;
+}
+
+.city-tooltip:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .map-main {
+    background-color: #eaf7fe;
+    padding-top: 9rem;
+    padding-bottom: 4rem;
+  }
+  .map-main .map {
+    position: relative;
+    height: 61.8rem;
+    background-size: cover;
+  }
+  .map-main .countries-item_USA {
+    -webkit-transform: scale(0.86);
+            transform: scale(0.86);
+    top: 46.5%;
+    left: 12%;
+    height: 10rem;
+  }
+  .map-main .countries-item_Congo {
+    -webkit-transform: scale(0.86);
+            transform: scale(0.86);
+    top: 66.5%;
+    left: 27%;
+  }
+  .map-main .countries-item_China {
+    -webkit-transform: scale(0.86);
+            transform: scale(0.86);
+    top: 50.2%;
+    left: 40.1%;
+  }
+  .map-buttons {
+    position: absolute;
+    right: -1rem;
+    top: 84%;
+  }
+  .footer .wrapper {
+    padding-left: 0;
+  }
+  .footer .form-subscribe__panel {
+    padding-right: 3.5rem;
+  }
+  .footer .navigation__item:first-child {
+    padding-left: 7.1rem;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .header__navigation {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__navigation .navigation__item {
+    display: none;
+  }
+  .navigation-burger-menu .burger-menu__item {
+    display: block;
+    width: 1.8rem;
+    height: 0.2rem;
+    background-color: #ffffff;
+    border-radius: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+  .navigation-burger-menu:hover .burger-menu__item {
+    background-color: #4b9200;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 999px) {
+  .logo_header {
+    width: 4.6rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0;
+    padding: 0.4rem 0 0 0;
+    font-size: 1.23rem;
+    border: none;
+  }
+  .logo_header .logo__bamboo_header {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    height: 1.5rem;
+    top: 45.5%;
+    left: 7%;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .footer .wrapper {
+    padding-left: 0;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "logo     network" "donate   network" "nav       sign";
+  }
+  .footer .logo {
+    margin-top: 0;
+    margin-bottom: 3.2rem;
+  }
+  .footer .form-subscribe {
+    display: none;
+  }
+  .footer .button_donate {
+    margin-bottom: 3.3rem;
+  }
+  .footer__navigation .navigation {
+    margin-bottom: 0rem;
+  }
+  .footer__navigation .navigation__item {
+    padding-left: 3.6rem;
+  }
+  .footer__navigation .navigation__item:first-child {
+    padding-left: 0rem;
+  }
+  .footer .sign {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-left: 0;
+  }
+  .footer .sign-design-author {
+    padding-right: 0.5rem;
+  }
+  .footer .social-network-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-bottom: 4.2rem;
+  }
+  .footer .social-network-list__title {
+    display: none;
+  }
+  .footer .social-network-list__item {
+    margin-bottom: 2rem;
+  }
+  .footer .social-network-list__item:last-child {
+    margin-bottom: 0;
+  }
+  .footer .social-network-list .social-network-list__icon {
+    margin-right: 0rem;
+  }
+}
+
+.city-tooltip {
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  visibility: hidden;
+  position: absolute;
+  background-color: #ffffff;
+  padding: 1.6rem 1.13rem 1.5rem 1.13rem;
+  border: 0.1rem solid #000000;
+  border-radius: 0.5rem;
+}
+
+.city-tooltip__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1.1rem;
+}
+
+.city-tooltip__line1, .city-tooltip__line2 {
+  font-family: "Roboto", "sans-serif";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 130%;
+  line-height: 140%;
+  color: #000000;
+}
+
+.city-tooltip__online-button {
+  width: 13.6rem;
+  height: 3.1rem;
+  background-color: #f1f3f2;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  font-family: "Roboto", "sans-serif";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 130%;
+  line-height: 140%;
+  color: #4b9200;
+  padding: 0.414rem 1.687rem 0.486rem 1.687rem;
+}
+
+.city-tooltip::after {
+  content: "";
+  position: absolute;
+  top: -13%;
+  left: 30%;
+  border-width: 0.8rem;
+  border-style: solid;
+  border-color: transparent transparent #ffffff transparent;
+}
+
+.city-tooltip::before {
+  content: "";
+  position: absolute;
+  top: -13.8%;
+  left: 30%;
+  border-width: 0.8rem;
+  border-style: solid;
+  border-color: transparent transparent #000000 transparent;
+}
+
+.city-tooltip:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .map-main {
+    background-color: #eaf7fe;
+    padding-top: 5.7rem;
+    padding-bottom: 2.5rem;
+  }
+  .map-main .map {
+    position: relative;
+    height: 39.2rem;
+    background-size: cover;
+  }
+  .map-main .countries-item_USA {
+    -webkit-transform: scale(0.55);
+            transform: scale(0.55);
+    top: 41.5%;
+    left: 5.1%;
+    height: 10rem;
+  }
+  .map-main .countries-item_Congo {
+    -webkit-transform: scale(0.55);
+            transform: scale(0.55);
+    top: 62.8%;
+    left: 11.4%;
+  }
+  .map-main .countries-item_China {
+    -webkit-transform: scale(0.55);
+            transform: scale(0.55);
+    top: 45.2%;
+    left: 19.1%;
+  }
+  .map-buttons {
+    display: none;
+  }
+  .footer .wrapper {
+    padding-left: 0;
+  }
+  .footer .form-subscribe__panel {
+    padding-right: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .header__navigation {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__navigation .navigation__item {
+    display: none;
+  }
+  .navigation-burger-menu .burger-menu__item {
+    display: block;
+    width: 1.8rem;
+    height: 0.2rem;
+    background-color: #ffffff;
+    border-radius: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+  .navigation-burger-menu:hover .burger-menu__item {
+    background-color: #4b9200;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .footer .wrapper {
+    padding-left: 0;
+    padding-top: 1.2rem;
+    padding-bottom: 0;
+    justify-items: center;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "logo " "network" "subscribe" "donate" "sign" "nav";
+  }
+  .footer .logo {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+  .footer .form-subscribe__subtitle {
+    font-size: 1.6rem;
+    text-align: center;
+    padding-bottom: 1.2rem;
+  }
+  .footer .form-subscribe__panel {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .form-subscribe__input {
+    margin-bottom: 1rem;
+  }
+  .footer .form-subscribe .button__submit_squared {
+    margin-bottom: 4rem;
+  }
+  .footer__navigation {
+    width: 100%;
+    padding: 0 1.1rem;
+  }
+  .footer__navigation .navigation {
+    width: 100%;
+    margin-bottom: 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 3rem;
+  }
+  .footer__navigation .navigation li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__navigation .navigation__item {
+    padding-left: 0;
+  }
+  .footer__navigation .navigation__item:first-child {
+    padding-left: 0rem;
+  }
+  .footer .sign {
+    justify-self: flex-end;
+    padding-left: 0;
+    margin-bottom: 4rem;
+  }
+  .footer .sign-item {
+    font-size: 1.5rem;
+  }
+  .footer .sign-design-author {
+    padding-right: 0.5rem;
+  }
+  .footer .social-network-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .social-network-list__title {
+    display: none;
+  }
+  .footer .social-network-list__item {
+    margin-bottom: 0;
+  }
+  .footer .social-network-list .social-network-list__icon {
+    margin-right: 3rem;
+  }
+  .footer .social-network-list .icon_youtube {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .logo_footer {
+    width: 12.8rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0;
+    padding: 0.8rem 0 0 0;
+    font-size: 1.9rem;
+    border: none;
+  }
+  .logo_footer .logo__bamboo_footer {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    height: 2rem;
+    top: 12%;
+    left: 57%;
+  }
+}
+
+.city-tooltip {
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  visibility: hidden;
+  position: absolute;
+  background-color: #ffffff;
+  padding: 1.6rem 1.13rem 1.5rem 1.13rem;
+  border: 0.1rem solid #000000;
+  border-radius: 0.5rem;
+}
+
+.city-tooltip__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1.1rem;
+}
+
+.city-tooltip__line1, .city-tooltip__line2 {
+  font-family: "Roboto", "sans-serif";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 130%;
+  line-height: 140%;
+  color: #000000;
+}
+
+.city-tooltip__online-button {
+  width: 13.6rem;
+  height: 3.1rem;
+  background-color: #f1f3f2;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  font-family: "Roboto", "sans-serif";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 130%;
+  line-height: 140%;
+  color: #4b9200;
+  padding: 0.414rem 1.687rem 0.486rem 1.687rem;
+}
+
+.city-tooltip::after {
+  content: "";
+  position: absolute;
+  top: -13%;
+  left: 30%;
+  border-width: 0.8rem;
+  border-style: solid;
+  border-color: transparent transparent #ffffff transparent;
+}
+
+.city-tooltip::before {
+  content: "";
+  position: absolute;
+  top: -13.8%;
+  left: 30%;
+  border-width: 0.8rem;
+  border-style: solid;
+  border-color: transparent transparent #000000 transparent;
+}
+
+.city-tooltip:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .map-main {
+    background-color: #eaf7fe;
+    padding-top: 3.8rem;
+    padding-bottom: 1.8rem;
+  }
+  .map-main .wrapper {
+    max-width: 40.6rem;
+  }
+  .map-main .map {
+    height: 26.8rem;
+    position: relative;
+    background-size: cover;
+    background-position-x: 32%;
+  }
+  .map-main .countries {
+    width: 30rem;
+    margin: 0 auto;
+  }
+  .map-main .countries-item_USA {
+    -webkit-transform: scale(0.375);
+            transform: scale(0.375);
+    top: 36.2%;
+    left: -18.1%;
+    height: 10rem;
+  }
+  .map-main .countries-item_Congo {
+    -webkit-transform: scale(0.375);
+            transform: scale(0.375);
+    top: 58.8%;
+    left: -24.8%;
+  }
+  .map-main .countries-item_China {
+    -webkit-transform: scale(0.375);
+            transform: scale(0.375);
+    top: 1.5%;
+    left: 72.2%;
+  }
+  .map-buttons {
+    display: none;
+  }
+  .footer .wrapper {
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 345px) and (max-width: 639px) {
+  .map-main .wrapper {
+    max-width: 40.6rem;
+  }
+  .map-main .countries {
+    width: 30rem;
+    margin: 0 auto;
+  }
+  .map-main .countries-item_USA {
+    -webkit-transform: scale(0.375);
+            transform: scale(0.375);
+    top: 36.2%;
+    left: -22.1%;
+    height: 10rem;
+  }
+  .map-main .countries-item_Congo {
+    -webkit-transform: scale(0.375);
+            transform: scale(0.375);
+    top: 58.8%;
+    left: -30.8%;
+  }
+  .map-main .countries-item_China {
+    -webkit-transform: scale(0.375);
+            transform: scale(0.375);
+    top: 1.5%;
+    left: 66.2%;
+  }
+}
 /*# sourceMappingURL=map.css.map */
