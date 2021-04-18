@@ -11,7 +11,7 @@
             width: 12.8rem;
             height: 10.2rem;
             margin-top: 4.1rem;
-            margin-bottom: 4.3rem;
+            margin-bottom: 4.4rem;
 
             &__circle {
                 width: 11.9rem;
@@ -29,13 +29,14 @@
 
             .form-button {
                 position: absolute;
-                bottom: -10.5rem;
+                bottom: -10.4rem;
                 align-self: start;
                 margin-bottom: 3rem;
             }
 
             .button {
                 margin-left: 0;
+                margin-right: 0;
             }
         }
     }

@@ -1,7 +1,30 @@
 @media screen and (min-width: 640px) and (max-width:999px) {
-    .navigation {
-        &__item {
-            padding-left: 4.8rem;
+    .header__navigation {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .navigation__item {
+            display: none;
         }
     }
+
+    .navigation-burger-menu {
+        
+        .burger-menu__item {
+            display: block;
+            width: 1.8rem;
+            height: 0.2rem;
+            background-color: $color-white;
+            border-radius: 0.2rem;
+            margin-bottom: 0.2rem;
+        }
+        
+    }
+
+    .navigation-burger-menu:hover .burger-menu__item {
+        background-color: $color-green;
+        cursor: pointer;
+    } 
 }

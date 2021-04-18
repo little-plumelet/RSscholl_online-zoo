@@ -5,17 +5,19 @@
 
 
         .palm-decor {
-            position: absolute;
-            transform: scale(1);
-            left: -6rem;
-            bottom: -10.1rem;
+            width: 5.8rem;
+            height: 7.2rem;
+            background-image: url("../../../assets/images/decorations/palm_foto_1000.png");
+            background-position: right;
+            bottom:-6rem;
         }
     
         .strelitzia-decor {
-            transform: scale(0.5);
-            position: absolute;
-            right: -9.2rem;
-            bottom: -17rem;
+            width: 8rem;
+            height: 7.1rem;
+            background-image: url("../../../assets/images/decorations/strelitzia_pfoto_1000.png");
+            background-position: left;
+            bottom: -6.4rem;
         }
     }
 
@@ -32,7 +34,7 @@
         margin-bottom: 0;
     }
     .animal-card {
-        margin-bottom: 2rem;
+        margin-bottom: 1.9rem;
 
         &__image {
             width: 28.5rem;
@@ -66,14 +68,16 @@
         }
     }
 
-    .animals-list li:nth-child(3) > .animal-card {
+    .animals-list > li:nth-child(3) > .animal-card {
         margin-right: 2.6rem;
     }
 
-    .animals-list li:nth-child(5) > .animal-card,
-    .animals-list li:nth-child(6) > .animal-card {
+    .animals-list {
+        li:nth-child(5) > .animal-card,
+        li:nth-child(6) > .animal-card {
         display: none;
-    }
+        }
+    } 
 
     .button-arrow_left,
     .button-arrow_right {

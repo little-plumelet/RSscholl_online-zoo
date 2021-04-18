@@ -11,13 +11,22 @@
     align-items: center;
 
     .palm-decor {
-        transform: scale(2.3);
+        width: 28rem;
+        height: 46rem;
+        background-image: url("../../assets/images/decorations/palm_foto.png");
+        background-size: cover;
+        background-repeat: no-repeat;
         position: absolute;
-        left: -3rem;
-        bottom: 3rem;
+        left: 0;
+        bottom: -10rem;
     }
 
     .strelitzia-decor {
+        width: 36.8rem;
+        height: 27.5rem;
+        background-image: url("../../assets/images/decorations/strelitzia_pfoto.png");
+        background-size: cover;
+        background-repeat: no-repeat;
         position: absolute;
         right: 0;
         bottom: -10rem;

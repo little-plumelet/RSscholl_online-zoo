@@ -832,14 +832,22 @@ body {
 }
 
 .animals .palm-decor {
-  -webkit-transform: scale(2.3);
-          transform: scale(2.3);
+  width: 28rem;
+  height: 46rem;
+  background-image: url("../../assets/images/decorations/palm_foto.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   position: absolute;
-  left: -3rem;
-  bottom: 3rem;
+  left: 0;
+  bottom: -10rem;
 }
 
 .animals .strelitzia-decor {
+  width: 36.8rem;
+  height: 27.5rem;
+  background-image: url("../../assets/images/decorations/strelitzia_pfoto.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   position: absolute;
   right: 0;
   bottom: -10rem;
@@ -1397,10 +1405,13 @@ body {
 
 .testimonials .leave-decor {
   width: 24.6rem;
-  height: 28rem;
+  height: 35rem;
   position: absolute;
   background-image: url("../../../assets/images/decorations/leave_foto.png");
-  bottom: -18.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  bottom: -28rem;
   right: 0;
 }
 
@@ -1463,15 +1474,26 @@ body {
 
 @media screen and (min-width: 1000px) and (max-width: 1599px) {
   .site-history {
-    margin-bottom: 15.2rem;
+    margin-bottom: 14.3rem;
   }
   .site-history__photo {
     width: 45.5rem;
     height: 40.38rem;
     background-position: center;
   }
+  .site-history__text {
+    width: 45.4rem;
+  }
+  .site-history .text__title {
+    line-height: 100%;
+    margin-bottom: 3rem;
+  }
   .site-history .text__paragraph {
     font-size: 1.6rem;
+    margin-bottom: 5.8rem;
+  }
+  .site-history .text__paragraph:last-child {
+    line-height: 140%;
   }
   .site-history__decor {
     display: none;
@@ -1480,16 +1502,18 @@ body {
 
 @media screen and (min-width: 1000px) and (max-width: 1599px) {
   .animals {
-    margin-bottom: 14rem;
+    margin-bottom: 14.1rem;
   }
   .animals .palm-decor {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    width: 19.4rem;
     height: 20.2rem;
+    background-image: url("../../../assets/images/decorations/palm_foto_1000.png");
     bottom: -14rem;
   }
   .animals .strelitzia-decor {
+    width: 24.1rem;
     height: 18rem;
+    background-image: url("../../../assets/images/decorations/strelitzia_pfoto_1000.png");
     bottom: -14rem;
   }
   .animals-wrapper {
@@ -1533,6 +1557,9 @@ body {
   .feeding__title_h2 {
     margin-bottom: 2rem;
   }
+  .feeding__title_h3 {
+    margin-bottom: 4.5rem;
+  }
   .feeding__subtitle {
     margin-bottom: 2rem;
     margin-left: 4.9rem;
@@ -1540,7 +1567,8 @@ body {
   .feeding__paragraph {
     margin-left: 4.9rem;
     margin-right: 7.8rem;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
+    line-height: 130%;
   }
   .feeding__paragraph_bold {
     margin-bottom: 1rem;
@@ -1548,7 +1576,7 @@ body {
     margin-right: 7.8rem;
   }
   .feeding-cards {
-    margin-bottom: 6.7rem;
+    margin-bottom: 7rem;
   }
 }
 
@@ -1571,7 +1599,7 @@ body {
   .testimonials .leave-decor {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
-    bottom: -15.5rem;
+    bottom: -23.5rem;
     right: -2.5rem;
   }
   .testimonials-slider-wrapper {
@@ -1580,8 +1608,32 @@ body {
 }
 
 @media screen and (min-width: 640px) and (max-width: 999px) {
-  .navigation__item {
-    padding-left: 4.8rem;
+  .header__navigation {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__navigation .navigation__item {
+    display: none;
+  }
+  .navigation-burger-menu .burger-menu__item {
+    display: block;
+    width: 1.8rem;
+    height: 0.2rem;
+    background-color: #ffffff;
+    border-radius: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+  .navigation-burger-menu:hover .burger-menu__item {
+    background-color: #4b9200;
+    cursor: pointer;
   }
 }
 
@@ -1738,18 +1790,13 @@ body {
 
 @media screen and (min-width: 640px) and (max-width: 999px) {
   .animals .palm-decor {
-    position: absolute;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    left: -6rem;
-    bottom: -10.1rem;
+    width: 13.4rem;
+    height: 20.2rem;
+    background-position: right;
   }
   .animals .strelitzia-decor {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-    position: absolute;
-    right: -9.2rem;
-    bottom: -17rem;
+    width: 17.5rem;
+    height: 13.1rem;
   }
   .animals-wrapper {
     width: 600px;
@@ -1913,15 +1960,154 @@ body {
   .testimonials .leave-decor {
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
-    bottom: -15.1rem;
+    bottom: -22.1rem;
     right: -6.1rem;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 639px) {
-  .navigation__item {
+  .header__navigation {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__navigation .navigation__item {
     display: none;
-    padding-left: 4.8rem;
+  }
+  .navigation-burger-menu .burger-menu__item {
+    display: block;
+    width: 1.8rem;
+    height: 0.2rem;
+    background-color: #ffffff;
+    border-radius: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+  .navigation-burger-menu:hover .burger-menu__item {
+    background-color: #4b9200;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .footer .wrapper {
+    padding-left: 0;
+    padding-top: 1.2rem;
+    padding-bottom: 0;
+    justify-items: center;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "logo " "network" "subscribe" "donate" "sign" "nav";
+  }
+  .footer .logo {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+  .footer .form-subscribe__subtitle {
+    font-size: 1.6rem;
+    text-align: center;
+    padding-bottom: 1.2rem;
+  }
+  .footer .form-subscribe__panel {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .form-subscribe__input {
+    margin-bottom: 1rem;
+  }
+  .footer .form-subscribe .button__submit_squared {
+    margin-bottom: 4rem;
+  }
+  .footer__navigation {
+    width: 100%;
+    padding: 0 1.1rem;
+  }
+  .footer__navigation .navigation {
+    width: 100%;
+    margin-bottom: 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 3rem;
+  }
+  .footer__navigation .navigation li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__navigation .navigation__item {
+    padding-left: 0;
+  }
+  .footer__navigation .navigation__item:first-child {
+    padding-left: 0rem;
+  }
+  .footer .sign {
+    justify-self: flex-end;
+    padding-left: 0;
+    margin-bottom: 4rem;
+  }
+  .footer .sign-item {
+    font-size: 1.5rem;
+  }
+  .footer .sign-design-author {
+    padding-right: 0.5rem;
+  }
+  .footer .social-network-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .social-network-list__title {
+    display: none;
+  }
+  .footer .social-network-list__item {
+    margin-bottom: 0;
+  }
+  .footer .social-network-list .social-network-list__icon {
+    margin-right: 3rem;
+  }
+  .footer .social-network-list .icon_youtube {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .logo_footer {
+    width: 12.8rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0;
+    padding: 0.8rem 0 0 0;
+    font-size: 1.9rem;
+    border: none;
+  }
+  .logo_footer .logo__bamboo_footer {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    height: 2rem;
+    top: 12%;
+    left: 57%;
   }
 }
 
@@ -1939,7 +2125,7 @@ body {
     width: 12.8rem;
     height: 10.2rem;
     margin-top: 4.1rem;
-    margin-bottom: 4.3rem;
+    margin-bottom: 4.4rem;
   }
   .intro .title__circle {
     width: 11.9rem;
@@ -1952,7 +2138,7 @@ body {
   }
   .intro .hero .form-button {
     position: absolute;
-    bottom: -10.5rem;
+    bottom: -10.4rem;
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
         align-self: start;
@@ -1960,6 +2146,7 @@ body {
   }
   .intro .hero .button {
     margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -2002,18 +2189,18 @@ body {
     margin-bottom: 6rem;
   }
   .animals .palm-decor {
-    position: absolute;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    left: -6rem;
-    bottom: -10.1rem;
+    width: 5.8rem;
+    height: 7.2rem;
+    background-image: url("../../../assets/images/decorations/palm_foto_1000.png");
+    background-position: right;
+    bottom: -6rem;
   }
   .animals .strelitzia-decor {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-    position: absolute;
-    right: -9.2rem;
-    bottom: -17rem;
+    width: 8rem;
+    height: 7.1rem;
+    background-image: url("../../../assets/images/decorations/strelitzia_pfoto_1000.png");
+    background-position: left;
+    bottom: -6.4rem;
   }
   .animals-wrapper {
     width: 300px;
@@ -2032,7 +2219,7 @@ body {
     margin-bottom: 0;
   }
   .animal-card {
-    margin-bottom: 2rem;
+    margin-bottom: 1.9rem;
   }
   .animal-card__image {
     width: 28.5rem;
@@ -2058,7 +2245,7 @@ body {
   .animal-card__icon_carnivore {
     margin-right: 0;
   }
-  .animals-list li:nth-child(3) > .animal-card {
+  .animals-list > li:nth-child(3) > .animal-card {
     margin-right: 2.6rem;
   }
   .animals-list li:nth-child(5) > .animal-card,
@@ -2089,10 +2276,11 @@ body {
     font-size: 2.4rem;
   }
   .feeding__subtitle {
-    margin-bottom: 2rem;
+    margin-bottom: 1.8rem;
     margin-left: 0;
     font-size: 1.8rem;
     text-align: center;
+    line-height: 130%;
   }
   .feeding__paragraph {
     display: none;
@@ -2102,7 +2290,7 @@ body {
     font-size: 2.4rem;
   }
   .feeding-cards {
-    margin-bottom: 2rem;
+    margin-bottom: 1.9rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2133,11 +2321,14 @@ body {
     top: 26.5%;
   }
   .feeding .instruction-arrow_second {
-    top: 61%;
+    top: 60%;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 639px) {
+  .testimonials {
+    margin-bottom: 6rem;
+  }
   .testimonials .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2159,18 +2350,25 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 1.6rem;
   }
   .testimonials-card {
     width: 29.9rem;
-    height: 10.9rem;
+    height: 10.8rem;
     margin-bottom: 1.5rem;
   }
   .testimonials-card:nth-child(4) {
     display: none;
   }
+  .testimonials-card__heading {
+    padding: 0.8rem 0 1rem 1.2rem;
+  }
   .testimonials-card__text {
     height: 3.8rem;
     overflow: hidden;
+  }
+  .testimonials .heading__sign {
+    margin-left: 0.5rem;
   }
   .testimonials-slider-wrapper {
     display: none;
@@ -2179,10 +2377,9 @@ body {
     width: 24rem;
   }
   .testimonials .leave-decor {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-    bottom: -15.1rem;
-    right: -6.1rem;
+    width: 4rem;
+    height: 9.6rem;
+    bottom: -9rem;
   }
 }
 /*# sourceMappingURL=landing.css.map */

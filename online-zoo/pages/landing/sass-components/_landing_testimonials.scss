@@ -154,10 +154,13 @@
 
     .leave-decor {
         width: 24.6rem;
-        height: 28rem;
+        height: 35rem;
         position: absolute;
         background-image: url("../../../assets/images/decorations/leave_foto.png");
-        bottom: -18.5rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        bottom: -28rem;
         right: 0;
     }
 }

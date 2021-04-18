@@ -20,10 +20,11 @@
         }
 
         &__subtitle {
-            margin-bottom: 2rem;
+            margin-bottom: 1.8rem;
             margin-left: 0;
             font-size: 1.8rem;
             text-align: center;
+            line-height: 130%;
         }
 
         &__paragraph {
@@ -40,7 +41,7 @@
         }
 
         &-cards {
-            margin-bottom: 2rem;
+            margin-bottom: 1.9rem;
             flex-direction: column;
             position: relative;
         }
@@ -55,7 +56,6 @@
         &-card__bage {
             margin-bottom: 1rem;
         }
-
 
 
         .instruction-arrow {
@@ -73,7 +73,7 @@
             top: 26.5%;
         }
         .instruction-arrow_second {
-           top: 61%;
+           top: 60%;
         }
     }
 }
