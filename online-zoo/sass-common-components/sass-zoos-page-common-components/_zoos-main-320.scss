@@ -64,7 +64,7 @@
             width: 31.9rem;
             height: 19.3rem;
             overflow: hidden;
-            background-image: url("../../assets/images/zoos-panda/Giant\ Panda_foto_320.png");
+            // background-image: url("../../assets/images/zoos-panda/Giant\ Panda_foto_320.png");
             padding-right: 0;
             margin-bottom: 2rem;
             img {
@@ -145,5 +145,26 @@
             top: 20.5%;
             left: 56%;
             }
+    }
+
+    .panda-description {
+        &__photo {
+            background-image: url("../../assets/images/zoos-panda/Giant\ Panda_foto_320.png");
+        }
+    }
+    .eagle-description {
+        &__photo {
+            background-image: url("../../assets/images/zoos-eagle/eagle_foto.png");
+        }
+    }
+    .alligator-description {
+        &__photo {
+            background-image: url("../../assets/images/zoos-alligator/alligator_photo.png");
+        }
+    }
+    .gorilla-description {
+        &__photo {
+            background-image: url("../../assets/images/zoos-gorilla/gorila_photo.png");
+        }
     }
 }

@@ -85,6 +85,9 @@ switch (TITLE) {
         if (SCCREEN_WIDTH >= 640 && SCCREEN_WIDTH <=1599) {
             zoos_page_1000_mix_dom_elements();
         }
+        if (SCCREEN_WIDTH >= 320 && SCCREEN_WIDTH <=639) {
+            zoos_page_320_mix_dom_elements();
+        }
         break;
     case "Online-Zoo. Alligator":
         document.querySelectorAll(".navigation__item").forEach(element => {
@@ -100,6 +103,9 @@ switch (TITLE) {
         if (SCCREEN_WIDTH >= 640 && SCCREEN_WIDTH <=1599) {
             zoos_page_1000_mix_dom_elements();
         }
+        if (SCCREEN_WIDTH >= 320 && SCCREEN_WIDTH <=639) {
+            zoos_page_320_mix_dom_elements();
+        }
         break;
     case "Online-Zoo. Gorilla":
         document.querySelectorAll(".navigation__item").forEach(element => {
@@ -114,6 +120,9 @@ switch (TITLE) {
         document.getElementById("icon-gorilla").classList.add("active");
         if (SCCREEN_WIDTH >= 640 && SCCREEN_WIDTH <=1599) {
             zoos_page_1000_mix_dom_elements();
+        }
+        if (SCCREEN_WIDTH >= 320 && SCCREEN_WIDTH <=639) {
+            zoos_page_320_mix_dom_elements();
         }
         break;
 }
