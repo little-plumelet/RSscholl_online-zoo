@@ -1,10 +1,10 @@
-@media screen and (min-width: 100px) and (max-width: 1599px) {
+@media screen and (min-width: 640px) and (max-width: 999px) {
 
     .panda-cam,
     .eagle-cam,
     .gorilla-cam,
     .alligator-cam {
-        margin-bottom: 6rem;
+        margin-bottom: 2rem;
 
         .wrapper_main-cam {
             width: 100%;
@@ -14,17 +14,19 @@
 
         .wrapper_main-cam-iframe {
             margin: 0;
-            width: 778px;
-            height: 438px;
+            width: 495px;
+            height: 278px;
         }
 
          &__title {
-             top: 10rem;
+             top: 5.5rem;
+             font-size: 3.6rem;
+             line-height: 130%;
         }
     }
 
     .more-cam {
-        margin-bottom: 10rem;
+        margin-bottom: 6rem;
 
         &-wrapper {
             position: relative;
@@ -36,8 +38,8 @@
         
             &-item {
                 position: relative;
-                width: 293px;
-                height: 210px;
+                width: 180px;
+                height: 140px;
                 margin-right: 3rem;
             }
 

@@ -46,7 +46,7 @@ switch (TITLE) {
             element.classList.remove("active");
         });
         document.getElementById("icon-panda").classList.add("active");
-         if (SCCREEN_WIDTH >= 1000 && SCCREEN_WIDTH <=1599) {
+         if (SCCREEN_WIDTH >= 640 && SCCREEN_WIDTH <=1599) {
              zoos_page_1000_mix_dom_elements();
          }
         break;
@@ -62,7 +62,7 @@ switch (TITLE) {
             element.classList.remove("active");
         });
         document.getElementById("icon-eagle").classList.add("active");
-        if (SCCREEN_WIDTH >= 1000 && SCCREEN_WIDTH <=1599) {
+        if (SCCREEN_WIDTH >= 640 && SCCREEN_WIDTH <=1599) {
             zoos_page_1000_mix_dom_elements();
         }
         break;
@@ -77,7 +77,7 @@ switch (TITLE) {
             element.classList.remove("active");
         });
         document.getElementById("icon-alligator").classList.add("active");
-        if (SCCREEN_WIDTH >= 1000 && SCCREEN_WIDTH <=1599) {
+        if (SCCREEN_WIDTH >= 640 && SCCREEN_WIDTH <=1599) {
             zoos_page_1000_mix_dom_elements();
         }
         break;
@@ -92,7 +92,7 @@ switch (TITLE) {
             element.classList.remove("active");
         });
         document.getElementById("icon-gorilla").classList.add("active");
-        if (SCCREEN_WIDTH >= 1000 && SCCREEN_WIDTH <=1599) {
+        if (SCCREEN_WIDTH >= 640 && SCCREEN_WIDTH <=1599) {
             zoos_page_1000_mix_dom_elements();
         }
         break;

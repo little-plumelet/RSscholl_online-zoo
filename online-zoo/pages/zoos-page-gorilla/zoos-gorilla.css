@@ -859,6 +859,8 @@ body {
   height: 20rem;
   background-image: url("../../assets/images/decorations/leave_foto_45.png");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .strelitzia-decor {
@@ -1193,7 +1195,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
+@media screen and (min-width: 100px) and (max-width: 1599px) {
   .panda-cam,
   .eagle-cam,
   .gorilla-cam,
@@ -1399,7 +1401,13 @@ body {
   }
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .cam-aside {
+    left: 2rem;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1599px) {
   .cam-aside-link {
     margin: 0.45rem 0;
   }
