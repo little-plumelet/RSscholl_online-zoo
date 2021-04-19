@@ -16,6 +16,23 @@ function zoos_page_1000_mix_dom_elements () {
      main.appendChild(donate);
 }
 
+function zoos_page_320_mix_dom_elements () {
+    const camAside = document.querySelector(".cam-aside");
+     const mainContent = document.querySelector(".main-content");
+     const description = document.querySelector(".description");
+     const moreCam = document.querySelector(".more-cam");
+
+     const withAside = document.createElement("div");
+     withAside.classList.add("with-aside");
+
+     withAside.appendChild(camAside);
+     withAside.appendChild(moreCam);
+     mainContent.appendChild(withAside);
+     mainContent.appendChild(description);
+     
+}
+
+
 switch (TITLE) {
     case "Online-Zoo. Landing":
         document.querySelectorAll(".navigation__item").forEach(element => {
@@ -49,6 +66,9 @@ switch (TITLE) {
          if (SCCREEN_WIDTH >= 640 && SCCREEN_WIDTH <=1599) {
              zoos_page_1000_mix_dom_elements();
          }
+         if (SCCREEN_WIDTH >= 320 && SCCREEN_WIDTH <=639) {
+            zoos_page_320_mix_dom_elements();
+        }
         break;
 
     case "Online-Zoo. Eagle":

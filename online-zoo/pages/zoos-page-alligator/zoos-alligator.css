@@ -860,7 +860,6 @@ body {
   background-image: url("../../assets/images/decorations/leave_foto_45.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .strelitzia-decor {
@@ -1195,7 +1194,7 @@ body {
   }
 }
 
-@media screen and (min-width: 100px) and (max-width: 1599px) {
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
   .panda-cam,
   .eagle-cam,
   .gorilla-cam,
@@ -1478,6 +1477,954 @@ body {
     bottom: 39rem;
     width: 18.7rem;
     height: 13.9rem;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .header__navigation {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__navigation .navigation__item {
+    display: none;
+  }
+  .navigation-burger-menu .burger-menu__item {
+    display: block;
+    width: 1.8rem;
+    height: 0.2rem;
+    background-color: #ffffff;
+    border-radius: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+  .navigation-burger-menu:hover .burger-menu__item {
+    background-color: #4b9200;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 999px) {
+  .logo_header {
+    width: 4.6rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0;
+    padding: 0.4rem 0 0 0;
+    font-size: 1.23rem;
+    border: none;
+  }
+  .logo_header .logo__bamboo_header {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    height: 1.5rem;
+    top: 45.5%;
+    left: 7%;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .footer .wrapper {
+    padding-left: 0;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "logo     network" "donate   network" "nav       sign";
+  }
+  .footer .logo {
+    margin-top: 0;
+    margin-bottom: 3.2rem;
+  }
+  .footer .form-subscribe {
+    display: none;
+  }
+  .footer .button_donate {
+    margin-bottom: 3.3rem;
+  }
+  .footer__navigation .navigation {
+    margin-bottom: 0rem;
+  }
+  .footer__navigation .navigation__item {
+    padding-left: 3.6rem;
+  }
+  .footer__navigation .navigation__item:first-child {
+    padding-left: 0rem;
+  }
+  .footer .sign {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-left: 0;
+  }
+  .footer .sign-design-author {
+    padding-right: 0.5rem;
+  }
+  .footer .social-network-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-bottom: 4.2rem;
+  }
+  .footer .social-network-list__title {
+    display: none;
+  }
+  .footer .social-network-list__item {
+    margin-bottom: 2rem;
+  }
+  .footer .social-network-list__item:last-child {
+    margin-bottom: 0;
+  }
+  .footer .social-network-list .social-network-list__icon {
+    margin-right: 0rem;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .panda-cam,
+  .eagle-cam,
+  .gorilla-cam,
+  .alligator-cam {
+    margin-bottom: 2rem;
+  }
+  .panda-cam .wrapper_main-cam,
+  .eagle-cam .wrapper_main-cam,
+  .gorilla-cam .wrapper_main-cam,
+  .alligator-cam .wrapper_main-cam {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .panda-cam .wrapper_main-cam-iframe,
+  .eagle-cam .wrapper_main-cam-iframe,
+  .gorilla-cam .wrapper_main-cam-iframe,
+  .alligator-cam .wrapper_main-cam-iframe {
+    margin: 0;
+    width: 495px;
+    height: 278px;
+  }
+  .panda-cam__title,
+  .eagle-cam__title,
+  .gorilla-cam__title,
+  .alligator-cam__title {
+    top: 5.5rem;
+    font-size: 3.6rem;
+    line-height: 130%;
+  }
+  .more-cam {
+    margin-bottom: 6rem;
+  }
+  .more-cam-wrapper {
+    position: relative;
+  }
+  .more-cam-list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .more-cam-list-item {
+    position: relative;
+    width: 180px;
+    height: 140px;
+    margin-right: 3rem;
+  }
+  .more-cam-list-item:nth-child(3), .more-cam-list-item:nth-child(4) {
+    display: none;
+  }
+  .wrapper_cam {
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .main {
+    margin-top: 7.7rem;
+  }
+  .main-wrapper {
+    max-width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-bottom: 0;
+  }
+  .main-content {
+    padding-right: 0;
+    margin-right: 2rem;
+  }
+  .description-wrapper {
+    margin-bottom: 21rem;
+  }
+  .panda-description__title,
+  .eagle-description__title,
+  .alligator-description__title,
+  .gorilla-description__title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  .panda-description__content,
+  .eagle-description__content,
+  .alligator-description__content,
+  .gorilla-description__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .panda-description__text,
+  .eagle-description__text,
+  .alligator-description__text,
+  .gorilla-description__text {
+    font-size: 22px;
+    line-height: 140%;
+    margin-bottom: 4.5rem;
+    max-width: 42rem;
+  }
+  .panda-description__photo,
+  .eagle-description__photo,
+  .alligator-description__photo,
+  .gorilla-description__photo {
+    padding-right: 3rem;
+    margin-bottom: 3rem;
+  }
+  .panda-description__photo img,
+  .eagle-description__photo img,
+  .alligator-description__photo img,
+  .gorilla-description__photo img {
+    width: 39.4rem;
+    height: 39.3rem;
+  }
+  .panda-description__bage,
+  .eagle-description__bage,
+  .alligator-description__bage,
+  .gorilla-description__bage {
+    padding-bottom: 0;
+  }
+  .panda-description__bage .button_rounded,
+  .eagle-description__bage .button_rounded,
+  .alligator-description__bage .button_rounded,
+  .gorilla-description__bage .button_rounded {
+    position: relative;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    right: -7%;
+  }
+  .panda-description__details,
+  .eagle-description__details,
+  .alligator-description__details,
+  .gorilla-description__details {
+    position: relative;
+  }
+  .panda-description__details-paragraph,
+  .eagle-description__details-paragraph,
+  .alligator-description__details-paragraph,
+  .gorilla-description__details-paragraph {
+    padding-bottom: 0;
+  }
+  .panda-description__details-paragraph:nth-child(2),
+  .eagle-description__details-paragraph:nth-child(2),
+  .alligator-description__details-paragraph:nth-child(2),
+  .gorilla-description__details-paragraph:nth-child(2) {
+    padding-bottom: 2.5rem;
+  }
+  .panda-description__details-paragraph:nth-child(3),
+  .eagle-description__details-paragraph:nth-child(3),
+  .alligator-description__details-paragraph:nth-child(3),
+  .gorilla-description__details-paragraph:nth-child(3) {
+    padding-bottom: 3rem;
+  }
+  .panda-description__details-subtitle_general,
+  .eagle-description__details-subtitle_general,
+  .alligator-description__details-subtitle_general,
+  .gorilla-description__details-subtitle_general {
+    margin-bottom: 2rem;
+  }
+  .panda-description__details-subtitle_general ~ .panda-description__details-paragraph,
+  .eagle-description__details-subtitle_general ~ .panda-description__details-paragraph,
+  .alligator-description__details-subtitle_general ~ .panda-description__details-paragraph,
+  .gorilla-description__details-subtitle_general ~ .panda-description__details-paragraph, .panda-description__details-subtitle_general ~
+  .eagle-description__details-paragraph,
+  .eagle-description__details-subtitle_general ~
+  .eagle-description__details-paragraph,
+  .alligator-description__details-subtitle_general ~
+  .eagle-description__details-paragraph,
+  .gorilla-description__details-subtitle_general ~
+  .eagle-description__details-paragraph, .panda-description__details-subtitle_general ~
+  .alligator-description__details-paragraph,
+  .eagle-description__details-subtitle_general ~
+  .alligator-description__details-paragraph,
+  .alligator-description__details-subtitle_general ~
+  .alligator-description__details-paragraph,
+  .gorilla-description__details-subtitle_general ~
+  .alligator-description__details-paragraph, .panda-description__details-subtitle_general ~
+  .gorilla-description__details-paragraph,
+  .eagle-description__details-subtitle_general ~
+  .gorilla-description__details-paragraph,
+  .alligator-description__details-subtitle_general ~
+  .gorilla-description__details-paragraph,
+  .gorilla-description__details-subtitle_general ~
+  .gorilla-description__details-paragraph {
+    height: 5rem;
+    overflow: hidden;
+  }
+  .panda-description__details-subtitle:nth-child(n+5),
+  .eagle-description__details-subtitle:nth-child(n+5),
+  .alligator-description__details-subtitle:nth-child(n+5),
+  .gorilla-description__details-subtitle:nth-child(n+5) {
+    display: none;
+  }
+  .panda-description__details-paragraph:nth-child(n+6),
+  .eagle-description__details-paragraph:nth-child(n+6),
+  .alligator-description__details-paragraph:nth-child(n+6),
+  .gorilla-description__details-paragraph:nth-child(n+6) {
+    display: none;
+  }
+  .panda-description__details .button__read-less_squared,
+  .eagle-description__details .button__read-less_squared,
+  .alligator-description__details .button__read-less_squared,
+  .gorilla-description__details .button__read-less_squared {
+    position: absolute;
+    bottom: -23.5%;
+  }
+  .description__link {
+    color: #ababab;
+    text-decoration: none;
+  }
+  .footer .wrapper {
+    padding-left: 0;
+  }
+  .footer .form-subscribe__panel {
+    padding-right: 3rem;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .button-arrow {
+    width: 4.3rem;
+    height: 4.3rem;
+    position: absolute;
+    left: 85%;
+    outline: none;
+    border: none;
+    background-size: cover;
+  }
+  .button-arrow_left {
+    top: 17%;
+  }
+  .button-arrow_right {
+    top: 52%;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .cam-aside {
+    left: 2rem;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1599px) {
+  .cam-aside-link {
+    margin: 0.45rem 0;
+  }
+  .cam-aside-link .cam-aside__icon {
+    width: 5.3rem;
+    height: 5.3rem;
+    border: 1.3px solid #fe9013;
+  }
+  .cam-aside-link:first-child, .cam-aside-link:last-child {
+    margin: 0;
+  }
+  .cam-aside #icon-gorilla {
+    background-size: cover;
+  }
+  .cam-aside #icon-gorilla:hover,
+  .cam-aside #icon-gorilla.active {
+    background-size: cover;
+  }
+  .cam-aside #icon-alligator {
+    background-size: cover;
+  }
+  .cam-aside #icon-alligator:hover,
+  .cam-aside #icon-alligator.active {
+    background-size: cover;
+  }
+  .cam-aside #icon-panda {
+    background-size: cover;
+  }
+  .cam-aside #icon-panda:hover,
+  .cam-aside #icon-panda.active {
+    background-size: cover;
+  }
+  .cam-aside #icon-eagle {
+    background-size: cover;
+  }
+  .cam-aside #icon-eagle:hover,
+  .cam-aside #icon-eagle.active {
+    background-size: cover;
+  }
+  .cam-aside #icon-sloth {
+    background-size: cover;
+  }
+  .cam-aside #icon-sloth:hover,
+  .cam-aside #icon-sloth.active {
+    background-size: cover;
+  }
+  .cam-aside #icon-penguin {
+    background-size: cover;
+  }
+  .cam-aside #icon-penguin:hover,
+  .cam-aside #icon-penguin.active {
+    background-size: cover;
+  }
+  .cam-aside #icon-arrow-down {
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .donate {
+    min-height: 28.5rem;
+    padding-bottom: 3.3rem;
+  }
+  .leave-decor {
+    right: 0;
+    bottom: 28.5rem;
+    width: 12.5rem;
+    height: 10.5rem;
+  }
+  .strelitzia-decor {
+    left: 0;
+    bottom: 28.5rem;
+    width: 14.4rem;
+    height: 10.7rem;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .header__navigation {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__navigation .navigation__item {
+    display: none;
+  }
+  .navigation-burger-menu .burger-menu__item {
+    display: block;
+    width: 1.8rem;
+    height: 0.2rem;
+    background-color: #ffffff;
+    border-radius: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+  .navigation-burger-menu:hover .burger-menu__item {
+    background-color: #4b9200;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .footer .wrapper {
+    padding-left: 0;
+    padding-top: 1.2rem;
+    padding-bottom: 0;
+    justify-items: center;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "logo " "network" "subscribe" "donate" "sign" "nav";
+  }
+  .footer .logo {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+  .footer .form-subscribe__subtitle {
+    font-size: 1.6rem;
+    text-align: center;
+    padding-bottom: 1.2rem;
+  }
+  .footer .form-subscribe__panel {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .form-subscribe__input {
+    margin-bottom: 1rem;
+  }
+  .footer .form-subscribe .button__submit_squared {
+    margin-bottom: 4rem;
+  }
+  .footer__navigation {
+    width: 100%;
+    padding: 0 1.1rem;
+  }
+  .footer__navigation .navigation {
+    width: 100%;
+    margin-bottom: 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 3rem;
+  }
+  .footer__navigation .navigation li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__navigation .navigation__item {
+    padding-left: 0;
+  }
+  .footer__navigation .navigation__item:first-child {
+    padding-left: 0rem;
+  }
+  .footer .sign {
+    justify-self: flex-end;
+    padding-left: 0;
+    margin-bottom: 4rem;
+  }
+  .footer .sign-item {
+    font-size: 1.5rem;
+  }
+  .footer .sign-design-author {
+    padding-right: 0.5rem;
+  }
+  .footer .social-network-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .social-network-list__title {
+    display: none;
+  }
+  .footer .social-network-list__item {
+    margin-bottom: 0;
+  }
+  .footer .social-network-list .social-network-list__icon {
+    margin-right: 3rem;
+  }
+  .footer .social-network-list .icon_youtube {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .logo_footer {
+    width: 12.8rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0;
+    padding: 0.8rem 0 0 0;
+    font-size: 1.9rem;
+    border: none;
+  }
+  .logo_footer .logo__bamboo_footer {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    height: 2rem;
+    top: 12%;
+    left: 57%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .panda-cam,
+  .eagle-cam,
+  .gorilla-cam,
+  .alligator-cam {
+    margin-bottom: 2rem;
+  }
+  .panda-cam .wrapper_main-cam,
+  .eagle-cam .wrapper_main-cam,
+  .gorilla-cam .wrapper_main-cam,
+  .alligator-cam .wrapper_main-cam {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .panda-cam .wrapper_main-cam-iframe,
+  .eagle-cam .wrapper_main-cam-iframe,
+  .gorilla-cam .wrapper_main-cam-iframe,
+  .alligator-cam .wrapper_main-cam-iframe {
+    margin: 0;
+    width: 299px;
+    height: 168px;
+  }
+  .panda-cam__title,
+  .eagle-cam__title,
+  .gorilla-cam__title,
+  .alligator-cam__title {
+    top: 5.5rem;
+    left: 1rem;
+    font-size: 2.4rem;
+    line-height: 120%;
+  }
+  .more-cam {
+    margin-bottom: 6rem;
+    margin-left: 2.1rem;
+  }
+  .more-cam-wrapper {
+    position: relative;
+  }
+  .more-cam-list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .more-cam-list-item {
+    position: relative;
+    width: 89px;
+    height: 68px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  .wrapper_cam {
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .main {
+    margin-top: 5.9rem;
+  }
+  .main-wrapper {
+    max-width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-bottom: 0;
+  }
+  .main-content {
+    padding-right: 0;
+    margin-right: 0rem;
+  }
+  .with-aside {
+    margin-bottom: 1.3rem;
+  }
+  .description-wrapper {
+    margin-bottom: 15.2rem;
+  }
+  .panda-description .description-wrapper,
+  .eagle-description .description-wrapper,
+  .alligator-description .description-wrapper,
+  .gorilla-description .description-wrapper {
+    max-width: 320px;
+  }
+  .panda-description__small-info,
+  .eagle-description__small-info,
+  .alligator-description__small-info,
+  .gorilla-description__small-info {
+    position: relative;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+  }
+  .panda-description__title,
+  .eagle-description__title,
+  .alligator-description__title,
+  .gorilla-description__title {
+    position: absolute;
+    text-align: center;
+    font-size: 2.4rem;
+    line-height: 120%;
+    top: -6.5%;
+    left: 30%;
+    margin-bottom: 2.5rem;
+  }
+  .panda-description__content,
+  .eagle-description__content,
+  .alligator-description__content,
+  .gorilla-description__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .panda-description__text,
+  .eagle-description__text,
+  .alligator-description__text,
+  .gorilla-description__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 3rem;
+    max-width: 42rem;
+  }
+  .panda-description__photo,
+  .eagle-description__photo,
+  .alligator-description__photo,
+  .gorilla-description__photo {
+    width: 31.9rem;
+    height: 19.3rem;
+    overflow: hidden;
+    background-image: url("../../assets/images/zoos-panda/Giant Panda_foto_320.png");
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+  .panda-description__photo img,
+  .eagle-description__photo img,
+  .alligator-description__photo img,
+  .gorilla-description__photo img {
+    display: none;
+  }
+  .panda-description__bage,
+  .eagle-description__bage,
+  .alligator-description__bage,
+  .gorilla-description__bage {
+    padding-bottom: 0;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .panda-description__bage .button_rounded,
+  .eagle-description__bage .button_rounded,
+  .alligator-description__bage .button_rounded,
+  .gorilla-description__bage .button_rounded {
+    position: relative;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    right: 0;
+  }
+  .panda-description__details,
+  .eagle-description__details,
+  .alligator-description__details,
+  .gorilla-description__details {
+    position: relative;
+    max-width: 300px;
+    padding-top: 1rem;
+    margin: 0 auto;
+  }
+  .panda-description__details-paragraph,
+  .eagle-description__details-paragraph,
+  .alligator-description__details-paragraph,
+  .gorilla-description__details-paragraph {
+    padding-bottom: 1rem;
+  }
+  .panda-description__details-paragraph:first-child,
+  .eagle-description__details-paragraph:first-child,
+  .alligator-description__details-paragraph:first-child,
+  .gorilla-description__details-paragraph:first-child {
+    padding-bottom: 4rem;
+  }
+  .panda-description__details-paragraph:nth-child(3),
+  .eagle-description__details-paragraph:nth-child(3),
+  .alligator-description__details-paragraph:nth-child(3),
+  .gorilla-description__details-paragraph:nth-child(3) {
+    padding-bottom: 2.2rem;
+  }
+  .panda-description__details-subtitle_general,
+  .eagle-description__details-subtitle_general,
+  .alligator-description__details-subtitle_general,
+  .gorilla-description__details-subtitle_general {
+    margin-bottom: 0.6rem;
+  }
+  .panda-description__details-subtitle_general ~ .panda-description__details-paragraph,
+  .eagle-description__details-subtitle_general ~ .panda-description__details-paragraph,
+  .alligator-description__details-subtitle_general ~ .panda-description__details-paragraph,
+  .gorilla-description__details-subtitle_general ~ .panda-description__details-paragraph, .panda-description__details-subtitle_general ~
+  .eagle-description__details-paragraph,
+  .eagle-description__details-subtitle_general ~
+  .eagle-description__details-paragraph,
+  .alligator-description__details-subtitle_general ~
+  .eagle-description__details-paragraph,
+  .gorilla-description__details-subtitle_general ~
+  .eagle-description__details-paragraph, .panda-description__details-subtitle_general ~
+  .alligator-description__details-paragraph,
+  .eagle-description__details-subtitle_general ~
+  .alligator-description__details-paragraph,
+  .alligator-description__details-subtitle_general ~
+  .alligator-description__details-paragraph,
+  .gorilla-description__details-subtitle_general ~
+  .alligator-description__details-paragraph, .panda-description__details-subtitle_general ~
+  .gorilla-description__details-paragraph,
+  .eagle-description__details-subtitle_general ~
+  .gorilla-description__details-paragraph,
+  .alligator-description__details-subtitle_general ~
+  .gorilla-description__details-paragraph,
+  .gorilla-description__details-subtitle_general ~
+  .gorilla-description__details-paragraph {
+    height: 11rem;
+    overflow: hidden;
+    line-height: 140%;
+  }
+  .panda-description__details-subtitle:nth-child(n+5),
+  .eagle-description__details-subtitle:nth-child(n+5),
+  .alligator-description__details-subtitle:nth-child(n+5),
+  .gorilla-description__details-subtitle:nth-child(n+5) {
+    display: none;
+  }
+  .panda-description__details-paragraph:nth-child(n+6),
+  .eagle-description__details-paragraph:nth-child(n+6),
+  .alligator-description__details-paragraph:nth-child(n+6),
+  .gorilla-description__details-paragraph:nth-child(n+6) {
+    display: none;
+  }
+  .panda-description__details .button__read-less_squared,
+  .eagle-description__details .button__read-less_squared,
+  .alligator-description__details .button__read-less_squared,
+  .gorilla-description__details .button__read-less_squared {
+    position: absolute;
+    bottom: -18.5%;
+  }
+  .description__link {
+    color: #ababab;
+    text-decoration: none;
+  }
+  .footer .wrapper {
+    padding-left: 0;
+  }
+  .footer .logo__bamboo {
+    top: 20.5%;
+    left: 56%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .button-arrow {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .with-aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .cam-aside {
+    margin-left: 1rem;
+    position: initial;
+  }
+  .cam-aside-wrapper {
+    padding: 0.5rem 0.5rem;
+  }
+  .cam-aside-link {
+    margin: 0.15rem 0;
+  }
+  .cam-aside-link .cam-aside__icon {
+    width: 5.3rem;
+    height: 5.3rem;
+    border: 1.3px solid #fe9013;
+  }
+  .cam-aside-link:nth-child(4), .cam-aside-link:nth-child(5), .cam-aside-link:nth-child(6) {
+    display: none;
+  }
+  .cam-aside #icon-gorilla {
+    background-size: cover;
+  }
+  .cam-aside #icon-gorilla:hover,
+  .cam-aside #icon-gorilla.active {
+    background-size: cover;
+  }
+  .cam-aside #icon-alligator {
+    background-size: cover;
+  }
+  .cam-aside #icon-alligator:hover,
+  .cam-aside #icon-alligator.active {
+    background-size: cover;
+  }
+  .cam-aside #icon-panda {
+    background-size: cover;
+  }
+  .cam-aside #icon-panda:hover,
+  .cam-aside #icon-panda.active {
+    background-size: cover;
+  }
+  .cam-aside #icon-eagle {
+    background-size: cover;
+  }
+  .cam-aside #icon-eagle:hover,
+  .cam-aside #icon-eagle.active {
+    background-size: cover;
+  }
+  .cam-aside #icon-sloth {
+    background-size: cover;
+  }
+  .cam-aside #icon-sloth:hover,
+  .cam-aside #icon-sloth.active {
+    background-size: cover;
+  }
+  .cam-aside #icon-penguin {
+    background-size: cover;
+  }
+  .cam-aside #icon-penguin:hover,
+  .cam-aside #icon-penguin.active {
+    background-size: cover;
+  }
+  .cam-aside #icon-arrow-down {
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .donate {
+    min-height: 22.1rem;
+    padding-bottom: 1rem;
+  }
+  .leave-decor {
+    right: 0;
+    bottom: 21.8rem;
+    width: 6.3rem;
+    height: 7rem;
+  }
+  .strelitzia-decor {
+    left: 0;
+    bottom: 22rem;
+    width: 10.7rem;
+    height: 6.3rem;
   }
 }
 /*# sourceMappingURL=zoos-alligator.css.map */
