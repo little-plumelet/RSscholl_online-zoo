@@ -1,9 +1,3 @@
-@media screen and (min-width: 640px) and (max-width:999px) {
-    .cam-aside {
-        left: 2rem;
-    }
-}
-
 @media screen and (min-width: 640px) and (max-width:1599px) {
     .cam-aside {
 
@@ -75,5 +69,13 @@
             background-size: cover;
        }
         
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width:999px) {
+    .cam-aside {
+        margin-left: 2rem;
+        position: static;
+        margin-right: 3.3rem;
     }
 }
