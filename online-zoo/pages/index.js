@@ -1,4 +1,5 @@
 const TITLE = document.title;
+const SCCREEN_WIDTH = window.screen.width;
 
 //temporarly
 // alert("К сожалению я не успела выполнить ссылки-иконки для переход по страницам животных на странице zoos. \
@@ -6,6 +7,14 @@ const TITLE = document.title;
 // https://rolling-scopes-school.github.io/little-plumelet-JSFE2021Q1/online-zoo/pages/zoos-page-alligator/zoos-alligator.html \
 // https://rolling-scopes-school.github.io/little-plumelet-JSFE2021Q1/online-zoo/pages/zoos-page-eagle/zoos-eagle.html \
 // https://rolling-scopes-school.github.io/little-plumelet-JSFE2021Q1/online-zoo/pages/zoos-page-gorilla/zoos-gorilla.html")
+
+function zoos_page_1000_mix_dom_elements () {
+    const main = document.querySelector(".main");
+     const donate = document.querySelector(".donate");
+     const description = document.querySelector(".description");
+     main.appendChild(description);
+     main.appendChild(donate);
+}
 
 switch (TITLE) {
     case "Online-Zoo. Landing":
@@ -37,6 +46,9 @@ switch (TITLE) {
             element.classList.remove("active");
         });
         document.getElementById("icon-panda").classList.add("active");
+         if (SCCREEN_WIDTH >= 1000 && SCCREEN_WIDTH <=1599) {
+             zoos_page_1000_mix_dom_elements();
+         }
         break;
 
     case "Online-Zoo. Eagle":
@@ -50,6 +62,9 @@ switch (TITLE) {
             element.classList.remove("active");
         });
         document.getElementById("icon-eagle").classList.add("active");
+        if (SCCREEN_WIDTH >= 1000 && SCCREEN_WIDTH <=1599) {
+            zoos_page_1000_mix_dom_elements();
+        }
         break;
     case "Online-Zoo. Alligator":
         document.querySelectorAll(".navigation__item").forEach(element => {
@@ -62,6 +77,9 @@ switch (TITLE) {
             element.classList.remove("active");
         });
         document.getElementById("icon-alligator").classList.add("active");
+        if (SCCREEN_WIDTH >= 1000 && SCCREEN_WIDTH <=1599) {
+            zoos_page_1000_mix_dom_elements();
+        }
         break;
     case "Online-Zoo. Gorilla":
         document.querySelectorAll(".navigation__item").forEach(element => {
@@ -74,5 +92,8 @@ switch (TITLE) {
             element.classList.remove("active");
         });
         document.getElementById("icon-gorilla").classList.add("active");
+        if (SCCREEN_WIDTH >= 1000 && SCCREEN_WIDTH <=1599) {
+            zoos_page_1000_mix_dom_elements();
+        }
         break;
 }

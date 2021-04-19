@@ -1,0 +1,19 @@
+@media screen and (min-width: 1000px) and (max-width:1599px) {
+    .button-arrow {
+        width: 6.2rem;
+        height: 6.2rem;
+
+        position: absolute;
+        left: 83%;
+        outline: none;
+        border: none;
+    }
+
+    .button-arrow_left {
+        top: 15%;
+    }
+
+    .button-arrow_right {
+        top: 50%;
+    }
+}

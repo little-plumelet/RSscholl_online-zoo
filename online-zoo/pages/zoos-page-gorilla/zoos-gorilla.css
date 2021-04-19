@@ -20,7 +20,8 @@ body {
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1599px) {
-  .wrapper {
+  .wrapper,
+  .main-wrapper {
     max-width: 940px;
   }
 }
@@ -58,7 +59,8 @@ body {
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1599px) {
-  .wrapper {
+  .wrapper,
+  .main-wrapper {
     max-width: 940px;
   }
 }
@@ -582,6 +584,14 @@ body {
   margin-bottom: 8rem;
 }
 
+.panda-cam .wrapper_main-cam-iframe,
+.eagle-cam .wrapper_main-cam-iframe,
+.gorilla-cam .wrapper_main-cam-iframe,
+.alligator-cam .wrapper_main-cam-iframe {
+  width: 1162px;
+  height: 652px;
+}
+
 .panda-cam__title,
 .eagle-cam__title,
 .gorilla-cam__title,
@@ -611,6 +621,8 @@ body {
 
 .more-cam-list-item {
   position: relative;
+  width: 268px;
+  height: 210px;
 }
 
 .more-cam-list-item:before {
@@ -662,6 +674,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 11.5rem;
 }
 
 .main-content {
@@ -841,20 +854,30 @@ body {
 .leave-decor {
   position: absolute;
   right: 0;
-  bottom: 30rem;
+  bottom: 39rem;
+  width: 21rem;
+  height: 20rem;
+  background-image: url("../../assets/images/decorations/leave_foto_45.png");
+  background-repeat: no-repeat;
 }
 
 .strelitzia-decor {
   position: absolute;
   left: 0;
   bottom: 39rem;
+  width: 30.6rem;
+  height: 20.9rem;
+  background-image: url("../../assets/images/decorations/strelitzia_pfoto_left.png");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .button-arrow {
   width: 6.2rem;
   height: 6.2rem;
   position: absolute;
-  top: 34%;
+  top: 74.8%;
   outline: none;
   border: none;
 }
@@ -864,12 +887,12 @@ body {
 }
 
 .button-arrow_left {
-  left: -7%;
+  left: 8.6%;
   background: url("../../assets/icons/arrow_left.svg");
 }
 
 .button-arrow_right {
-  left: 101.5%;
+  left: 87.5%;
   background: url("../../assets/icons/arrow_right.svg");
 }
 
@@ -1143,5 +1166,310 @@ body {
   border-width: 0.8rem;
   border-style: solid;
   border-color: transparent #4b9200 transparent transparent;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .navigation__item {
+    padding-left: 4.8rem;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .footer .wrapper {
+    padding-left: 1.5rem;
+        grid-template-areas: "logo subscribe subscribe" "donate   donate    .........." "network  nav       sign";
+  }
+  .footer .form-subscribe__subtitle {
+    padding-left: 31rem;
+  }
+  .footer .form-subscribe__panel {
+    padding-right: 2rem;
+  }
+  .footer__navigation .navigation__item:first-child {
+    padding-left: 6.1rem;
+  }
+  .footer .sign {
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .panda-cam,
+  .eagle-cam,
+  .gorilla-cam,
+  .alligator-cam {
+    margin-bottom: 6rem;
+  }
+  .panda-cam .wrapper_main-cam,
+  .eagle-cam .wrapper_main-cam,
+  .gorilla-cam .wrapper_main-cam,
+  .alligator-cam .wrapper_main-cam {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .panda-cam .wrapper_main-cam-iframe,
+  .eagle-cam .wrapper_main-cam-iframe,
+  .gorilla-cam .wrapper_main-cam-iframe,
+  .alligator-cam .wrapper_main-cam-iframe {
+    margin: 0;
+    width: 778px;
+    height: 438px;
+  }
+  .panda-cam__title,
+  .eagle-cam__title,
+  .gorilla-cam__title,
+  .alligator-cam__title {
+    top: 10rem;
+  }
+  .more-cam {
+    margin-bottom: 10rem;
+  }
+  .more-cam-wrapper {
+    position: relative;
+  }
+  .more-cam-list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .more-cam-list-item {
+    position: relative;
+    width: 293px;
+    height: 210px;
+    margin-right: 3rem;
+  }
+  .more-cam-list-item:nth-child(3), .more-cam-list-item:nth-child(4) {
+    display: none;
+  }
+  .wrapper_cam {
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .main {
+    margin-top: 9.2rem;
+  }
+  .main-wrapper {
+    max-width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-bottom: 0;
+  }
+  .main-content {
+    padding-right: 0;
+    margin-right: 3rem;
+  }
+  .description-wrapper {
+    margin-bottom: 20rem;
+  }
+  .panda-description__title,
+  .eagle-description__title,
+  .alligator-description__title,
+  .gorilla-description__title {
+    margin-bottom: 2.5rem;
+  }
+  .panda-description__text,
+  .eagle-description__text,
+  .alligator-description__text,
+  .gorilla-description__text {
+    font-size: 22px;
+    line-height: 140%;
+    margin-bottom: 4.1rem;
+  }
+  .panda-description__photo,
+  .eagle-description__photo,
+  .alligator-description__photo,
+  .gorilla-description__photo {
+    padding-right: 3rem;
+  }
+  .panda-description__photo img,
+  .eagle-description__photo img,
+  .alligator-description__photo img,
+  .gorilla-description__photo img {
+    width: 45.5rem;
+    height: 45.8rem;
+  }
+  .panda-description__bage,
+  .eagle-description__bage,
+  .alligator-description__bage,
+  .gorilla-description__bage {
+    padding-bottom: 0;
+  }
+  .panda-description__details,
+  .eagle-description__details,
+  .alligator-description__details,
+  .gorilla-description__details {
+    position: relative;
+  }
+  .panda-description__details-paragraph:nth-child(2), .panda-description__details-paragraph:nth-child(3),
+  .eagle-description__details-paragraph:nth-child(2),
+  .eagle-description__details-paragraph:nth-child(3),
+  .alligator-description__details-paragraph:nth-child(2),
+  .alligator-description__details-paragraph:nth-child(3),
+  .gorilla-description__details-paragraph:nth-child(2),
+  .gorilla-description__details-paragraph:nth-child(3) {
+    padding-bottom: 3rem;
+  }
+  .panda-description__details-subtitle_general,
+  .eagle-description__details-subtitle_general,
+  .alligator-description__details-subtitle_general,
+  .gorilla-description__details-subtitle_general {
+    margin-bottom: 2rem;
+  }
+  .panda-description__details-subtitle_general ~ .panda-description__details-paragraph,
+  .eagle-description__details-subtitle_general ~ .panda-description__details-paragraph,
+  .alligator-description__details-subtitle_general ~ .panda-description__details-paragraph,
+  .gorilla-description__details-subtitle_general ~ .panda-description__details-paragraph, .panda-description__details-subtitle_general ~
+  .eagle-description__details-paragraph,
+  .eagle-description__details-subtitle_general ~
+  .eagle-description__details-paragraph,
+  .alligator-description__details-subtitle_general ~
+  .eagle-description__details-paragraph,
+  .gorilla-description__details-subtitle_general ~
+  .eagle-description__details-paragraph, .panda-description__details-subtitle_general ~
+  .alligator-description__details-paragraph,
+  .eagle-description__details-subtitle_general ~
+  .alligator-description__details-paragraph,
+  .alligator-description__details-subtitle_general ~
+  .alligator-description__details-paragraph,
+  .gorilla-description__details-subtitle_general ~
+  .alligator-description__details-paragraph, .panda-description__details-subtitle_general ~
+  .gorilla-description__details-paragraph,
+  .eagle-description__details-subtitle_general ~
+  .gorilla-description__details-paragraph,
+  .alligator-description__details-subtitle_general ~
+  .gorilla-description__details-paragraph,
+  .gorilla-description__details-subtitle_general ~
+  .gorilla-description__details-paragraph {
+    height: 5rem;
+    overflow: hidden;
+  }
+  .panda-description__details-subtitle:nth-child(n+5),
+  .eagle-description__details-subtitle:nth-child(n+5),
+  .alligator-description__details-subtitle:nth-child(n+5),
+  .gorilla-description__details-subtitle:nth-child(n+5) {
+    display: none;
+  }
+  .panda-description__details-paragraph:nth-child(n+6),
+  .eagle-description__details-paragraph:nth-child(n+6),
+  .alligator-description__details-paragraph:nth-child(n+6),
+  .gorilla-description__details-paragraph:nth-child(n+6) {
+    display: none;
+  }
+  .panda-description__details .button__read-less_squared,
+  .eagle-description__details .button__read-less_squared,
+  .alligator-description__details .button__read-less_squared,
+  .gorilla-description__details .button__read-less_squared {
+    position: absolute;
+    bottom: -23.5%;
+  }
+  .description__link {
+    color: #ababab;
+    text-decoration: none;
+  }
+  .footer .wrapper {
+    padding-left: 0;
+  }
+  .footer .form-subscribe__panel {
+    padding-right: 3rem;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .button-arrow {
+    width: 6.2rem;
+    height: 6.2rem;
+    position: absolute;
+    left: 83%;
+    outline: none;
+    border: none;
+  }
+  .button-arrow_left {
+    top: 15%;
+  }
+  .button-arrow_right {
+    top: 50%;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .cam-aside-link {
+    margin: 0.45rem 0;
+  }
+  .cam-aside-link .cam-aside__icon {
+    width: 5.3rem;
+    height: 5.3rem;
+    border: 1.3px solid #fe9013;
+  }
+  .cam-aside-link:first-child, .cam-aside-link:last-child {
+    margin: 0;
+  }
+  .cam-aside #icon-gorilla {
+    background-size: cover;
+  }
+  .cam-aside #icon-gorilla:hover,
+  .cam-aside #icon-gorilla.active {
+    background-size: cover;
+  }
+  .cam-aside #icon-alligator {
+    background-size: cover;
+  }
+  .cam-aside #icon-alligator:hover,
+  .cam-aside #icon-alligator.active {
+    background-size: cover;
+  }
+  .cam-aside #icon-panda {
+    background-size: cover;
+  }
+  .cam-aside #icon-panda:hover,
+  .cam-aside #icon-panda.active {
+    background-size: cover;
+  }
+  .cam-aside #icon-eagle {
+    background-size: cover;
+  }
+  .cam-aside #icon-eagle:hover,
+  .cam-aside #icon-eagle.active {
+    background-size: cover;
+  }
+  .cam-aside #icon-sloth {
+    background-size: cover;
+  }
+  .cam-aside #icon-sloth:hover,
+  .cam-aside #icon-sloth.active {
+    background-size: cover;
+  }
+  .cam-aside #icon-penguin {
+    background-size: cover;
+  }
+  .cam-aside #icon-penguin:hover,
+  .cam-aside #icon-penguin.active {
+    background-size: cover;
+  }
+  .cam-aside #icon-arrow-down {
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .leave-decor {
+    right: 0;
+    bottom: 39rem;
+    width: 17.5rem;
+    height: 16rem;
+  }
+  .strelitzia-decor {
+    left: 0;
+    bottom: 39rem;
+    width: 18.7rem;
+    height: 13.9rem;
+  }
 }
 /*# sourceMappingURL=zoos-gorilla.css.map */

@@ -1,0 +1,56 @@
+@media screen and (min-width: 1000px) and (max-width:1599px) {
+
+    .panda-cam,
+    .eagle-cam,
+    .gorilla-cam,
+    .alligator-cam {
+        margin-bottom: 6rem;
+
+        .wrapper_main-cam {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .wrapper_main-cam-iframe {
+            margin: 0;
+            width: 778px;
+            height: 438px;
+        }
+
+         &__title {
+             top: 10rem;
+        }
+    }
+
+    .more-cam {
+        margin-bottom: 10rem;
+
+        &-wrapper {
+            position: relative;
+        }
+
+        &-list {
+            justify-content: flex-start;
+            
+        
+            &-item {
+                position: relative;
+                width: 293px;
+                height: 210px;
+                margin-right: 3rem;
+            }
+
+            &-item:nth-child(3),
+            &-item:nth-child(4)
+            {
+                display: none;
+            }
+        }
+    }
+
+    .wrapper_cam {
+        position: relative;
+
+    }
+}

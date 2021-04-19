@@ -4,6 +4,10 @@
 .alligator-cam {
     margin-bottom: 8rem;
 
+    .wrapper_main-cam-iframe {
+        width: 1162px;
+        height: 652px;
+    }
 
     &__title {
         @include h2;
@@ -22,6 +26,8 @@
     
         &-item{
             position: relative;
+            width: 268px;
+            height: 210px;
         }
 
         &-item:before {

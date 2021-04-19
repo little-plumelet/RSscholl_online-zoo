@@ -20,7 +20,8 @@ body {
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1599px) {
-  .wrapper {
+  .wrapper,
+  .main-wrapper {
     max-width: 940px;
   }
 }
@@ -58,7 +59,8 @@ body {
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1599px) {
-  .wrapper {
+  .wrapper,
+  .main-wrapper {
     max-width: 940px;
   }
 }

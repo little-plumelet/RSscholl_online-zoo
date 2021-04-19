@@ -36,11 +36,21 @@
 .leave-decor {
     position: absolute;
     right: 0;
-    bottom: 30rem;
+    bottom: 39rem;
+    width: 21rem;
+    height: 20rem;
+    background-image: url("../../assets/images/decorations/leave_foto_45.png");
+    background-repeat: no-repeat;
 }
 
 .strelitzia-decor {
     position: absolute;
     left: 0;
     bottom: 39rem;
+    width: 30.6rem;
+    height: 20.9rem;
+    background-image: url("../../assets/images/decorations/strelitzia_pfoto_left.png");
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
