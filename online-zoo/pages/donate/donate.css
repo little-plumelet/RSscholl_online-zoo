@@ -579,7 +579,7 @@ body {
 
 .hero {
   height: 38.7rem;
-  background-image: url("../../../assets/images/hero/panda_donate.png");
+  background-image: url("../../assets/images/hero/panda_donate.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -669,7 +669,7 @@ body {
 .donate-info__pictograph .pictograph-days__cross-icon {
   width: 1.4rem;
   height: 1.4rem;
-  background-image: url("../../../assets/icons/donate/x_icon.svg");
+  background-image: url("../../assets/icons/donate/x_icon.svg");
   margin-right: 6.4rem;
   margin-top: 2rem;
 }
@@ -677,7 +677,7 @@ body {
 .donate-info__pictograph .pictograph-days__animal-icon {
   width: 28.4rem;
   height: 24.6rem;
-  background-image: url("../../../assets/icons/donate/animals-widget.svg");
+  background-image: url("../../assets/icons/donate/animals-widget.svg");
 }
 
 .donate-info-wrapper {
