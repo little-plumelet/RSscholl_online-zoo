@@ -912,4 +912,97 @@ body {
   height: 2rem;
   border-radius: 50%;
 }
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .navigation__item {
+    padding-left: 4.8rem;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .footer .wrapper {
+    padding-left: 1.5rem;
+        grid-template-areas: "logo subscribe subscribe" "donate   donate    .........." "network  nav       sign";
+  }
+  .footer .form-subscribe__subtitle {
+    padding-left: 31rem;
+  }
+  .footer .form-subscribe__panel {
+    padding-right: 2rem;
+  }
+  .footer__navigation .navigation__item:first-child {
+    padding-left: 6.1rem;
+  }
+  .footer .sign {
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .main-donate .wrapper {
+    padding: 4rem 0 3.2rem 0;
+  }
+  .footer .wrapper {
+    padding-left: 0;
+  }
+  .footer .form-subscribe__panel {
+    padding-right: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .donate-explanation__title {
+    max-width: 778px;
+  }
+  .donate-explanation__paragraph {
+    margin-bottom: 7rem;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .donate-info__title {
+    margin-bottom: 4rem;
+  }
+  .donate-info .donate-info-wrapper {
+    width: 100%;
+  }
+  .donate-info .donate-info__details {
+    padding: 2rem 4.5rem 4.6rem 4.5rem;
+  }
+  .donate-info .donate-info__details-title {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .donate-info__scale {
+    width: 95%;
+    position: relative;
+  }
+  .donate-info__scale-title {
+    margin-bottom: 2rem;
+  }
+  .donate-info__scale-wrapper {
+    width: 100%;
+  }
+  .donate-info__scale-radio-buttons {
+    padding: 0 1rem;
+  }
+  .donate-info__scale-radio-buttons:before {
+    width: 97%;
+  }
+  .scale-radio-buttons__item:first-child {
+    display: none;
+  }
+  .scale-radio-buttons__item {
+    position: relative;
+  }
+  .scale-radio-buttons__item-label {
+    left: -95%;
+  }
+  .scale-radio-buttons__item-input {
+    -webkit-transform: scale(4);
+            transform: scale(4);
+  }
+}
 /*# sourceMappingURL=donate.css.map */

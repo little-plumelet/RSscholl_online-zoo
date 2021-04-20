@@ -1,0 +1,11 @@
+@media screen and (min-width: 1000px) and (max-width:1599px) {
+    .donate-explanation {
+        &__title {
+            max-width: 778px;
+        }
+
+        &__paragraph {
+            margin-bottom: 7rem;
+        }
+    }
+}
