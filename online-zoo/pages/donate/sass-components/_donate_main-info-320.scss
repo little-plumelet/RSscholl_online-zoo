@@ -1,0 +1,162 @@
+@media screen and (min-width: 320px) and (max-width: 639px) {
+    .donate-info {
+        
+        &__title {
+            margin-bottom: 3rem;
+            font-size: 24px;
+        }
+
+        &__pictograph {
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: center;
+             margin-bottom: 0.5rem;
+             font-size: 24px;
+
+             .pictograph-days {
+                 margin-top: 3rem;
+    //             display: flex;
+    //             flex-direction: column;
+    //             align-items: center;
+
+                 &__number {
+    //                 margin-right: 2.3rem;
+    //                 font-family: "Roboto", sans-serif;
+                     font-size: 4.0rem;
+    //                 font-weight: 500;
+    //                 line-height: 80%;
+    //                 text-transform: uppercase;
+    //                 color: $color-background-dark;
+                    
+                 }
+
+                 &__subtitle {
+    //                 margin-top: 0.5rem;
+    //                 @include paragraph-bold;
+    //                 color: $color-black-blue;
+                    font-size: 9px;
+                 }
+
+                 &__cross-icon {
+                     width: 0.8rem;
+                     height: 0.8rem;
+                     background-size: cover;
+                     background-position: center;
+    //                 background-image: url("../../../assets/icons/donate/x_icon.svg");
+                     margin-right: 3.6rem;
+    //                 margin-top: 2rem;
+                 }
+
+                 &__animal-icon {
+                     width: 16rem;
+                     height: 13.9rem;
+                     background-size: cover;
+    //                 background-image: url("../../../assets/icons/donate/animals-widget.svg");
+                 }
+               }
+         }
+    }
+
+     .donate-info-wrapper {
+         width: 100%;
+    //     margin: 0 auto;
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+     }
+
+     .donate-info__details {
+    //     background: rgba(255, 255, 255, 0.52);
+    //     border-radius: 2rem;
+        padding: 2rem 0 2.2rem 0;
+
+         &-title {
+    //         @include h2;
+    //         color: $color-light-orange;
+    //         text-align: center;
+             margin-bottom: 1.5rem;
+             font-size: 24px;
+         }
+
+         &-subtitle {
+    //         @include subtitle;
+    //         color: $color-black-blue;
+            align-self: center;
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 16px;
+         }
+
+         .donate-info__inspiration {
+              width: 301px;
+    //         @include paragraph;
+    //         color: $color-black-blue;
+    //         margin-top: 3rem;
+         }
+    }
+
+     .donate-form {
+    //     align-self: start;
+         margin-bottom: 3rem;
+    //     position: relative;
+
+         &__input {
+            position: relative;
+            left: 0;
+             width: 18rem;
+             height: 4.2rem;
+             
+        }
+    //         border: 0.1rem solid #929699;
+    //         border-radius: 0.2rem;
+    //         background-color: transparent;
+    //         padding-left: 0.9rem;
+    //         outline: none;
+         
+
+         &__input-label {
+    //         position: absolute;
+    //         top: 25%;
+             right: 4.5%;
+    //         font-family: "Roboto", sans-serif;
+    //         font-size: 2.2rem;
+    //         color: #929699;
+         }
+    }
+
+     .donate-info__radio-buttons {
+    //     display: flex;
+    //     justify-content: center;
+    //     padding-left: 3rem;
+         margin-bottom: 3rem;
+
+    //     .radio-buttons__item {
+    //         position: relative;
+
+    //         &-input {
+    //         appearance: none;
+    //         outline: none;
+    //         width: 1.6rem;
+    //         height: 1.6rem;
+    //         position: absolute;
+    //         top: 0;
+    //         left: 0;
+    //         border: 1px solid $color-light-orange;
+    //         border-radius: 50%;
+    //         }
+
+    //         &-label {
+    //             @include paragraph;
+    //             color: $color-black-blue;
+    //             margin-right: 5rem;
+    //             padding-left: 2.6rem;
+    //         }
+
+    //         &-input:checked {
+    //             border: 1px solid $color-green;
+    //             background-color: $color-green;
+    //             outline: none;
+    //         }
+
+    }
+}
