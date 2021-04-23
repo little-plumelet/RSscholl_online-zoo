@@ -875,7 +875,7 @@ body {
   outline: none;
   width: 1rem;
   height: 1rem;
-  z-index: 1;
+  z-index: 5;
   -webkit-transform: scale(4);
           transform: scale(4);
   cursor: pointer;
@@ -889,6 +889,7 @@ body {
   background-color: #ffee2e;
   border: 1px solid #ffee2e;
   border-radius: 50%;
+  z-index: 0;
 }
 
 .scale-radio-buttons__item-input:checked + .scale-radio-buttons__item-icon:before {
@@ -911,6 +912,7 @@ body {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
+  z-index: 1;
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1599px) {
@@ -1511,6 +1513,18 @@ body {
     width: 0.5rem;
     height: 0.5rem;
     top: 15%;
+  }
+  .scale-radio-buttons__item-input:checked + .scale-radio-buttons__item-icon:before {
+    top: -305%;
+    left: -335%;
+    width: 2rem;
+    height: 2rem;
+  }
+  .scale-radio-buttons__item-input:checked + .scale-radio-buttons__item-icon:after {
+    top: -150%;
+    left: -175%;
+    width: 1rem;
+    height: 1rem;
   }
 }
 

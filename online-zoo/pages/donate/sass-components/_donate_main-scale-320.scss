@@ -85,11 +85,11 @@
         &-input:checked + &-icon:before {
             // content: "";
             // position: absolute;
-            // top: -205%;
-            // left: -225%;
+            top: -305%;
+            left: -335%;
             // border: 2px solid $color-light-orange;
-            // width: 4rem;
-            // height: 4rem;
+             width: 2rem;
+             height: 2rem;
             // border-radius: 50%; 
         }
 
@@ -97,11 +97,11 @@
         &-input:checked + &-icon:after {
         // content: "";
         // position: absolute;
-        // top: -90%;
-        // left: -95%;
+        top: -150%;
+        left: -175%;
         // border: 2px solid $color-light-orange;
-        // width: 2rem;
-        // height: 2rem;
+        width: 1rem;
+        height: 1rem;
         // border-radius: 50%; 
         }
     }
