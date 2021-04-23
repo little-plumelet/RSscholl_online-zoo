@@ -2,7 +2,7 @@ const TITLE = document.title;
 const SCCREEN_WIDTH = window.screen.width;
 
 //temporarly
-alert("Прошу вас при проверке адаптива при растягивании окна между брейкпойнтами 320 640 и 1000 обновлять страницу. Я прикрутила изменения в DOM через JS но не знаю как привязать обращение к JS при растягивании окна");// \
+//alert("Прошу вас при проверке адаптива при растягивании окна между брейкпойнтами 320 640 и 1000 обновлять страницу. Я прикрутила изменения в DOM через JS но не знаю как привязать обращение к JS при растягивании окна");// \
 // Чтобы посмотреть страницы других животных кроме панды используйте, пожалуйста следующие пути: \
 // https://rolling-scopes-school.github.io/little-plumelet-JSFE2021Q1/online-zoo/pages/zoos-page-alligator/zoos-alligator.html \
 // https://rolling-scopes-school.github.io/little-plumelet-JSFE2021Q1/online-zoo/pages/zoos-page-eagle/zoos-eagle.html \

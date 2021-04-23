@@ -200,7 +200,7 @@ h1 {
   padding-bottom: 5rem;
   -ms-grid-columns: 1fr 2fr 1fr;
       grid-template-columns: 1fr 2fr 1fr;
-      grid-template-areas: "logo ...... subscribe" "donate .... .........." "network nav sign";
+      grid-template-areas: "logo ...... subscribe" "donate .... .........." "network nav sign";
 }
 
 .footer .wrapper .logo {
@@ -907,7 +907,7 @@ h1 {
 @media screen and (min-width: 1000px) and (max-width: 1599px) {
   .footer .wrapper {
     padding-left: 1.5rem;
-        grid-template-areas: "logo subscribe subscribe" "donate   donate    .........." "network  nav       sign";
+        grid-template-areas: "logo subscribe subscribe" "donate   donate    .........." "network  nav       sign";
   }
   .footer .form-subscribe__subtitle {
     padding-left: 31rem;
@@ -1043,6 +1043,11 @@ h1 {
 }
 
 @media screen and (min-width: 640px) and (max-width: 999px) {
+  .header {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
   .header__navigation {
     width: 100%;
     display: -webkit-box;
@@ -1099,7 +1104,7 @@ h1 {
     padding-bottom: 1.2rem;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "logo     network" "donate   network" "nav       sign";
+        grid-template-areas: "logo     network" "donate   network" "nav       sign";
   }
   .footer .logo {
     margin-top: 0;
@@ -1308,7 +1313,7 @@ h1 {
     justify-items: center;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: "logo " "network" "subscribe" "donate" "sign" "nav";
+        grid-template-areas: "logo " "network" "subscribe" "donate" "sign" "nav";
   }
   .footer .logo {
     margin-top: 0;
