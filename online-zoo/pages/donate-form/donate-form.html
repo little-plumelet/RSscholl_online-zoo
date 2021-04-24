@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online-Zoo. Donate-form</title>
+    <link href="donate-form.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <span class="donate-form-aside"></span>
+        <div class="forms">
+            <section class="forms__section">
+                <h3 class="form__title">Donation Information</h3>
+                <form action="" class="form-donate">
+                    <div class="checkbox__subtitle">Amount</div>
+                    <input class="form-donate__input" type="number" placeholder="1000" id="Amount-donate" type="number" min="1" max="9999">
+                    <label class="form-donate__input-label" for id="Amount-donate">$</label>
+                </form>
+            </section>
+            <section class="forms__section">
+                <h3 class="form__title">Additional information</h3>
+                <form action="" class="form-additional-info">
+                    <div class="additional-info__share">
+                        <div class="additional-info__checkbox">
+                            <input type="checkbox" id="networks" name="networks">
+                            <label class="additional-info__checkbox-label" for="networks">Share with your friends on social networks</label>
+                        </div>
+                        <div class="networks-icons">
+                            <a href="https://www.facebook.com/" class="facebook">
+                                <span class="facebook-icon"></span>
+                            </a>
+                            <a href="https://www.instagram.com/" class="instagram"> 
+                                <span class="instagram-icon"></span>
+                            </a>
+                            <a href="https://twitter.com/?lang=ru" class="twitter">
+                                <span class="twitter-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="additional-info__checkbox additional-info__checkbox_corporate">
+                        <div class="checkbox__subtitle">Corporate</div>
+                        <input type="checkbox" id="company" name="company">
+                        <label class="additional-info__checkbox-label" for="company">This donation is on behalf of a company</label>
+                    </div>
+                    <div class="additional-info__checkbox">
+                        <div class="checkbox__subtitle">Anonymous</div>
+                        <input type="checkbox" id="anonym" name="anonym">
+                        <label class="additional-info__checkbox-label" for="anonym">I prefer to make this donation anonymously</label>
+                    </div>
+                    <div class="additional-info__comments">
+                        <div class="comments__subtitle">Comments</div>
+                        <textarea name="comments" cols="73" rows="5">
+                        </textarea>
+                    </div>
+                </form>
+            </section>
+            <section class="forms__section">
+                <h3 class="form__title">Payment information</h3>
+                <form action="" class="form-payment-info">
+                    <div class="payment-info__field">
+                        <div class="field__subtitle">
+                            <span class="field__subtitle-icon"></span>
+                            <span class="field__subtitle-text">Cardholder's Name:</span>
+                        </div>
+                        <input class="field__input" type="text" id="name" name="name" required minlength="3" maxlength="20" size="10">
+                    </div>
+                    <div class="payment-info__field">
+                        <div class="field__subtitle">
+                            <span class="field__subtitle-icon"></span>
+                            <span class="field__subtitle-text">Card Type:</span>
+                        </div>
+                        <input class="field__input" type="text" id="card-type" name="card-type" required>
+                        <span class="field__input-card-type-icon"></span>
+                    </div>
+                    <div class="payment-info__field">
+                        <div class="field__subtitle">
+                            <span class="field__subtitle-icon"></span>
+                            <span class="field__subtitle-text">Credit Card Number:</span>
+                        </div>
+                        <input class="field__input" type="number" id="card-number" name="card-number" required>
+                    </div>
+                    <div class="payment-info__field">
+                        <div class="field__subtitle">
+                            <span class="field__subtitle-icon"></span>
+                            <span class="field__subtitle-text">Card Expiration:</span>
+                        </div>
+                        <input class="field__input field__input_card-expiration" type="date" id="date1" name="date1" required>
+                        <input class="field__input field__input_card-expiration" type="date" id="date2r" name="date2" required>   
+                    </div>
+                    <div class="payment-info__field">
+                        <div class="field__subtitle">
+                            <span class="field__subtitle-icon"></span>
+                            <span class="field__subtitle-text">Card Security Code:</span>
+                        </div>
+                        <input class="field__input field__input_code" type="number" id="code" name="code" required minlength="4" maxlength="4" placeholder="0000">
+                    </div>
+                    <div class="payment-info__field">
+                        <div class="field__subtitle">Amount:</div>
+                        <input class="field__input" class="field__input" type="number" placeholder="1000" id="Amount-payment" type="number" min="1" max="9999">
+                        <label class="field__input-label" for id="Amount-payment">$</label>
+                    </div>
+                </form>
+            </section>
+            <button class="button button_rounded">DONATE NOW</button>
+        </div>
+    </div>
+</body>
+</html>

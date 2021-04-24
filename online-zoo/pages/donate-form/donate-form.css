@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+:root {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.button_rounded {
+  width: 29.8rem;
+  height: 5.4rem;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  border: none;
+  border-radius: 2.5rem;
+  font-family: "Roboto", "sans-serif";
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 140%;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  outline: none;
+}
+
+.button_rounded:hover {
+  cursor: pointer;
+}
+
+.button_rounded:active {
+  background: #4b9200;
+}
+
+.wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.forms {
+  padding-left: 9.2rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-left: 14.5%;
+}
+
+.donate-form-aside {
+  position: fixed;
+  width: 14.5%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #febdab 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%);
+}
+
+.form-donate__input {
+  min-height: 4.2rem;
+  min-width: 13rem;
+}
+
+.button {
+  margin-left: 44.5rem;
+  margin-top: 2rem;
+}
+
+.forms__section {
+  margin-bottom: 4.3rem;
+}
+
+.forms__section .form__title {
+  font-family: "Roboto", "sans-serif";
+  font-weight: 400;
+  font-size: 3.6rem;
+  line-height: 130%;
+  color: #fe9013;
+  margin-bottom: 3rem;
+}
+
+.forms__section .additional-info__checkbox,
+.forms__section .form-donate,
+.forms__section .payment-info__field,
+.forms__section .additional-info__share,
+.forms__section .additional-info__comments {
+  position: relative;
+  margin-bottom: 1rem;
+  margin-left: 45.4rem;
+}
+
+.forms__section .additional-info__checkbox:first-child {
+  margin-left: 0;
+}
+
+.forms__section .additional-info__checkbox_corporate,
+.forms__section .payment-info__field {
+  margin-bottom: 2rem;
+}
+
+.forms__section .checkbox__subtitle,
+.forms__section .comments__subtitle,
+.forms__section .field__subtitle {
+  position: absolute;
+  min-width: 18.5rem;
+  left: -21.4rem;
+  top: 25%;
+  font-family: "Roboto", "sans-serif";
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 140%;
+  color: #333b41;
+  text-align: right;
+}
+
+.forms__section .additional-info__checkbox-label {
+  font-family: "Roboto", "sans-serif";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 130%;
+  color: #333b41;
+  padding-left: 0.8rem;
+}
+
+.forms__section .field__input,
+.forms__section .form-donate__input {
+  width: 100%;
+  min-height: 4.2rem;
+  padding-left: 1.2rem;
+  font-family: "Roboto", "sans-serif";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 130%;
+  color: #000;
+}
+
+.forms__section .form-donate__input {
+  width: 25%;
+}
+
+.forms__section .field__input_card-expiration {
+  width: 30%;
+  margin-right: 3rem;
+}
+
+.forms__section .field__input_code {
+  width: 20%;
+}
+
+.forms__section .field__input-label,
+.forms__section .form-donate__input-label {
+  position: absolute;
+  top: 25%;
+  left: 21%;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: #929699;
+}
+
+.forms__section .field__input-card-type-icon {
+  position: absolute;
+  width: 12.1rem;
+  height: 4.3rem;
+  right: 1.2rem;
+  background: url("../../assets/icons/donate-form/paypal-logo.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.forms__section .field__subtitle-icon {
+  position: absolute;
+  width: 0.8rem;
+  height: 0.8rem;
+  background: url("../../assets/icons/donate-form/star.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.forms__section .field__subtitle-text {
+  padding-left: 1rem;
+}
+
+.networks-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.networks-icons .facebook {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25px;
+  height: 25px;
+  margin-right: 25px;
+}
+
+.networks-icons .facebook-icon {
+  width: inherit;
+  height: inherit;
+  background: url("../../assets/icons/donate-form/facebook.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.networks-icons .instagram {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35px;
+  height: 35px;
+  margin-right: 25px;
+}
+
+.networks-icons .instagram-icon {
+  width: inherit;
+  height: inherit;
+  background: url("../../assets/icons/donate-form/Instagram.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.networks-icons .twitter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25px;
+  height: 25px;
+}
+
+.networks-icons .twitter-icon {
+  width: inherit;
+  height: inherit;
+  background: url("../../assets/icons/donate-form/Twitter.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*# sourceMappingURL=donate-form.css.map */

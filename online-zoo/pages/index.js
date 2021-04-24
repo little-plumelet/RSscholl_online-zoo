@@ -32,6 +32,7 @@ function zoos_page_320_mix_dom_elements () {
      
 }
 
+function check_window () {
     switch (TITLE) {
         case "Online-Zoo. Landing":
             document.querySelectorAll(".navigation__item").forEach(element => {
@@ -125,3 +126,6 @@ function zoos_page_320_mix_dom_elements () {
             }
             break;
     }
+}
+
+setInterval(check_window, 2000)
