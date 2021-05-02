@@ -1,5 +1,11 @@
+import { nextItem, previousItem, currentItem, isEnabledCards } from "./carousel.js";
+import { nextItemCam, previousItemCam, currentItemCam, isEnabledCams } from "./carousel-cams.js";
+import { switchTestimonials, testimonialsRangeValue } from "./carousel-testimonials.js";
+import { donateRadioButton, donateInput } from "./donate.js";
+
 const TITLE = document.title;
-const SCCREEN_WIDTH = window.screen.width;
+const SCREEN_WIDTH = window.screen.width;
+let more = false;
 
 //temporarly
 //alert("Прошу вас при проверке адаптива при растягивании окна между брейкпойнтами 320 640 и 1000 обновлять страницу. Я прикрутила изменения в DOM через JS но не знаю как привязать обращение к JS при растягивании окна");// \
@@ -32,7 +38,84 @@ function zoos_page_320_mix_dom_elements () {
      
 }
 
-function check_window () {
+function click_buttons_zoos_pages() {
+    //carousel for zoos page for animals' cards
+    document.querySelector(".button-arrow_right").addEventListener("click", function() {
+        if (isEnabledCams) {
+            nextItemCam(currentItemCam);
+        }
+    })
+
+    document.querySelector(".button-arrow_left").addEventListener("click", function() {
+        if (isEnabledCams) {
+            previousItemCam(currentItem);
+        }
+    })
+}
+
+function change_cam_zoos_page() {
+    let camsList = document.querySelectorAll(".more-cam-list-item");
+    let camContainer = document.querySelector(".more-cam-container");
+    let mainCam = document.querySelector(".wrapper_main-cam-iframe");
+    //camsList.forEach(element => {
+        /*element*/ camContainer.onclick = function(e) {
+            let tmpElement = mainCam.firstElementChild.cloneNode(true);
+            tmpElement.classList.add(".more-cam-list-item");
+            e.target.appendChild(tmpElement);
+            
+            mainCam.removeChild(mainCam.firstElementChild);
+            mainCam.appendChild(e.target.firstElementChild);
+            //camsList = document.querySelectorAll(".more-cam-list-item");
+        }//);
+    //});
+
+}
+
+function toggleParagraphs() {
+     if (more)
+        this.style.display = "none";
+    else
+        this.style.display = "block";
+ }
+
+function more_less_button() {
+        document.querySelector(".button__read-less_squared").addEventListener('click', function (e) {
+            e.preventDefault();
+            let paragraphs = document.querySelectorAll(".description__details-paragraph");
+            let subtitles = document.querySelectorAll(".description__details-subtitle");
+            if (more) {
+                console.log(e.target)
+                e.target.innerHTML = "Read More";
+                for (let i = 0; i < paragraphs.length; i++) {
+                    if (i > 3) {
+                        toggleParagraphs.apply(paragraphs[i]);
+                    }
+                }
+                for (let i = 0; i < subtitles.length; i++) {
+                    if (i > 3) {
+                        toggleParagraphs.apply(subtitles[i]);
+                    }
+                }
+                more = false;
+            }
+            else {
+                e.target.innerHTML = "Read Less";
+                for (let i = 0; i < paragraphs.length; i++) {
+                    if (i > 3) {
+                        toggleParagraphs.apply(paragraphs[i]);
+                    }
+                }
+                for (let i = 0; i < subtitles.length; i++) {
+                    if (i > 3) {
+                        toggleParagraphs.apply(subtitles[i]);
+                    }
+                }
+                more = true;
+            }
+        });
+}
+
+//function check_window () {
     switch (TITLE) {
         case "Online-Zoo. Landing":
             document.querySelectorAll(".navigation__item").forEach(element => {
@@ -40,6 +123,20 @@ function check_window () {
             }); 
             document.querySelectorAll(".navigation__item_about").forEach(element => {
                 element.classList.add("active");
+            });
+
+
+            //carousel for landing page for animals' cards
+            document.querySelector(".button-arrow_right").addEventListener("click", function() {
+                if (isEnabledCards) {
+                    nextItem(currentItem);
+                }
+            });
+
+            document.querySelector(".button-arrow_left").addEventListener("click", function() {
+                if (isEnabledCards) {
+                    previousItem(currentItem);
+                }
             });
             break;
 
@@ -63,12 +160,15 @@ function check_window () {
                 element.classList.remove("active");
             });
             document.getElementById("icon-panda").classList.add("active");
-            if (SCCREEN_WIDTH >= 640 && SCCREEN_WIDTH <=1599) {
+            if (SCREEN_WIDTH >= 640 && SCREEN_WIDTH <=1599) {
                 zoos_page_1000_mix_dom_elements();
             }
-            if (SCCREEN_WIDTH >= 320 && SCCREEN_WIDTH <=639) {
+            if (SCREEN_WIDTH >= 320 && SCREEN_WIDTH <=639) {
                 zoos_page_320_mix_dom_elements();
             }
+            click_buttons_zoos_pages();
+            change_cam_zoos_page();
+            more_less_button();
             break;
 
         case "Online-Zoo. Eagle":
@@ -82,12 +182,15 @@ function check_window () {
                 element.classList.remove("active");
             });
             document.getElementById("icon-eagle").classList.add("active");
-            if (SCCREEN_WIDTH >= 640 && SCCREEN_WIDTH <=1599) {
+            if (SCREEN_WIDTH >= 640 && SCREEN_WIDTH <=1599) {
                 zoos_page_1000_mix_dom_elements();
             }
-            if (SCCREEN_WIDTH >= 320 && SCCREEN_WIDTH <=639) {
+            if (SCREEN_WIDTH >= 320 && SCREEN_WIDTH <=639) {
                 zoos_page_320_mix_dom_elements();
             }
+            click_buttons_zoos_pages();
+            change_cam_zoos_page();
+            more_less_button();
             break;
         case "Online-Zoo. Alligator":
             document.querySelectorAll(".navigation__item").forEach(element => {
@@ -100,12 +203,15 @@ function check_window () {
                 element.classList.remove("active");
             });
             document.getElementById("icon-alligator").classList.add("active");
-            if (SCCREEN_WIDTH >= 640 && SCCREEN_WIDTH <=1599) {
+            if (SCREEN_WIDTH >= 640 && SCREEN_WIDTH <=1599) {
                 zoos_page_1000_mix_dom_elements();
             }
-            if (SCCREEN_WIDTH >= 320 && SCCREEN_WIDTH <=639) {
+            if (SCREEN_WIDTH >= 320 && SCREEN_WIDTH <=639) {
                 zoos_page_320_mix_dom_elements();
             }
+            click_buttons_zoos_pages();
+            change_cam_zoos_page();
+            more_less_button();
             break;
         case "Online-Zoo. Gorilla":
             document.querySelectorAll(".navigation__item").forEach(element => {
@@ -118,14 +224,43 @@ function check_window () {
                 element.classList.remove("active");
             });
             document.getElementById("icon-gorilla").classList.add("active");
-            if (SCCREEN_WIDTH >= 640 && SCCREEN_WIDTH <=1599) {
+            if (SCREEN_WIDTH >= 640 && SCREEN_WIDTH <=1599) {
                 zoos_page_1000_mix_dom_elements();
             }
-            if (SCCREEN_WIDTH >= 320 && SCCREEN_WIDTH <=639) {
+            if (SCREEN_WIDTH >= 320 && SCREEN_WIDTH <=639) {
                 zoos_page_320_mix_dom_elements();
             }
+            click_buttons_zoos_pages();
+            change_cam_zoos_page();
+            more_less_button();
             break;
+    }
+//}
+
+//setInterval(check_window, 2000)
+
+//carousel for landing page for testimonials
+let cards = document.querySelectorAll(".testimonials-card");
+if (cards.length > 0) {
+    let intervalTestimonialsID = setInterval(switchTestimonials, 10000);
+    cards.forEach((card) => card.addEventListener("click", (event) => {
+        clearInterval(intervalTestimonialsID);   
+        setTimeout(function () {
+            setInterval(switchTestimonials, 10000); 
+        }, 40000);
+    }));
+
+    let testimonialsRange = document.querySelector('.testimonials-slider');
+    if (testimonialsRange) {
+        testimonialsRange.addEventListener("input", (event) => {
+            clearInterval(intervalTestimonialsID);   
+            testimonialsRangeValue();
+            intervalTestimonialsID = setInterval(switchTestimonials, 10000);
+
+        });
     }
 }
 
-setInterval(check_window, 2000)
+donateRadioButton();
+donateInput();
+

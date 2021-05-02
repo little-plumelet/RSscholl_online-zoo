@@ -68,6 +68,11 @@
             padding-bottom: 2rem;
         }
 
+
+        &-paragraph:nth-child(n + 6),
+        &-subtitle:nth-child(n + 5) {
+            display: none;
+        }
         &-subtitle {
             @include subtitle;
             color: $color-background-dark;

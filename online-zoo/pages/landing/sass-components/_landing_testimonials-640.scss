@@ -13,14 +13,16 @@
         }
 
         &-list {
+            width: 100%;
             flex-direction: column;
             margin-bottom: 2.5rem;
         }
         
         &-card {
-            width: 60rem;
+            width: 59rem;
             height: 10.9rem;
             margin-bottom: 1.5rem;
+            margin-right: 0;
         }
         
         &-card:nth-child(4) {

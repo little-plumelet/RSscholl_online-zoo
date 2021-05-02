@@ -46,6 +46,7 @@
     margin-bottom: 8rem;
     outline: none;
     border: none;
+    z-index: 10;
 }
 
 .button-arrow:hover {
@@ -70,12 +71,23 @@
     background: url("../../assets/icons/arrow_right_active.svg");
 }
 
+.animals-list-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin: 0 2rem;
+}
+
 .animals-list {
+    width: 100%;
+    position: relative;
     margin-bottom: 6rem;
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
     justify-content: space-between;
+    animation: 1s ease-in-out;
+    display: none;
 }
 
 .animal-card {
@@ -169,4 +181,50 @@
         background: url("../../assets/icons/animals-cards/carnivore_icon.svg");
     }
 }
+    
 
+.next {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.active, .next {
+    display: flex;
+}
+
+.to-left {
+    animation-name: left;
+}
+
+.to-right {
+    animation-name: right;
+    animation-direction: reverse;
+}
+
+.from-left {
+    animation-name: left;
+    animation-direction: reverse;
+}
+
+.from-right {
+    animation-name: right;
+}
+
+@keyframes left {
+    from {
+        left: 0;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes right {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0;
+    }
+}

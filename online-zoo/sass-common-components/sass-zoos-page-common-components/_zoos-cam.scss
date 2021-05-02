@@ -7,6 +7,7 @@
     .wrapper_main-cam-iframe {
         width: 1162px;
         height: 652px;
+        
     }
 
     &__title {
@@ -20,14 +21,30 @@
 
 .more-cam {
     margin-bottom: 14rem;
+
+    &-container {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    &-wrapper {
+        position: relative;
+    }
+
     &-list {
+        position: relative;
         display: flex;
         justify-content: space-between;
+        animation: 1s ease;
     
         &-item{
             position: relative;
+            flex-shrink: 0;
             width: 268px;
             height: 210px;
+            margin-right: 3rem;
+            z-index: 5;
         }
 
         &-item:before {
@@ -55,10 +72,38 @@
             top: 0;
             left: 0;
             cursor: pointer;
+            z-index: 100;
         }
     }
 }
 
 .wrapper_cam {
     position: relative;
+}
+
+.to-left {
+    animation-name: left;
+}
+
+.from-left {
+    animation-name: left;
+    animation-direction: reverse;
+}
+
+@keyframes left {
+    from {
+        left: 0;
+    }
+    to {
+        left: -25%;
+    }
+}
+
+@keyframes right {
+    from {
+        left: 25%;
+    }
+    to {
+        left: 0;
+    }
 }

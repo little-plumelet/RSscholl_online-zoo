@@ -610,19 +610,36 @@ body {
   margin-bottom: 14rem;
 }
 
+.more-cam-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.more-cam-wrapper {
+  position: relative;
+}
+
 .more-cam-list {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-animation: 1s ease;
+          animation: 1s ease;
 }
 
 .more-cam-list-item {
   position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   width: 268px;
   height: 210px;
+  margin-right: 3rem;
+  z-index: 5;
 }
 
 .more-cam-list-item:before {
@@ -653,10 +670,58 @@ body {
   top: 0;
   left: 0;
   cursor: pointer;
+  z-index: 100;
 }
 
 .wrapper_cam {
   position: relative;
+}
+
+.to-left {
+  -webkit-animation-name: left;
+          animation-name: left;
+}
+
+.from-left {
+  -webkit-animation-name: left;
+          animation-name: left;
+  animation-direction: reverse;
+}
+
+@-webkit-keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -25%;
+  }
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -25%;
+  }
+}
+
+@-webkit-keyframes right {
+  from {
+    left: 25%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 25%;
+  }
+  to {
+    left: 0;
+  }
 }
 
 .main {
@@ -764,6 +829,16 @@ body {
   line-height: 160%;
   color: #000000;
   padding-bottom: 2rem;
+}
+
+.panda-description__details-paragraph:nth-child(n + 6), .panda-description__details-subtitle:nth-child(n + 5),
+.eagle-description__details-paragraph:nth-child(n + 6),
+.eagle-description__details-subtitle:nth-child(n + 5),
+.alligator-description__details-paragraph:nth-child(n + 6),
+.alligator-description__details-subtitle:nth-child(n + 5),
+.gorilla-description__details-paragraph:nth-child(n + 6),
+.gorilla-description__details-subtitle:nth-child(n + 5) {
+  display: none;
 }
 
 .panda-description__details-subtitle,
@@ -878,7 +953,7 @@ body {
   width: 6.2rem;
   height: 6.2rem;
   position: absolute;
-  top: 74.8%;
+  top: 34%;
   outline: none;
   border: none;
 }
@@ -888,12 +963,12 @@ body {
 }
 
 .button-arrow_left {
-  left: 8.6%;
+  left: -7%;
   background: url("../../assets/icons/arrow_left.svg");
 }
 
 .button-arrow_right {
-  left: 87.5%;
+  left: 102%;
   background: url("../../assets/icons/arrow_right.svg");
 }
 
@@ -909,7 +984,7 @@ body {
   width: 6.2rem;
   height: 6.2rem;
   position: absolute;
-  top: 74.8%;
+  top: 34%;
   outline: none;
   border: none;
 }
@@ -919,12 +994,12 @@ body {
 }
 
 .button-arrow_left {
-  left: 8.6%;
+  left: -7%;
   background: url("../../assets/icons/arrow_left.svg");
 }
 
 .button-arrow_right {
-  left: 87.5%;
+  left: 102%;
   background: url("../../assets/icons/arrow_right.svg");
 }
 
@@ -1243,6 +1318,7 @@ body {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    padding-right: 3rem;
   }
   .panda-cam .wrapper_main-cam-iframe,
   .eagle-cam .wrapper_main-cam-iframe,
@@ -1261,13 +1337,12 @@ body {
   .more-cam {
     margin-bottom: 10rem;
   }
+  .more-cam-container {
+    width: 65%;
+    margin-left: 13rem;
+  }
   .more-cam-wrapper {
     position: relative;
-  }
-  .more-cam-list {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
   }
   .more-cam-list-item {
     position: relative;
@@ -1275,11 +1350,49 @@ body {
     height: 210px;
     margin-right: 3rem;
   }
-  .more-cam-list-item:nth-child(3), .more-cam-list-item:nth-child(4) {
-    display: none;
-  }
   .wrapper_cam {
     position: relative;
+  }
+  .to-left {
+    -webkit-animation-name: left_1000;
+            animation-name: left_1000;
+  }
+  .from-left {
+    -webkit-animation-name: left_1000;
+            animation-name: left_1000;
+    animation-direction: reverse;
+  }
+  @-webkit-keyframes left_1000 {
+    from {
+      left: 0;
+    }
+    to {
+      left: -50%;
+    }
+  }
+  @keyframes left_1000 {
+    from {
+      left: 0;
+    }
+    to {
+      left: -50%;
+    }
+  }
+  @-webkit-keyframes right_1000 {
+    from {
+      left: 50%;
+    }
+    to {
+      left: 0;
+    }
+  }
+  @keyframes right_1000 {
+    from {
+      left: 50%;
+    }
+    to {
+      left: 0;
+    }
   }
 }
 

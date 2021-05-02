@@ -4,6 +4,11 @@
     position: relative;
     margin-bottom: 18rem;
 
+    .wrapper {
+        position: relative;
+        overflow: hidden;
+    }
+
     &__title {
         @include h3;
         color: $color-black-blue;
@@ -12,19 +17,32 @@
         margin-bottom: 4.7rem;
     }
 
+    &-container {
+        width: 100%;
+        overflow: hidden;
+        padding: 3px;
+    }
+
     &-list {
+        width: 124%;
+        position: relative;
         display: flex;
         justify-content: space-between;
         list-style-type: none;
 
+        margin-left: 0;
         margin-bottom: 2rem;
+        animation: 3s ease;
     }
+
 
     &-card {
         width: 26.8rem;
         border-radius: 2rem;
         background-color: $color-gray-light;
         position: relative;
+        flex-shrink: 0;
+        margin-right: 2.8rem;
     }
 
     //code gradient border from code-pen https://sitist.ru/info-gradient-border.htm
@@ -163,4 +181,51 @@
         bottom: -28rem;
         right: 0;
     }
+
+
+    // .next-comm {
+    //     position: absolute;
+    //     top: 0;
+    //     width: 100%;
+    // }
+
+    // .active-comm, .next-comm {
+    //     display: flex;
+    // }
+
+    // .to-left-comm {
+    //     animation-name: left-comm;
+    // }
+
+    // .to-right-comm {
+    //     animation-name: right-comm;
+    //     animation-direction: reverse;
+    // }
+
+    // .from-left-comm {
+    //     animation-name: left-comm;
+    //     animation-direction: reverse;
+    // }
+
+    // .from-right-comm {
+    //     animation-name: right-comm;
+    // }
+
+    // @keyframes left-comm {
+    //     from {
+    //         left: 0;
+    //     }
+    //     to {
+    //         left: -100%;
+    //     }
+    // }
+
+    // @keyframes right-comm {
+    //     from {
+    //         left: 100%;
+    //     }
+    //     to {
+    //         left: 0;
+    //     }
+    // }
 }

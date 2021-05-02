@@ -99,6 +99,13 @@
         background-color: transparent;
         padding-left: 0.9rem;
         outline: none;
+        @include subtitle;
+        appearance: none;
+    }
+
+    &__input::-webkit-outer-spin-button,
+    &__input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
     }
 
     &__input-label {

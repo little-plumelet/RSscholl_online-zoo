@@ -10,6 +10,7 @@
             width: 100%;
             display: flex;
             justify-content: flex-end;
+            padding-right: 3rem;
         }
 
         .wrapper_main-cam-iframe {
@@ -26,12 +27,17 @@
     .more-cam {
         margin-bottom: 10rem;
 
+        &-container {
+            width: 65%;
+            margin-left: 13rem;
+        }
+
         &-wrapper {
             position: relative;
         }
 
         &-list {
-            justify-content: flex-start;
+            //justify-content: flex-start;
             
         
             &-item {
@@ -41,16 +47,45 @@
                 margin-right: 3rem;
             }
 
-            &-item:nth-child(3),
-            &-item:nth-child(4)
-            {
-                display: none;
-            }
+            // &-item:nth-child(3),
+            // &-item:nth-child(4)
+            // {
+            //     display: none;
+            // }
         }
     }
 
     .wrapper_cam {
         position: relative;
 
+    }
+
+
+    .to-left {
+        animation-name: left_1000;
+    }
+
+    .from-left {
+        animation-name: left_1000;
+        animation-direction: reverse;
+    }
+
+
+    @keyframes left_1000 {
+        from {
+            left: 0;
+        }
+        to {
+            left: -50%;
+        }
+    }
+
+    @keyframes right_1000 {
+        from {
+            left: 50%;
+        }
+        to {
+            left: 0;
+        }
     }
 }

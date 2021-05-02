@@ -875,6 +875,7 @@ body {
   margin-bottom: 8rem;
   outline: none;
   border: none;
+  z-index: 10;
 }
 
 .button-arrow:hover {
@@ -899,7 +900,18 @@ body {
   background: url("../../assets/icons/arrow_right_active.svg");
 }
 
+.animals-list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  margin: 0 2rem;
+}
+
 .animals-list {
+  width: 100%;
+  position: relative;
   margin-bottom: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -910,6 +922,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-animation: 1s ease-in-out;
+          animation: 1s ease-in-out;
+  display: none;
 }
 
 .animal-card {
@@ -1028,6 +1043,76 @@ body {
   width: 4.8rem;
   height: 3.8rem;
   background: url("../../assets/icons/animals-cards/carnivore_icon.svg");
+}
+
+.next {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.active, .next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.to-left {
+  -webkit-animation-name: left;
+          animation-name: left;
+}
+
+.to-right {
+  -webkit-animation-name: right;
+          animation-name: right;
+  animation-direction: reverse;
+}
+
+.from-left {
+  -webkit-animation-name: left;
+          animation-name: left;
+  animation-direction: reverse;
+}
+
+.from-right {
+  -webkit-animation-name: right;
+          animation-name: right;
+}
+
+@-webkit-keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@-webkit-keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
 }
 
 .feeding {
@@ -1238,6 +1323,11 @@ body {
   margin-bottom: 18rem;
 }
 
+.testimonials .wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
 .testimonials__title {
   font-family: "Roboto", "sans-serif";
   font-weight: 400;
@@ -1248,7 +1338,15 @@ body {
   margin-bottom: 4.7rem;
 }
 
+.testimonials-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 3px;
+}
+
 .testimonials-list {
+  width: 124%;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1256,7 +1354,10 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   list-style-type: none;
+  margin-left: 0;
   margin-bottom: 2rem;
+  -webkit-animation: 3s ease;
+          animation: 3s ease;
 }
 
 .testimonials-card {
@@ -1264,6 +1365,9 @@ body {
   border-radius: 2rem;
   background-color: #f1f3f2;
   position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 2.8rem;
 }
 
 .testimonials-card:before {
@@ -1592,11 +1696,11 @@ body {
   .testimonials__title {
     margin-bottom: 3.2rem;
   }
+  .testimonials-list {
+    width: 134%;
+  }
   .testimonials-card {
     width: 29.3rem;
-  }
-  .testimonials-card:nth-child(4) {
-    display: none;
   }
   .testimonials-slider-wrapper {
     width: 39rem;
@@ -1814,6 +1918,9 @@ body {
   .button-arrow {
     position: absolute;
   }
+  .animals-list-container {
+    margin: 0 0;
+  }
   .animals-list {
     margin-bottom: 0;
   }
@@ -1940,6 +2047,7 @@ body {
     margin-bottom: 3.1rem;
   }
   .testimonials-list {
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1947,9 +2055,10 @@ body {
     margin-bottom: 2.5rem;
   }
   .testimonials-card {
-    width: 60rem;
+    width: 59rem;
     height: 10.9rem;
     margin-bottom: 1.5rem;
+    margin-right: 0;
   }
   .testimonials-card:nth-child(4) {
     display: none;

@@ -747,6 +747,17 @@ body {
   background-color: transparent;
   padding-left: 0.9rem;
   outline: none;
+  font-family: "Roboto", "sans-serif";
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 120%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.donate-form__input::-webkit-outer-spin-button, .donate-form__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 .donate-form__input-label {
