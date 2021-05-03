@@ -10,22 +10,24 @@ export function switchTestimonials() {
     {
         let testimonialsCard = document.querySelector(".testimonials-card");
         let testimonialsList = document.querySelectorAll(".testimonials-list");
-        tempValue = Number(testimonialsRange.value);
-        currentOffset = testimonialsCard.offsetWidth + 15;
-        testimonialsList[0].setAttribute("style", "transition: margin " + "4000ms ease;");
-        testimonialsList[0].setAttribute("style", "margin-left: -" + currentOffset + "px");
-        testimonialsList[0].appendChild(testimonialsList[0].firstElementChild.cloneNode(true));
-        testimonialsList[0].removeChild(testimonialsList[0].firstElementChild);
-        testimonialsList[0].style.marginLeft = '0px';
-        tempValue++;
-        if (tempValue <= Number(testimonialsRange.max)) testimonialsRange.value = tempValue;
-        else {
-            tempValue = 0;
-            testimonialsRange.value = 0;
+        if (testimonialsRange) {
+            tempValue = Number(testimonialsRange.value);
+            currentOffset = testimonialsCard.offsetWidth + 15;
+            testimonialsList[0].setAttribute("style", "transition: margin " + "4000ms ease;");
+            testimonialsList[0].setAttribute("style", "margin-left: -" + currentOffset + "px");
+            testimonialsList[0].appendChild(testimonialsList[0].firstElementChild.cloneNode(true));
+            testimonialsList[0].removeChild(testimonialsList[0].firstElementChild);
+            testimonialsList[0].style.marginLeft = '0px';
+            tempValue++;
+            if (tempValue <= Number(testimonialsRange.max)) testimonialsRange.value = tempValue;
+            else {
+                tempValue = 0;
+                testimonialsRange.value = 0;
+            }
+            //setTimeout(function() {
+                testimonialsList[0].style.cssText = "transition: none;";
+            //}, 4000);
         }
-        //setTimeout(function() {
-            testimonialsList[0].style.cssText = "transition: none;";
-        //}, 4000);
     }
 }
 

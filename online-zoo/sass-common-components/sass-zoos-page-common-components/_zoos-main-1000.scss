@@ -52,6 +52,10 @@
         &__details {    
             position: relative;
 
+            &-paragraph {
+                margin-bottom: 2rem;
+            }
+            
             &-paragraph:nth-child(2),
             &-paragraph:nth-child(3) {
                 padding-bottom: 3rem;

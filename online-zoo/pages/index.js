@@ -57,18 +57,13 @@ function change_cam_zoos_page() {
     let camsList = document.querySelectorAll(".more-cam-list-item");
     let camContainer = document.querySelector(".more-cam-container");
     let mainCam = document.querySelector(".wrapper_main-cam-iframe");
-    //camsList.forEach(element => {
-        /*element*/ camContainer.onclick = function(e) {
-            let tmpElement = mainCam.firstElementChild.cloneNode(true);
-            tmpElement.classList.add(".more-cam-list-item");
-            e.target.appendChild(tmpElement);
-            
-            mainCam.removeChild(mainCam.firstElementChild);
-            mainCam.appendChild(e.target.firstElementChild);
-            //camsList = document.querySelectorAll(".more-cam-list-item");
-        }//);
-    //});
-
+    camContainer.onclick = function(e) {
+        let tmpElement = mainCam.firstElementChild.cloneNode(true);
+        tmpElement.classList.add(".more-cam-list-item");
+        e.target.appendChild(tmpElement);
+        mainCam.removeChild(mainCam.firstElementChild);
+        mainCam.appendChild(e.target.firstElementChild);
+    }
 }
 
 function toggleParagraphs() {
@@ -86,6 +81,7 @@ function more_less_button() {
             if (more) {
                 console.log(e.target)
                 e.target.innerHTML = "Read More";
+                e.target.style.bottom = "-23.5%";
                 for (let i = 0; i < paragraphs.length; i++) {
                     if (i > 3) {
                         toggleParagraphs.apply(paragraphs[i]);
@@ -100,6 +96,7 @@ function more_less_button() {
             }
             else {
                 e.target.innerHTML = "Read Less";
+                e.target.style.bottom = "-7%";
                 for (let i = 0; i < paragraphs.length; i++) {
                     if (i > 3) {
                         toggleParagraphs.apply(paragraphs[i]);
@@ -241,12 +238,12 @@ function more_less_button() {
 
 //carousel for landing page for testimonials
 let cards = document.querySelectorAll(".testimonials-card");
+let intervalTestimonialsID = setInterval(switchTestimonials, 10000);
 if (cards.length > 0) {
-    let intervalTestimonialsID = setInterval(switchTestimonials, 10000);
-    cards.forEach((card) => card.addEventListener("click", (event) => {
+    cards.forEach((card) => card.addEventListener("click", () => {
         clearInterval(intervalTestimonialsID);   
         setTimeout(function () {
-            setInterval(switchTestimonials, 10000); 
+            intervalTestimonialsID = setInterval(switchTestimonials, 10000); 
         }, 40000);
     }));
 
@@ -255,6 +252,7 @@ if (cards.length > 0) {
         testimonialsRange.addEventListener("input", (event) => {
             clearInterval(intervalTestimonialsID);   
             testimonialsRangeValue();
+            //cards = document.querySelectorAll(".testimonials-card");
             intervalTestimonialsID = setInterval(switchTestimonials, 10000);
 
         });
@@ -263,4 +261,3 @@ if (cards.length > 0) {
 
 donateRadioButton();
 donateInput();
-

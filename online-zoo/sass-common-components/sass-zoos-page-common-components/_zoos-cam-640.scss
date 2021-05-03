@@ -28,8 +28,13 @@
     .more-cam {
         margin-bottom: 6rem;
 
+        &-container {
+            width: 80%;
+        }
+
         &-wrapper {
             position: relative;
+            max-width: 490px;
         }
 
         &-list {

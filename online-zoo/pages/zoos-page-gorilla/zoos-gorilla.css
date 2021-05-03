@@ -1302,6 +1302,7 @@ body {
   .gorilla-cam__title,
   .alligator-cam__title {
     top: 10rem;
+    margin-left: 13rem;
   }
   .more-cam {
     margin-bottom: 10rem;
@@ -1422,6 +1423,12 @@ body {
   .alligator-description__details,
   .gorilla-description__details {
     position: relative;
+  }
+  .panda-description__details-paragraph,
+  .eagle-description__details-paragraph,
+  .alligator-description__details-paragraph,
+  .gorilla-description__details-paragraph {
+    margin-bottom: 2rem;
   }
   .panda-description__details-paragraph:nth-child(2), .panda-description__details-paragraph:nth-child(3),
   .eagle-description__details-paragraph:nth-child(2),
@@ -1753,8 +1760,12 @@ body {
   .more-cam {
     margin-bottom: 6rem;
   }
+  .more-cam-container {
+    width: 80%;
+  }
   .more-cam-wrapper {
     position: relative;
+    max-width: 490px;
   }
   .more-cam-list {
     -webkit-box-pack: start;
@@ -1866,6 +1877,7 @@ body {
   .alligator-description__details-paragraph,
   .gorilla-description__details-paragraph {
     padding-bottom: 0;
+    margin-bottom: 1rem;
   }
   .panda-description__details-paragraph:nth-child(2),
   .eagle-description__details-paragraph:nth-child(2),
@@ -2255,6 +2267,9 @@ body {
     height: 68px;
     margin-right: 1rem;
     margin-bottom: 1rem;
+  }
+  .more-cam-list-item:nth-child(n + 5) {
+    display: none;
   }
   .wrapper_cam {
     position: relative;
