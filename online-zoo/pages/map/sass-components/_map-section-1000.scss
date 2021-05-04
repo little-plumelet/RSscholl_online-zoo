@@ -6,10 +6,16 @@
         //padding-top: 9rem;
         //padding-bottom: 4rem;
         
+        .map-wrapper {
+            padding-top: 9rem;
+            height: 74.7rem;
+            
+            
+        }
          .map {
            position: relative;
-            height: 61.8rem;
-            background-size: cover;
+            //height: 61.8rem;
+            width: 94rem;
          }
 
         .countries {
@@ -21,28 +27,28 @@
                     transform: scale(0.86);
                     top:46.5%;
                     left: 12%;
-                    height: 10rem;
+                    //height: 10rem;
                  }
 
                  &_Congo {
                     transform: scale(0.86);
-                    top: 66.5%;
-                    left: 27%;
+                    //top: 66.5%;
+                    //left: 30%;
                 }
 
                 &_China {
                     transform: scale(0.86);
-                    top: 50.2%;
-                    left: 40.1%;
+                    //top: 50.2%;
+                    //left: 40.1%;
                 }
             }
         }
     }
 
      .map-buttons {
-         position: absolute;
-         right: -1rem;
-        top: 84%;
+        position: absolute;
+        right: 2rem;
+        bottom: 2rem;
     }
 
     .footer {

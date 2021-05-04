@@ -3,13 +3,17 @@
 @media screen and (min-width: 640px) and (max-width: 999px) {
     .map-main {
         background-color: $color-map-blue-light;
-        padding-top: 5.7rem;
-        padding-bottom: 2.5rem;
+        padding-top: 3.5rem;
         
+        .map-wrapper {
+            padding-top: 5.7rem;
+            padding-bottom: 2.5rem;
+            height: 47.4rem;
+        }
+
          .map {
-           position: relative;
             height: 39.2rem;
-            background-size: cover;
+            width: 59.4rem;
          }
 
         .countries {
@@ -19,19 +23,52 @@
                  &_USA {
                     transform: scale(0.55);
                     top: 41.5%;
-                    left: 5.1%;
+                    left: 8.1%;
                     height: 10rem;
+
+                    .city-Florida {
+                        left: 85%;
+                    }
                  }
 
                  &_Congo {
                     transform: scale(0.55);
-                    top: 62.8%;
-                    left: 11.4%;
+                    //top: 62.8%;
+                    left: 50%;
+
+                    .Congo__icon {
+                        top: -101%;
+                    }
                 }
                 &_China {
                     transform: scale(0.55);
-                    top: 45.2%;
-                    left: 19.1%;
+                    top: 49%;
+                    //left: 42%;
+
+                    
+
+                    .China__icon_1 {
+                        position: absolute;
+                        top: -70%;
+                        left: 137%;
+                    }
+                    .China__icon_2 {
+                        position: absolute;
+                        top: 11%;
+                        left: 132%;
+                    }
+        
+                    .city__animals_item1 {
+                        position: absolute;
+                        top: -78%;
+                        left: 75%;
+                    }
+        
+                    .city__animals_item2 {
+                        position: absolute;
+                        left: 70%;
+                        top: 23%;
+                    }
                 }
             }
         }

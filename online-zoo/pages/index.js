@@ -267,7 +267,7 @@ donateInput();
 //map
 mapImage.addEventListener("mousedown", (e) => {
     calculateCoords(e, mapImage);
-    moveAt(e);
+    //moveAt(e);
 
     document.addEventListener("mousemove", moveAt);
     document.addEventListener("mouseup", stopDrag);
@@ -280,7 +280,12 @@ mapImage.width = mapImage.offsetWidth;
 buttonMinus.addEventListener("click", () => {
     console.log(mapImage.width);
     
-    if (mapImage.width >= mapWrapper.offsetWidth - 510) {
+    if (mapImage.width >= mapWrapper.offsetWidth - 510 && mapWrapper.offsetWidth >=1600) {
+        mapImage.style.width = `${mapImage.width / 1.25}px`;
+        mapImage.width = parseFloat(mapImage.style.width);
+        if (mapImage.width < 1200) mapWrapper.style.paddingTop = "10rem"; 
+    }
+    if (mapImage.width >= mapWrapper.offsetWidth - 50 && mapWrapper.offsetWidth >= 1000) {
         mapImage.style.width = `${mapImage.width / 1.25}px`;
         mapImage.width = parseFloat(mapImage.style.width);
         if (mapImage.width < 1200) mapWrapper.style.paddingTop = "10rem"; 
@@ -290,6 +295,17 @@ buttonPlus.addEventListener("click", () => {
     if (mapImage.width <= mapWrapper.offsetWidth * 4) {
         mapImage.style.width = `${mapImage.width * 1.25}px`;
         mapImage.width = parseFloat(mapImage.style.width);
-        mapWrapper.style.paddingTop = "0"; 
+        if (mapImage.style.width > 1800)
+            mapWrapper.style.paddingTop = "0"; 
     }
 })
+
+const toolTipButton = document.querySelectorAll(".city-tooltip__online-button");
+toolTipButton.forEach((element) => element.addEventListener("click", (e) => {
+    e.stopPropagation();
+    let tmp = e.target.previousElementSibling.innerHTML;
+    if (tmp.includes("China")) window.location.href="../zoos-page-panda/zoos-panda.html";
+    if (tmp.includes("Eagles")) window.location.href="../zoos-page-eagle/zoos-eagle.html";
+    if (tmp.includes("Alligator")) window.location.href="../zoos-page-alligator/zoos-alligator.html";
+    if (tmp.includes("Congo")) window.location.href="../zoos-page-gorilla/zoos-gorilla.html";
+    }));

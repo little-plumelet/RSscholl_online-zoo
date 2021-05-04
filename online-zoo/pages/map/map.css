@@ -613,7 +613,7 @@ h1 {
 
 .map-main {
   background-color: #eaf7fe;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .map-main .map-wrapper {
@@ -630,18 +630,19 @@ h1 {
 
 .map-main .map-image {
   width: 100%;
+  min-height: 100%;
 }
 
 .map-main .countries {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
 
 .map-main .countries-item {
-  position: relative;
+  position: absolute;
   display: inline-block;
 }
 
@@ -654,9 +655,9 @@ h1 {
 
 .map-main .countries-item_Congo {
   top: 67.5%;
-  left: 31%;
+  left: 52%;
   width: 4.7%;
-  height: 10.7%;
+  height: 8.7%;
 }
 
 .map-main .countries-item_Congo .Congo__icon {
@@ -674,6 +675,7 @@ h1 {
 .map-main .countries-item_Congo .city-tooltip {
   top: 100%;
   left: -95%;
+  z-index: 100;
 }
 
 .map-main .countries-item_Congo .city__animals_item1:hover ~ .city-tooltip {
@@ -685,7 +687,7 @@ h1 {
 
 .map-main .countries-item_China {
   top: 51.2%;
-  left: 45%;
+  left: 71%;
   width: 10.3%;
   height: 15.25%;
 }
@@ -909,6 +911,15 @@ h1 {
   background-position: center;
 }
 
+.city-tooltip__online-button {
+  z-index: 200;
+  cursor: pointer;
+}
+
+.city-tooltip__online-button:hover {
+  cursor: pointer;
+}
+
 @media screen and (min-width: 1000px) and (max-width: 1599px) {
   .navigation__item {
     padding-left: 4.8rem;
@@ -1011,34 +1022,32 @@ h1 {
   .map-main {
     background-color: #eaf7fe;
   }
+  .map-main .map-wrapper {
+    padding-top: 9rem;
+    height: 74.7rem;
+  }
   .map-main .map {
     position: relative;
-    height: 61.8rem;
-    background-size: cover;
+    width: 94rem;
   }
   .map-main .countries-item_USA {
     -webkit-transform: scale(0.86);
             transform: scale(0.86);
     top: 46.5%;
     left: 12%;
-    height: 10rem;
   }
   .map-main .countries-item_Congo {
     -webkit-transform: scale(0.86);
             transform: scale(0.86);
-    top: 66.5%;
-    left: 27%;
   }
   .map-main .countries-item_China {
     -webkit-transform: scale(0.86);
             transform: scale(0.86);
-    top: 50.2%;
-    left: 40.1%;
   }
   .map-buttons {
     position: absolute;
-    right: -1rem;
-    top: 84%;
+    right: 2rem;
+    bottom: 2rem;
   }
   .footer .wrapper {
     padding-left: 0;
@@ -1246,32 +1255,59 @@ h1 {
 @media screen and (min-width: 640px) and (max-width: 999px) {
   .map-main {
     background-color: #eaf7fe;
+    padding-top: 3.5rem;
+  }
+  .map-main .map-wrapper {
     padding-top: 5.7rem;
     padding-bottom: 2.5rem;
+    height: 47.4rem;
   }
   .map-main .map {
-    position: relative;
     height: 39.2rem;
-    background-size: cover;
+    width: 59.4rem;
   }
   .map-main .countries-item_USA {
     -webkit-transform: scale(0.55);
             transform: scale(0.55);
     top: 41.5%;
-    left: 5.1%;
+    left: 8.1%;
     height: 10rem;
+  }
+  .map-main .countries-item_USA .city-Florida {
+    left: 85%;
   }
   .map-main .countries-item_Congo {
     -webkit-transform: scale(0.55);
             transform: scale(0.55);
-    top: 62.8%;
-    left: 11.4%;
+    left: 50%;
+  }
+  .map-main .countries-item_Congo .Congo__icon {
+    top: -101%;
   }
   .map-main .countries-item_China {
     -webkit-transform: scale(0.55);
             transform: scale(0.55);
-    top: 45.2%;
-    left: 19.1%;
+    top: 49%;
+  }
+  .map-main .countries-item_China .China__icon_1 {
+    position: absolute;
+    top: -70%;
+    left: 137%;
+  }
+  .map-main .countries-item_China .China__icon_2 {
+    position: absolute;
+    top: 11%;
+    left: 132%;
+  }
+  .map-main .countries-item_China .city__animals_item1 {
+    position: absolute;
+    top: -78%;
+    left: 75%;
+  }
+  .map-main .countries-item_China .city__animals_item2 {
+    position: absolute;
+    left: 70%;
+    top: 23%;
   }
   .map-buttons {
     display: none;
@@ -1511,40 +1547,70 @@ h1 {
 @media screen and (min-width: 320px) and (max-width: 639px) {
   .map-main {
     background-color: #eaf7fe;
-    padding-top: 3.8rem;
-    padding-bottom: 1.8rem;
+    padding-top: 7rem;
   }
-  .map-main .wrapper {
-    max-width: 40.6rem;
+  .map-main .map-wrapper {
+    padding-top: 0;
+    height: 32.4rem;
   }
   .map-main .map {
     height: 26.8rem;
+    width: 40.6rem;
     position: relative;
-    background-size: cover;
-    background-position-x: 32%;
+    left: -8%;
   }
   .map-main .countries {
-    width: 30rem;
     margin: 0 auto;
   }
   .map-main .countries-item_USA {
     -webkit-transform: scale(0.375);
             transform: scale(0.375);
-    top: 36.2%;
-    left: -18.1%;
+    top: 37%;
+    left: 6%;
     height: 10rem;
+  }
+  .map-main .countries-item_USA .city-Florida {
+    left: 125%;
   }
   .map-main .countries-item_Congo {
     -webkit-transform: scale(0.375);
             transform: scale(0.375);
-    top: 58.8%;
-    left: -24.8%;
+    top: 68%;
+    left: 49%;
+  }
+  .map-main .countries-item_Congo .countries__name {
+    position: relative;
+    top: -60%;
+    left: 50%;
+  }
+  .map-main .countries-item_Congo .Congo__icon {
+    top: -141%;
   }
   .map-main .countries-item_China {
     -webkit-transform: scale(0.375);
             transform: scale(0.375);
-    top: 1.5%;
-    left: 72.2%;
+    top: 47%;
+    left: 67%;
+  }
+  .map-main .countries-item_China .China__icon_1 {
+    position: absolute;
+    top: -70%;
+    left: 227%;
+  }
+  .map-main .countries-item_China .China__icon_2 {
+    position: absolute;
+    top: 11%;
+    left: 202%;
+  }
+  .map-main .countries-item_China .city__animals_item1 {
+    position: absolute;
+    top: -78%;
+    left: 105%;
+  }
+  .map-main .countries-item_China .city__animals_item2 {
+    position: absolute;
+    left: 100%;
+    top: 23%;
   }
   .map-buttons {
     display: none;
