@@ -2,6 +2,8 @@ import { nextItem, previousItem, currentItem, isEnabledCards } from "./carousel.
 import { nextItemCam, previousItemCam, currentItemCam, isEnabledCams } from "./carousel-cams.js";
 import { switchTestimonials, testimonialsRangeValue } from "./carousel-testimonials.js";
 import { donateRadioButton, donateInput } from "./donate.js";
+import { mapImage, calculateCoords, moveAt, stopDrag, headerElem, footerElem, 
+    buttonPlus, buttonMinus, mapWrapper } from "./map.js";
 
 const TITLE = document.title;
 const SCREEN_WIDTH = window.screen.width;
@@ -252,7 +254,6 @@ if (cards.length > 0) {
         testimonialsRange.addEventListener("input", (event) => {
             clearInterval(intervalTestimonialsID);   
             testimonialsRangeValue();
-            //cards = document.querySelectorAll(".testimonials-card");
             intervalTestimonialsID = setInterval(switchTestimonials, 10000);
 
         });
@@ -261,3 +262,34 @@ if (cards.length > 0) {
 
 donateRadioButton();
 donateInput();
+
+
+//map
+mapImage.addEventListener("mousedown", (e) => {
+    calculateCoords(e, mapImage);
+    moveAt(e);
+
+    document.addEventListener("mousemove", moveAt);
+    document.addEventListener("mouseup", stopDrag);
+});
+
+headerElem.addEventListener("mouseenter", stopDrag);
+footerElem.addEventListener("mouseenter", stopDrag);
+
+mapImage.width = mapImage.offsetWidth;
+buttonMinus.addEventListener("click", () => {
+    console.log(mapImage.width);
+    
+    if (mapImage.width >= mapWrapper.offsetWidth - 510) {
+        mapImage.style.width = `${mapImage.width / 1.25}px`;
+        mapImage.width = parseFloat(mapImage.style.width);
+        if (mapImage.width < 1200) mapWrapper.style.paddingTop = "10rem"; 
+    }
+})
+buttonPlus.addEventListener("click", () => {
+    if (mapImage.width <= mapWrapper.offsetWidth * 4) {
+        mapImage.style.width = `${mapImage.width * 1.25}px`;
+        mapImage.width = parseFloat(mapImage.style.width);
+        mapWrapper.style.paddingTop = "0"; 
+    }
+})
