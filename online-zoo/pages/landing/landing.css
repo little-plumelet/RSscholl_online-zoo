@@ -1368,6 +1368,7 @@ body {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-right: 2.8rem;
+  cursor: pointer;
 }
 
 .testimonials-card:before {

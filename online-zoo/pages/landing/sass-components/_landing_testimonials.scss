@@ -43,6 +43,7 @@
         position: relative;
         flex-shrink: 0;
         margin-right: 2.8rem;
+        cursor: pointer;
     }
 
     //code gradient border from code-pen https://sitist.ru/info-gradient-border.htm
@@ -181,51 +182,4 @@
         bottom: -28rem;
         right: 0;
     }
-
-
-    // .next-comm {
-    //     position: absolute;
-    //     top: 0;
-    //     width: 100%;
-    // }
-
-    // .active-comm, .next-comm {
-    //     display: flex;
-    // }
-
-    // .to-left-comm {
-    //     animation-name: left-comm;
-    // }
-
-    // .to-right-comm {
-    //     animation-name: right-comm;
-    //     animation-direction: reverse;
-    // }
-
-    // .from-left-comm {
-    //     animation-name: left-comm;
-    //     animation-direction: reverse;
-    // }
-
-    // .from-right-comm {
-    //     animation-name: right-comm;
-    // }
-
-    // @keyframes left-comm {
-    //     from {
-    //         left: 0;
-    //     }
-    //     to {
-    //         left: -100%;
-    //     }
-    // }
-
-    // @keyframes right-comm {
-    //     from {
-    //         left: 100%;
-    //     }
-    //     to {
-    //         left: 0;
-    //     }
-    // }
 }

@@ -15,8 +15,7 @@ export function switchTestimonials() {
             currentOffset = testimonialsCard.offsetWidth + 15;
             testimonialsList[0].setAttribute("style", "transition: margin " + "4000ms ease;");
             testimonialsList[0].setAttribute("style", "margin-left: -" + currentOffset + "px");
-            testimonialsList[0].appendChild(testimonialsList[0].firstElementChild.cloneNode(true));
-            testimonialsList[0].removeChild(testimonialsList[0].firstElementChild);
+            testimonialsList[0].appendChild(testimonialsList[0].firstElementChild);
             testimonialsList[0].style.marginLeft = '0px';
             tempValue++;
             if (tempValue <= Number(testimonialsRange.max)) testimonialsRange.value = tempValue;
@@ -44,14 +43,12 @@ export let testimonialsRangeValue = function() {
                 testimonialsList[0].setAttribute("style", "margin-left: -" + currentOffset + "px");
             
                 for (let j = 0; j < (i - tempValue) ; j++) {
-                    testimonialsList[0].appendChild(testimonialsList[0].firstElementChild.cloneNode(true));
-                    testimonialsList[0].removeChild(testimonialsList[0].firstElementChild);
+                    testimonialsList[0].appendChild(testimonialsList[0].firstElementChild);
                 }
             }
             else if (currentOffset < 0) {
                 for (let j = 0; j < (tempValue - i) ; j++) {
-                    testimonialsList[0].prepend(testimonialsList[0].lastElementChild.cloneNode(true));
-                    testimonialsList[0].removeChild(testimonialsList[0].lastElementChild);
+                    testimonialsList[0].prepend(testimonialsList[0].lastElementChild);
                 }
                 currentOffset *= -1;
             }

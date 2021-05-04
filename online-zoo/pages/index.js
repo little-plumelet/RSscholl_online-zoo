@@ -244,7 +244,7 @@ if (cards.length > 0) {
         clearInterval(intervalTestimonialsID);   
         setTimeout(function () {
             intervalTestimonialsID = setInterval(switchTestimonials, 10000); 
-        }, 40000);
+        }, 30000);
     }));
 
     let testimonialsRange = document.querySelector('.testimonials-slider');
