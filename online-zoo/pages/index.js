@@ -270,6 +270,7 @@ mapImage.addEventListener("mousedown", (e) => {
     if (toolTips) {
         toolTips.forEach(element => element.classList.remove("active"));
     }
+    if (mapImage.width <= mapWrapper.offsetWidth) return;
     calculateCoords(e, mapImage);
     //moveAt(e);
 
@@ -286,12 +287,21 @@ buttonMinus.addEventListener("click", () => {
     if (mapImage.width >= mapWrapper.offsetWidth - 510 && mapWrapper.offsetWidth >=1600) {
         mapImage.style.width = `${mapImage.width / 1.25}px`;
         mapImage.width = parseFloat(mapImage.style.width);
-        if (mapImage.width < 1200) mapWrapper.style.paddingTop = "10rem"; 
+        if (mapImage.width < 1200) {
+            mapWrapper.style.paddingTop = "10rem";
+            document.querySelector(".map").style.top = "0";
+            document.querySelector(".map").style.left = "0";
+
+        }
     }
     if (mapImage.width >= mapWrapper.offsetWidth - 50 && mapWrapper.offsetWidth >= 1000) {
         mapImage.style.width = `${mapImage.width / 1.25}px`;
         mapImage.width = parseFloat(mapImage.style.width);
-        if (mapImage.width < 1200) mapWrapper.style.paddingTop = "10rem"; 
+        if (mapImage.width < 1200) {
+            mapWrapper.style.paddingTop = "10rem"; 
+            document.querySelector(".map").style.top = "0";
+            document.querySelector(".map").style.left = "0";
+        }
     }
 })
 buttonPlus.addEventListener("click", () => {
