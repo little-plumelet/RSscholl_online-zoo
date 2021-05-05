@@ -265,89 +265,115 @@ donateInput();
 
 
 //map
-mapImage.addEventListener("mousedown", (e) => {
-    const toolTips = document.querySelectorAll(".active");
-    if (toolTips) {
-        toolTips.forEach(element => element.classList.remove("active"));
-    }
-    if (mapImage.width <= mapWrapper.offsetWidth) return;
-    calculateCoords(e, mapImage);
-    //moveAt(e);
-
-    document.addEventListener("mousemove", moveAt);
-    document.addEventListener("mouseup", stopDrag);
-});
-
-headerElem.addEventListener("mouseenter", stopDrag);
-footerElem.addEventListener("mouseenter", stopDrag);
-
-mapImage.width = mapImage.offsetWidth;
-buttonMinus.addEventListener("click", () => {
-    
-    if (mapImage.width >= mapWrapper.offsetWidth - 510 && mapWrapper.offsetWidth >=1600) {
-        mapImage.style.width = `${mapImage.width / 1.25}px`;
-        mapImage.width = parseFloat(mapImage.style.width);
-        if (mapImage.width < 1200) {
-            mapWrapper.style.paddingTop = "10rem";
-            document.querySelector(".map").style.top = "0";
-            document.querySelector(".map").style.left = "0";
-
+if (mapImage) {
+    mapImage.addEventListener("mousedown", (e) => {
+        const toolTips = document.querySelectorAll(".active");
+        if (toolTips) {
+            toolTips.forEach(element => element.classList.remove("active"));
         }
-    }
-    if (mapImage.width >= mapWrapper.offsetWidth - 50 && mapWrapper.offsetWidth >= 1000) {
-        mapImage.style.width = `${mapImage.width / 1.25}px`;
-        mapImage.width = parseFloat(mapImage.style.width);
-        if (mapImage.width < 1200) {
-            mapWrapper.style.paddingTop = "10rem"; 
-            document.querySelector(".map").style.top = "0";
-            document.querySelector(".map").style.left = "0";
+        if (mapImage.width <= mapWrapper.offsetWidth) return;
+        calculateCoords(e, mapImage);
+        //moveAt(e);
+
+        document.addEventListener("mousemove", moveAt);
+        document.addEventListener("mouseup", stopDrag);
+    });
+
+    headerElem.addEventListener("mouseenter", stopDrag);
+    footerElem.addEventListener("mouseenter", stopDrag);
+
+    mapImage.width = mapImage.offsetWidth;
+    buttonMinus.addEventListener("click", () => {
+        
+        if (mapImage.width >= mapWrapper.offsetWidth - 510 && mapWrapper.offsetWidth >=1600) {
+            mapImage.style.width = `${mapImage.width / 1.25}px`;
+            mapImage.width = parseFloat(mapImage.style.width);
+            document.querySelectorAll(".countries-item").forEach(element => {
+                const scale  = mapImage.width / 10000 + 1;
+                element.style.transform = `scale(${scale})`;
+            });
+            if (mapImage.width < 1200) {
+                mapWrapper.style.paddingTop = "10rem";
+                document.querySelector(".map").style.top = "0";
+                document.querySelector(".map").style.left = "0";
+                document.querySelectorAll(".countries-item").forEach(element => {
+                    element.style.transform = `scale(0.86)`;
+                });
+            }
+            if (mapImage.width >= 1080) {
+                document.querySelectorAll(".countries-item").forEach(element => {
+                    element.style.transform = `scale(1)`;
+                });
+            }
         }
-    }
-})
-buttonPlus.addEventListener("click", () => {
-    if (mapImage.width <= mapWrapper.offsetWidth * 4) {
-        mapImage.style.width = `${mapImage.width * 1.25}px`;
-        mapImage.width = parseFloat(mapImage.style.width);
-        if (mapImage.style.width > 1800)
-            mapWrapper.style.paddingTop = "0"; 
-    }
-})
+        if (parseInt(mapImage.width) >= mapWrapper.offsetWidth - 50 && mapWrapper.offsetWidth >= 1000) {
+            mapImage.style.width = `${mapImage.width / 1.25}px`;
+            mapImage.width = parseFloat(mapImage.style.width);
+            document.querySelectorAll(".countries-item").forEach(element => {
+                const scale  = mapImage.width / 10000 + 1;
+                element.style.transform = `scale(${scale})`;
+            });
+            if (mapImage.width >= 940) {
+                mapWrapper.style.paddingTop = "9rem"; 
+                document.querySelector(".map").style.top = "0";
+                document.querySelector(".map").style.left = "0";
+                document.querySelectorAll(".countries-item").forEach(element => {
+                    element.style.transform = `scale(0.86)`;
+                });
+            }
+            
+        }
+    })
 
-const mapIcons = document.querySelectorAll(".city__animals_item");
-mapIcons.forEach((icon) => icon.addEventListener("click", (e) => {
-    e.stopPropagation();
-    if (icon.alt.includes("panda-alone")) {
-        const toolTip = document.getElementById("panda");
-        toolTip.classList.add("active");
-    }
-    if (icon.alt.includes("pandas")) {
-        const toolTip = document.getElementById("pandas");
-        toolTip.classList.add("active");
-    }
-    if (icon.alt.includes("gorilla")) {
-        const toolTip = document.getElementById("gorilla");
-        toolTip.classList.add("active");
-    }
-    if (icon.alt.includes("gorilla")) {
-        const toolTip = document.getElementById("gorilla");
-        toolTip.classList.add("active");
-    }
-    if (icon.alt.includes("alligator")) {
-        const toolTip = document.getElementById("alligator");
-        toolTip.classList.add("active");
-    }
-    if (icon.alt.includes("eagle")) {
-        const toolTip = document.getElementById("eagle");
-        toolTip.classList.add("active");
-    }
-}));
+    buttonPlus.addEventListener("click", () => {
+        if (mapImage.width <= mapWrapper.offsetWidth * 4) {
+            mapImage.style.width = `${mapImage.width * 1.25}px`;
+            mapImage.width = parseFloat(mapImage.style.width);
+            document.querySelectorAll(".countries-item").forEach(element => {
+                const scale  = mapImage.width / 10000 + 1;
+                element.style.transform = `scale(${scale})`;
+            })
+            if (mapImage.width > 1600)
+                mapWrapper.style.paddingTop = "0"; 
+        }
+    })
 
-const toolTipButtons = document.querySelectorAll(".city-tooltip__online-button");
-toolTipButtons.forEach((element) => element.addEventListener("click", (e) => {
-    e.stopPropagation();
-    let tmp = e.target.previousElementSibling.innerHTML;
-    if (tmp.includes("China")) window.location.href="../zoos-page-panda/zoos-panda.html";
-    if (tmp.includes("Eagles")) window.location.href="../zoos-page-eagle/zoos-eagle.html";
-    if (tmp.includes("Alligator")) window.location.href="../zoos-page-alligator/zoos-alligator.html";
-    if (tmp.includes("Congo")) window.location.href="../zoos-page-gorilla/zoos-gorilla.html";
+    const mapIcons = document.querySelectorAll(".city__animals_item");
+    mapIcons.forEach((icon) => icon.addEventListener("click", (e) => {
+        e.stopPropagation();
+        if (icon.alt.includes("panda-alone")) {
+            const toolTip = document.getElementById("panda");
+            toolTip.classList.add("active");
+        }
+        if (icon.alt.includes("pandas")) {
+            const toolTip = document.getElementById("pandas");
+            toolTip.classList.add("active");
+        }
+        if (icon.alt.includes("gorilla")) {
+            const toolTip = document.getElementById("gorilla");
+            toolTip.classList.add("active");
+        }
+        if (icon.alt.includes("gorilla")) {
+            const toolTip = document.getElementById("gorilla");
+            toolTip.classList.add("active");
+        }
+        if (icon.alt.includes("alligator")) {
+            const toolTip = document.getElementById("alligator");
+            toolTip.classList.add("active");
+        }
+        if (icon.alt.includes("eagle")) {
+            const toolTip = document.getElementById("eagle");
+            toolTip.classList.add("active");
+        }
     }));
+
+    const toolTipButtons = document.querySelectorAll(".city-tooltip__online-button");
+    toolTipButtons.forEach((element) => element.addEventListener("click", (e) => {
+        e.stopPropagation();
+        let tmp = e.target.previousElementSibling.innerHTML;
+        if (tmp.includes("China")) window.location.href="../zoos-page-panda/zoos-panda.html";
+        if (tmp.includes("Eagles")) window.location.href="../zoos-page-eagle/zoos-eagle.html";
+        if (tmp.includes("Alligator")) window.location.href="../zoos-page-alligator/zoos-alligator.html";
+        if (tmp.includes("Congo")) window.location.href="../zoos-page-gorilla/zoos-gorilla.html";
+        }));
+    }

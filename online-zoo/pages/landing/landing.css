@@ -1358,6 +1358,8 @@ body {
   margin-bottom: 2rem;
   -webkit-animation: 3s ease;
           animation: 3s ease;
+  -webkit-transition: 3s ease;
+  transition: 3s ease;
 }
 
 .testimonials-card {

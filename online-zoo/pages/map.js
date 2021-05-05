@@ -30,7 +30,8 @@ export const stopDrag = () => {
     document.removeEventListener("mousemove", moveAt);
     mapImage.removeEventListener("mouseup", stopDrag);
 }
-
-mapImage.ondragstart = function() {
-    return false;
+if (mapImage) {
+    mapImage.ondragstart = function() {
+        return false;
+    }
 }

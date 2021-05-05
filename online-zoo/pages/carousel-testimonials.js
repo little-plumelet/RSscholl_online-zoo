@@ -6,28 +6,32 @@ let tempValue = 0;
 
 
 export function switchTestimonials() {
+    let flag = true;
+    let testimonialsCard = document.querySelector(".testimonials-card");
+    let testimonialsList = document.querySelectorAll(".testimonials-list");
     if (loop)
     {
-        let testimonialsCard = document.querySelector(".testimonials-card");
-        let testimonialsList = document.querySelectorAll(".testimonials-list");
         if (testimonialsRange) {
             tempValue = Number(testimonialsRange.value);
-            currentOffset = testimonialsCard.offsetWidth + 15;
+            currentOffset = testimonialsCard.offsetWidth + 30;
             testimonialsList[0].setAttribute("style", "transition: margin " + "4000ms ease;");
             testimonialsList[0].setAttribute("style", "margin-left: -" + currentOffset + "px");
-            testimonialsList[0].appendChild(testimonialsList[0].firstElementChild);
-            testimonialsList[0].style.marginLeft = '0px';
-            tempValue++;
-            if (tempValue <= Number(testimonialsRange.max)) testimonialsRange.value = tempValue;
-            else {
-                tempValue = 0;
-                testimonialsRange.value = 0;
-            }
-            //setTimeout(function() {
-                testimonialsList[0].style.cssText = "transition: none;";
-            //}, 4000);
+            testimonialsList[0].addEventListener("transitionend", (e) => {
+                if (flag) {
+                    e.target.appendChild(testimonialsList[0].firstElementChild);
+                    e.target.style.cssText = "transition: none;";
+                    e.target.style.marginLeft = '0px';
+                    tempValue++;
+                    if (tempValue <= Number(testimonialsRange.max)) testimonialsRange.value = tempValue;
+                    else {
+                        tempValue = 0;
+                        testimonialsRange.value = 0;
+                    }
+                    flag = false;
+                }
+            });
         }
-    }
+    } 
 }
 
 export let testimonialsRangeValue = function() {
