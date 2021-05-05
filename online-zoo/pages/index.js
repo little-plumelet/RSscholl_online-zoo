@@ -81,7 +81,7 @@ function more_less_button() {
             let paragraphs = document.querySelectorAll(".description__details-paragraph");
             let subtitles = document.querySelectorAll(".description__details-subtitle");
             if (more) {
-                console.log(e.target)
+                //console.log(e.target)
                 e.target.innerHTML = "Read More";
                 e.target.style.bottom = "-23.5%";
                 for (let i = 0; i < paragraphs.length; i++) {
@@ -266,6 +266,10 @@ donateInput();
 
 //map
 mapImage.addEventListener("mousedown", (e) => {
+    const toolTips = document.querySelectorAll(".active");
+    if (toolTips) {
+        toolTips.forEach(element => element.classList.remove("active"));
+    }
     calculateCoords(e, mapImage);
     //moveAt(e);
 
@@ -278,7 +282,6 @@ footerElem.addEventListener("mouseenter", stopDrag);
 
 mapImage.width = mapImage.offsetWidth;
 buttonMinus.addEventListener("click", () => {
-    console.log(mapImage.width);
     
     if (mapImage.width >= mapWrapper.offsetWidth - 510 && mapWrapper.offsetWidth >=1600) {
         mapImage.style.width = `${mapImage.width / 1.25}px`;
@@ -300,8 +303,37 @@ buttonPlus.addEventListener("click", () => {
     }
 })
 
-const toolTipButton = document.querySelectorAll(".city-tooltip__online-button");
-toolTipButton.forEach((element) => element.addEventListener("click", (e) => {
+const mapIcons = document.querySelectorAll(".city__animals_item");
+mapIcons.forEach((icon) => icon.addEventListener("click", (e) => {
+    e.stopPropagation();
+    if (icon.alt.includes("panda-alone")) {
+        const toolTip = document.getElementById("panda");
+        toolTip.classList.add("active");
+    }
+    if (icon.alt.includes("pandas")) {
+        const toolTip = document.getElementById("pandas");
+        toolTip.classList.add("active");
+    }
+    if (icon.alt.includes("gorilla")) {
+        const toolTip = document.getElementById("gorilla");
+        toolTip.classList.add("active");
+    }
+    if (icon.alt.includes("gorilla")) {
+        const toolTip = document.getElementById("gorilla");
+        toolTip.classList.add("active");
+    }
+    if (icon.alt.includes("alligator")) {
+        const toolTip = document.getElementById("alligator");
+        toolTip.classList.add("active");
+    }
+    if (icon.alt.includes("eagle")) {
+        const toolTip = document.getElementById("eagle");
+        toolTip.classList.add("active");
+    }
+}));
+
+const toolTipButtons = document.querySelectorAll(".city-tooltip__online-button");
+toolTipButtons.forEach((element) => element.addEventListener("click", (e) => {
     e.stopPropagation();
     let tmp = e.target.previousElementSibling.innerHTML;
     if (tmp.includes("China")) window.location.href="../zoos-page-panda/zoos-panda.html";

@@ -678,7 +678,7 @@ h1 {
   z-index: 100;
 }
 
-.map-main .countries-item_Congo .city__animals_item1:hover ~ .city-tooltip {
+.map-main .countries-item_Congo #gorilla.active {
   visibility: visible;
   opacity: 1;
   -webkit-transition: 0.5s;
@@ -726,8 +726,8 @@ h1 {
   left: 0%;
 }
 
-.map-main .countries-item_China .city__animals_item1:hover ~ .city-tooltip_1,
-.map-main .countries-item_China .city__animals_item2:hover ~ .city-tooltip_2 {
+.map-main .countries-item_China #panda.active,
+.map-main .countries-item_China #pandas.active {
   visibility: visible;
   opacity: 1;
   -webkit-transition: 0.5s;
@@ -795,8 +795,7 @@ h1 {
   left: -35%;
 }
 
-.map-main .countries .city-Los-Angeles .city__animals_item1:hover ~ .city-tooltip,
-.map-main .countries .city-Los-Angeles .city__animals_item2:hover ~ .city-tooltip {
+.map-main .countries .city-Los-Angeles #eagle.active {
   visibility: visible;
   opacity: 1;
   -webkit-transition: 0.5s;
@@ -820,7 +819,7 @@ h1 {
   left: -27%;
 }
 
-.map-main .countries .city-Florida .city__animals_item1:hover ~ .city-tooltip {
+.map-main .countries .city-Florida #alligator.active {
   visibility: visible;
   opacity: 1;
   -webkit-transition: 0.5s;
@@ -831,6 +830,10 @@ h1 {
   width: 2.56rem;
   height: 3.2rem;
   background: url("../../assets/icons/map/location-icon.svg");
+}
+
+.map-main .city__animals_item {
+  cursor: pointer;
 }
 
 .map-buttons {

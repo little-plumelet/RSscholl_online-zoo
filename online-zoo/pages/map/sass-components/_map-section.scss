@@ -65,7 +65,7 @@
                     z-index: 100;
                 }
     
-                .city__animals_item1:hover ~ .city-tooltip {
+                #gorilla.active {
                     visibility: visible;
                     opacity: 1;
                     transition: 0.5s;
@@ -110,9 +110,9 @@
                     top: 75%;
                     left: 0%;
                 }
-    
-                .city__animals_item1:hover ~ .city-tooltip_1,
-                .city__animals_item2:hover ~ .city-tooltip_2 {
+     
+                   #panda.active,
+                   #pandas.active {
                     visibility: visible;
                     opacity: 1;
                     transition: 0.5s;
@@ -168,8 +168,7 @@
                     left: -35%;
                 }
 
-                .city__animals_item1:hover ~ .city-tooltip,
-                .city__animals_item2:hover ~ .city-tooltip {
+                #eagle.active {
                     visibility: visible;
                     opacity: 1;
                     transition: 0.5s;
@@ -193,7 +192,7 @@
                     left: -27%;
                 }
 
-                .city__animals_item1:hover ~ .city-tooltip {
+                #alligator.active {
                     visibility: visible;
                     opacity: 1;
                     transition: 0.5s;
@@ -207,6 +206,10 @@
             }
         }
 
+    }
+
+    .city__animals_item {
+        cursor: pointer;
     }
 }
 

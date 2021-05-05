@@ -9,7 +9,7 @@ let topIndent = 0;
 let leftIndent = 0;
 
 export const calculateCoords = (e, elem) => {
-    console.log(elem);
+    console.log("+++", elem);
     let box = elem.getBoundingClientRect();
     topIndent = e.pageY - box.top + pageYOffset;
     leftIndent = e.pageX - box.left + pageXOffset;
