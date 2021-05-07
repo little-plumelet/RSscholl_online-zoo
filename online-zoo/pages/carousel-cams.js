@@ -11,24 +11,26 @@ function hideItem(direction) {
         this.classList.remove(direction);
         if (direction === "to-left" && !isEnabledCams) {
             console.log("!!!", cams.firstElementChild)
-            cams.append(cams.firstElementChild.cloneNode(true));
-            cams.removeChild(cams.firstElementChild); 
+            cams.append(cams.firstElementChild);
             isEnabledCams = true;    
         }
         
-    })
-    
+    });
 }
 
 function showItem(direction) {
     isEnabledCams = false;
-    cams.prepend(cams.lastElementChild.cloneNode(true));
-    cams.removeChild(cams.lastElementChild);
+    cams.prepend(cams.lastElementChild);
     cams.classList.add(direction);
+    
     cams.addEventListener("animationend", function() {
         this.classList.remove(direction);
-        isEnabledCams = true;    
-    })
+        isEnabledCams = true;
+        if (direction === "to-left" && !isEnabledCams) {
+            console.log("!!!", cams.firstElementChild)
+            cams.append(cams.firstElementChild);
+        }    
+    });
 }
 
 export function nextItemCam(n) {
