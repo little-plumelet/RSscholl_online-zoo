@@ -20,9 +20,15 @@ export function donateInput() {
                 if (Number(element.value) === Number(this.value)) {
                     element.checked = true;
                     flag = true;
+                    if (this.value.length > 4)
+                        this.value = this.value.slice(0, 4);
                 }
-                else if (!flag) donateRadioButtons.forEach(element => { element.checked = false;});
-            })
-        })
+                else if (!flag) {
+                    donateRadioButtons.forEach(element => { element.checked = false;});
+                    if (this.value.length > 4)
+                    this.value = this.value.slice(0, 4);
+                }
+            });
+        });
     }
 }
