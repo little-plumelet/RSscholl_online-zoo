@@ -240,14 +240,15 @@ function more_less_button() {
 
 //carousel for landing page for testimonials
 let cards = document.querySelectorAll(".testimonials-card");
+let cardContainer = document.querySelector(".testimonials-list");
 let intervalTestimonialsID = setInterval(switchTestimonials, 10000);
 if (cards.length > 0) {
-    cards.forEach((card) => card.addEventListener("click", () => {
+    cardContainer.addEventListener("click", () => {
         clearInterval(intervalTestimonialsID);   
         setTimeout(function () {
             intervalTestimonialsID = setInterval(switchTestimonials, 10000); 
         }, 30000);
-    }));
+    });
 
     let testimonialsRange = document.querySelector('.testimonials-slider');
     if (testimonialsRange) {
@@ -258,7 +259,7 @@ if (cards.length > 0) {
 
         });
     }
-}
+};
 
 donateRadioButton();
 donateInput();

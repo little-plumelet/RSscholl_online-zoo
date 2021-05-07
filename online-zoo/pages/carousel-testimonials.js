@@ -38,7 +38,6 @@ export let testimonialsRangeValue = function() {
     let newValue = testimonialsRange.value;
     let testimonialsCard = document.querySelector(".testimonials-card");
     let testimonialsList = document.querySelectorAll(".testimonials-list");
-    let target;
     for (let i = 0; i < cards.length; i++) {
         if (i == newValue) {
             currentOffset = testimonialsCard.offsetWidth * (i - tempValue) + 30 * (i - tempValue);
