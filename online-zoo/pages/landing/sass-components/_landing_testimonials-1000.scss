@@ -1,0 +1,31 @@
+@media screen and (min-width: 1000px) and (max-width:1599px) {
+    .testimonials {
+        margin-bottom: 14rem;
+
+        &__title {
+            margin-bottom: 3.2rem;
+        }
+        
+        &-list {
+            width: 134%;
+        }
+
+        &-card {
+            width: 29.3rem;
+        }
+
+        &-slider-wrapper {
+            width: 39rem;
+        }
+
+        .leave-decor {
+            transform: scale(0.8);
+            bottom: -23.5rem;
+            right: -2.5rem;;
+        }
+
+        &-slider-wrapper {
+            margin-bottom: 5rem;
+        }
+    }
+}

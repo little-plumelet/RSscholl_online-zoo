@@ -1,0 +1,86 @@
+@media screen and (min-width: 320px) and (max-width: 639px) {
+
+    .animals {
+       margin-bottom: 6rem;
+
+
+        .palm-decor {
+            width: 5.8rem;
+            height: 7.2rem;
+            background-image: url("../../../assets/images/decorations/palm_foto_1000.png");
+            background-position: right;
+            bottom:-6rem;
+        }
+    
+        .strelitzia-decor {
+            width: 8rem;
+            height: 7.1rem;
+            background-image: url("../../../assets/images/decorations/strelitzia_pfoto_1000.png");
+            background-position: left;
+            bottom: -6.4rem;
+        }
+    }
+
+    .animals-wrapper {
+        width: $content-width-320;
+    }
+    .button-arrow {
+        position: absolute;
+    }
+
+    .animals-list {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+    .animal-card {
+        margin-bottom: 1.9rem;
+
+        &__image {
+            width: 28.5rem;
+        }
+
+    
+        &__figcaption {
+            min-height: 0;
+            margin-bottom: 0.6rem;
+        }
+
+        &__text {
+            margin-left: 1.25rem;
+        }
+
+        &__title {
+            font-size: 1.25rem;
+        }
+
+        &__paragraph {
+            font-size: 1.17rem;
+        }
+
+        &__icon {
+            transform: scale(0.8);
+            margin-right: 0.8rem;
+        }
+
+        &__icon_carnivore {
+            margin-right: 0;
+        }
+    }
+
+    .animals-list > li:nth-child(3) > .animal-card {
+        margin-right: 2.6rem;
+    }
+
+    .animals-list {
+        li:nth-child(5) > .animal-card,
+        li:nth-child(6) > .animal-card {
+        display: none;
+        }
+    } 
+
+    .button-arrow_left,
+    .button-arrow_right {
+        display: none;
+    }
+}

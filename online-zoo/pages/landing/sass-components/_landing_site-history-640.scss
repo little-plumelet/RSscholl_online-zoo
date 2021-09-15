@@ -1,0 +1,37 @@
+@media screen and (min-width: 640px) and (max-width:999px) {
+    .site-history {
+        min-height: 0;
+        margin-bottom: 8rem;
+
+        &__photo {
+            display: none;
+        }
+
+        .text__title {
+            margin-bottom: 2.5rem;
+        }
+
+        .text__subtitle {
+            margin-bottom: 2rem;
+        }
+
+        .text__paragraph {
+            margin-bottom: 3rem;
+            font-size: 1.6rem;
+        }
+
+        .text__paragraph:last-child {
+           width: 49.5rem;
+           line-height: 140%;
+        }
+
+        &__decor {
+            width: 12.6rem;
+            height: 47.6rem;
+            top: -6.5rem;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left;
+        }
+    }
+}

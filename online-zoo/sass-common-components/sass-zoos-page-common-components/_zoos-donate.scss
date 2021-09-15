@@ -1,0 +1,57 @@
+.donate {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    padding-bottom: 6rem;
+    min-height: 39rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.donate_panda {
+    background: url("../../assets/images/zoos-panda/panda_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.donate_alligator {
+    background: url("../../assets/images/zoos-alligator/alligator_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.donate_eagle {
+    background: url("../../assets/images/zoos-eagle/eagle_foto.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.donate_gorilla {
+    background: url("../../assets/images/zoos-gorilla/gorilla-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.leave-decor {
+    position: absolute;
+    right: 0;
+    bottom: 39rem;
+    width: 21rem;
+    height: 20rem;
+    background-image: url("../../assets/images/decorations/leave_foto_45.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.strelitzia-decor {
+    position: absolute;
+    left: 0;
+    bottom: 39rem;
+    width: 30.6rem;
+    height: 20.9rem;
+    background-image: url("../../assets/images/decorations/strelitzia_pfoto_left.png");
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

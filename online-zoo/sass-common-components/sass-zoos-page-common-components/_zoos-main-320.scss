@@ -1,0 +1,172 @@
+@media screen and (min-width: 320px) and (max-width: 639px) {
+    .main {
+        margin-top: 0;
+        padding-top: 5.9rem;
+    }
+    .main-wrapper {
+        max-width: 320px;
+        margin: 0 auto;
+        justify-content: flex-end;
+        margin-bottom: 0;
+    }
+
+    .main-content {
+        padding-right: 0;
+        margin-right: 0rem;
+    }
+
+    .with-aside {
+        margin-bottom: 1.3rem;
+    }
+
+    .description-wrapper {
+        margin-bottom: 15.2rem;
+    }
+
+    .panda-description,
+    .eagle-description,
+    .alligator-description,
+    .gorilla-description {
+
+        .description-wrapper {
+            max-width: 320px;
+        }
+
+        &__small-info {
+            position: relative;
+            padding-bottom: 3rem;
+            margin-bottom: 0;
+        }
+
+         &__title {
+             position: absolute;
+             text-align: center;
+             font-size: 2.4rem;
+             line-height: 120%;
+             top: -6.5%;
+             left: 30%;
+             margin-bottom: 2.5rem;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+         &__text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 140%;
+            margin-bottom: 3rem;
+            max-width: 42rem;
+         }
+
+         &__photo {
+            width: 31.9rem;
+            height: 19.3rem;
+            overflow: hidden;
+            // background-image: url("../../assets/images/zoos-panda/Giant\ Panda_foto_320.png");
+            padding-right: 0;
+            margin-bottom: 2rem;
+            img {
+               display: none;
+            }
+            
+         }
+
+         &__bage {
+             padding-bottom: 0;
+             max-width: 300px;
+             margin: 0 auto;
+
+             .button_rounded {
+                 position: relative;
+                 align-self: center;
+                 right: 0;
+             }
+        }
+
+        
+
+        &__details {    
+            position: relative;
+            max-width: 300px;
+            padding-top: 1rem;
+            margin: 0 auto;
+
+            &-paragraph {
+                padding-bottom: 1rem;
+                
+            }
+
+            &-paragraph:first-child {
+                padding-bottom: 4rem;
+            }
+
+            &-paragraph:nth-child(3) {
+                padding-bottom: 2.2rem;
+            }
+
+            &-subtitle_general {
+                margin-bottom: 0.6rem;
+            }
+
+            &-subtitle_general ~ &-paragraph {
+                height: 11rem;
+                overflow: hidden;
+                line-height: 140%;
+            }
+
+            &-subtitle:nth-child(n+5) {
+                display: none;
+            }
+            &-paragraph:nth-child(n+6) {
+                display: none;
+            }
+
+             .button__read-less_squared {
+                 position: absolute;
+                 bottom: -18.5%;
+             }
+
+        }
+    }
+
+     .description__link {
+         color: $color-gray-smoky;
+         text-decoration: none;
+    }
+
+    .footer {
+        .wrapper {
+            padding-left: 0;
+        }
+        
+        .logo__bamboo {
+            top: 20.5%;
+            left: 56%;
+            }
+    }
+
+    .panda-description {
+        &__photo {
+            background-image: url("../../assets/images/zoos-panda/Giant\ Panda_foto_320.png");
+        }
+    }
+    .eagle-description {
+        &__photo {
+            background-image: url("../../assets/images/zoos-eagle/eagle_foto.png");
+        }
+    }
+    .alligator-description {
+        &__photo {
+            background-image: url("../../assets/images/zoos-alligator/alligator_photo.png");
+        }
+    }
+    .gorilla-description {
+        &__photo {
+            background-image: url("../../assets/images/zoos-gorilla/gorila_photo.png");
+        }
+    }
+}

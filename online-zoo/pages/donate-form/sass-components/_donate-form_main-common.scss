@@ -1,0 +1,31 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.forms {
+    padding-left: 9.2rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    margin-left: 14.5%;
+}
+
+.donate-form-aside {
+    position: fixed;
+    width: 14.5%;
+    height: 100%;
+    display: block;
+    background: $color-peach-gradient;
+}
+
+.form-donate {
+    &__input {
+        min-height: 4.2rem;
+        min-width: 13rem;
+    }
+}
+
+.button {
+    margin-left: 44.5rem;
+    margin-top: 2rem;
+}

@@ -1,0 +1,85 @@
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+
+    .with-aside {
+        display: flex;
+    }
+    .cam-aside {
+         margin-left: 1rem;
+         position: static;
+
+         &-wrapper {
+             padding: 0.5rem 0.5rem;
+         }
+
+         &-link {
+             margin: 0.15rem 0;
+
+             .cam-aside__icon {
+                 width: 5.3rem;
+                 height: 5.3rem;
+                 border: 1.3px solid $color-light-orange;
+             }
+        }
+
+        &-link:nth-child(4),
+        &-link:nth-child(5),
+        &-link:nth-child(6) {
+           display: none;
+        }
+
+         #icon-gorilla {
+            background-size: cover;          
+         }
+
+        #icon-gorilla:hover,
+         #icon-gorilla.active {
+            background-size: cover;
+        }
+
+         #icon-alligator {
+            background-size: cover;
+         }
+        #icon-alligator:hover,
+        #icon-alligator.active {
+            background-size: cover;
+        }
+
+         #icon-panda {
+            background-size: cover;
+         }
+        #icon-panda:hover,
+        #icon-panda.active {
+            background-size: cover;
+        }
+
+         #icon-eagle {
+            background-size: cover;
+        }
+        #icon-eagle:hover,
+        #icon-eagle.active {
+            background-size: cover;
+        }
+    
+        #icon-sloth {
+            background-size: cover;
+        }
+        #icon-sloth:hover,
+        #icon-sloth.active {
+            background-size: cover;
+        }
+
+        #icon-penguin {
+            background-size: cover;
+        }
+        #icon-penguin:hover,
+        #icon-penguin.active {
+            background-size: cover;
+        }
+
+        #icon-arrow-down {
+            background-size: cover;
+       }
+        
+    }
+}

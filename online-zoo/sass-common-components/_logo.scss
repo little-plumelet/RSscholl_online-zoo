@@ -1,0 +1,25 @@
+.logo {
+    width: 8.2rem;
+    height: 5.2rem;
+    margin: 1.4rem 0;
+    padding: 0.355rem 0.455rem;
+    position: relative;
+    font-family: "Roboto", "sans-serif";
+    font-weight: 400;
+    font-size: 1.902rem;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border: 0.1rem solid #ffffff;
+    border-radius: 0.2rem;
+    
+    &__bamboo {
+        width: 1.5rem;
+        height: 2.1rem;
+        position: absolute;
+        top: 45.5%;
+        left: 12%;
+        background-image: url("../../assets/icons/logo/bamboo.svg");
+        background-repeat: no-repeat;
+    }
+}

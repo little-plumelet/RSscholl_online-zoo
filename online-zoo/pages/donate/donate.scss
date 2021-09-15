@@ -1,0 +1,42 @@
+@import "../../sass-common-components/fonts";
+@import "../../sass-common-components/constants";
+@import "../../sass-common-components/base";
+@import "../../sass-common-components/wrapper";
+
+//components
+@import "../../sass-common-components/header";
+@import "../../sass-common-components/logo";
+@import "../../sass-common-components/footer";
+@import "../../sass-common-components/button_rounded";
+@import "./sass-components/donate_hero";
+@import "./sass-components/donate_main-common";
+@import "./sass-components/donate_main-explanation";
+@import "./sass-components/donate_main-info";
+@import "./sass-components/donate_main-scale";
+
+//media screesns
+@import "../../sass-common-components/header-1000";
+@import "../../sass-common-components/footer-1000";
+@import "./sass-components/donate_hero-1000";
+@import "./sass-components/donate_main-common-1000";
+@import "./sass-components/donate_main-explanation-1000";
+@import "./sass-components/donate_main-info-1000";
+@import "./sass-components/donate_main-scale-1000";
+
+@import "../../sass-common-components/header-640";
+@import "../../sass-common-components/logo-640";
+@import "../../sass-common-components/footer-640";
+@import "./sass-components/donate_hero-640";
+@import "./sass-components/donate_main-common-640";
+@import "./sass-components/donate_main-info-640";
+@import "./sass-components/donate_main-scale-640";
+@import "./sass-components/donate_main-explanation-640";
+
+@import "../../sass-common-components/header-320";
+@import "../../sass-common-components/footer-320";
+@import "../../sass-common-components/logo-320_wide";
+@import "./sass-components/donate_hero-320";
+@import "./sass-components/donate_main-common-320";
+@import "./sass-components/donate_main-info-320";
+@import "./sass-components/donate_main-scale-320";
+@import "./sass-components/donate_main-explanation-320";

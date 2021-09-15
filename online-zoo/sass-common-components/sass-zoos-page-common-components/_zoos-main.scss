@@ -1,0 +1,105 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 11.2rem;
+}
+.main-wrapper {
+    display: flex;
+    margin-bottom: 11.5rem;
+}
+
+.main-content {
+    padding-right: 9.6rem;
+    margin: 0 auto;
+}
+
+.description-wrapper {
+    margin-bottom: 18rem;
+}
+
+.panda-description,
+.eagle-description,
+.alligator-description,
+.gorilla-description {
+
+    &__title {
+        @include h2;
+        font-weight: 500;
+        color: $color-green;
+        margin-bottom: 2rem;
+    }
+
+    &__small-info {
+        padding-bottom: 2rem;
+        margin-bottom: 4.1rem;
+        border-bottom: 0.1rem solid #767474;
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__text {
+        @include paragraph-zoos-bold;
+        color: $color-gray-smoky;
+        margin-bottom: 4.1rem;
+    }
+
+    &__photo {
+        padding-right: 7rem;
+    }
+
+    &__bage {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 3.9rem
+    }
+
+    
+
+    &__details {
+        
+
+        &-paragraph {
+            @include paragraph;
+            line-height: 160%;
+            color: $color-background-dark;
+            padding-bottom: 2rem;
+        }
+
+
+        &-paragraph:nth-child(n + 6),
+        &-subtitle:nth-child(n + 5) {
+            display: none;
+        }
+        &-subtitle {
+            @include subtitle;
+            color: $color-background-dark;
+            margin-bottom: 1rem;
+        }
+
+        .button__read-less_squared {
+            @include paragraph;
+            color: #000000;
+            line-height: 140%;
+            width: 12.9rem;
+            height: 4.2rem;
+            background-color: $color-gray-light;
+            border: 0.1rem solid $color-black-blue;
+            box-sizing: border-box;
+            border-radius: 0.5rem;
+            outline: none;
+        }
+
+        .button__read-less_squared:hover {
+            cursor: pointer;
+        }
+
+    }
+}
+
+.description__link {
+    color: $color-green;
+    text-decoration: none;
+}

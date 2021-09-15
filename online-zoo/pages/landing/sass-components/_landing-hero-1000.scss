@@ -1,0 +1,35 @@
+@media screen and (min-width: 1000px) and (max-width:1599px) {
+    .intro {
+        height: fit-content;
+        margin-bottom: 11rem;
+    }
+
+    .title {
+        width: 40rem;
+        height: 27rem;
+        margin-bottom: 4.8rem;
+
+        &__circle {
+            width: 36.7rem;
+            height: 36.7rem;
+            top: -9.6rem;
+            left: -11.5rem;
+        }
+
+        &__text {
+            font-size: 8.5rem;
+            top: -4.2rem;
+            left: -11rem;
+        }
+    }
+
+    .hero {
+        overflow: hidden;
+        padding-bottom: 4.7rem;
+
+        .button {
+            margin-right: 10.5rem;
+        }
+    }
+}
+    

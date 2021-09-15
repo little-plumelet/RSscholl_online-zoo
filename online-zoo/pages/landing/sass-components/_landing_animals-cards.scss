@@ -1,0 +1,230 @@
+@import "../../../sass-common-components/constants";
+@import "../../../sass-common-components/fonts";
+@import "../../../sass-common-components/base";
+@import "../../../sass-common-components/wrapper";
+
+.animals {
+    position: relative;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .palm-decor {
+        width: 28rem;
+        height: 46rem;
+        background-image: url("../../assets/images/decorations/palm_foto.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        bottom: -10rem;
+    }
+
+    .strelitzia-decor {
+        width: 36.8rem;
+        height: 27.5rem;
+        background-image: url("../../assets/images/decorations/strelitzia_pfoto.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 0;
+        bottom: -10rem;
+    }
+}
+
+.animals-wrapper {
+    width: 160rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.button-arrow {
+    width: 6.2rem;
+    height: 6.2rem;
+    margin-bottom: 8rem;
+    outline: none;
+    border: none;
+    z-index: 10;
+}
+
+.button-arrow:hover {
+    cursor: pointer;
+}
+
+.button-arrow_left {
+    margin-left: 13.8rem;
+    background: url("../../assets/icons/arrow_left.svg");
+}
+
+.button-arrow_right {
+    margin-right: 13.8rem;
+    background: url("../../assets/icons/arrow_right.svg");
+}
+
+.button-arrow_left:active {
+    background: url("../../assets/icons/arrow_left_active.svg");
+}
+
+.button-arrow_right:active {
+    background: url("../../assets/icons/arrow_right_active.svg");
+}
+
+.animals-list-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin: 0 2rem;
+}
+
+.animals-list {
+    width: 100%;
+    position: relative;
+    margin-bottom: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-between;
+    animation: 1s ease-in-out;
+    display: none;
+}
+
+.animal-card {
+    margin-bottom: 2rem;
+    border: 0.1rem solid #fe9013;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    
+    &__image-wrapper {
+        overflow: hidden;
+        position: relative;
+    } 
+
+    &__image {
+        transition: 0.5s;
+    }
+
+    &__image-overlay {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        position: absolute;
+        bottom: -100%;
+    
+        background: rgba(51, 59, 65, .8);;
+        text-align: center;
+
+        &-title {
+            @include h3;
+            color: $color-white-frosted;
+        }
+        &-paragraph {
+            @include paragraph;
+            color: $color-white-frosted;
+        }
+    }
+
+    &__image-wrapper:hover {
+        .animal-card__image {
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+
+        .animal-card__image-overlay {
+            transition: 0.5s;
+            bottom: 0;
+        }
+    }
+
+    &__figcaption {
+        min-height: 5.6rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__text {
+        margin-left: 1.6rem;
+    }
+
+    &__title {
+        @include button-text;
+        color: $color-background-dark;
+        text-transform: uppercase;
+    }
+
+    &__paragraph {
+        @include paragraph-small;
+        color: $color-background-dark;
+        text-transform: capitalize;
+    }
+
+    &__icon {
+        margin-right: 1.2rem;  
+    }
+
+    &__icon_herbivore {
+        width: 3.3rem;
+        height: 3.7rem;
+        background: url("../../assets/icons/animals-cards/herbivore_icon.svg");
+    }
+
+    &__icon_carnivore {
+        width: 4.8rem;
+        height: 3.8rem;
+        background: url("../../assets/icons/animals-cards/carnivore_icon.svg");
+    }
+}
+    
+
+.next {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.active, .next {
+    display: flex;
+}
+
+.to-left {
+    animation-name: left;
+}
+
+.to-right {
+    animation-name: right;
+    animation-direction: reverse;
+}
+
+.from-left {
+    animation-name: left;
+    animation-direction: reverse;
+}
+
+.from-right {
+    animation-name: right;
+}
+
+@keyframes left {
+    from {
+        left: 0;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes right {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0;
+    }
+}

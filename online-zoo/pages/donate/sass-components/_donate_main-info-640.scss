@@ -1,0 +1,153 @@
+@media screen and (min-width: 640px) and (max-width: 999px) {
+    .donate-info {
+        
+        &__title {
+            margin-bottom: 3.2rem;
+        }
+
+        &__pictograph {
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: center;
+             margin-bottom: 4.1rem;
+
+    //         .pictograph-days {
+    //             margin-top: 5rem;
+    //             display: flex;
+    //             flex-direction: column;
+    //             align-items: center;
+
+    //             &__number {
+    //                 margin-right: 2.3rem;
+    //                 font-family: "Roboto", sans-serif;
+    //                 font-size: 7.2rem;
+    //                 font-weight: 500;
+    //                 line-height: 80%;
+    //                 text-transform: uppercase;
+    //                 color: $color-background-dark;
+                    
+    //             }
+
+    //             &__subtitle {
+    //                 margin-top: 0.5rem;
+    //                 @include paragraph-bold;
+    //                 color: $color-black-blue;
+    //             }
+
+    //             &__cross-icon {
+    //                 width: 1.4rem;
+    //                 height: 1.4rem;
+    //                 background-image: url("../../../assets/icons/donate/x_icon.svg");
+    //                 margin-right: 6.4rem;
+    //                 margin-top: 2rem;
+    //             }
+
+    //             &__animal-icon {
+    //                 width: 28.4rem;
+    //                 height: 24.6rem;
+    //                 background-image: url("../../../assets/icons/donate/animals-widget.svg");
+    //             }
+    //         }
+         }
+    }
+
+     .donate-info-wrapper {
+         width: 100%;
+    //     margin: 0 auto;
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+     }
+
+     .donate-info__details {
+    //     background: rgba(255, 255, 255, 0.52);
+    //     border-radius: 2rem;
+        padding: 3rem 4.5rem 3.1rem 4.5rem;
+
+         &-title {
+    //         @include h2;
+    //         color: $color-light-orange;
+    //         text-align: center;
+             margin-bottom: 2rem;
+         }
+
+         &-subtitle {
+    //         @include subtitle;
+    //         color: $color-black-blue;
+            align-self: center;
+            text-align: center;
+            margin-bottom: 5rem;
+         }
+
+    //     .donate-info__inspiration {
+    //         @include paragraph;
+    //         color: $color-black-blue;
+    //         margin-top: 3rem;
+    //     }
+    }
+
+     .donate-form {
+    //     align-self: start;
+         margin-bottom: 4.3rem;
+    //     position: relative;
+
+         &__input {
+            position: relative;
+            left: -19%;
+             width: 18rem;
+             height: 4.2rem;
+             
+        }
+    //         border: 0.1rem solid #929699;
+    //         border-radius: 0.2rem;
+    //         background-color: transparent;
+    //         padding-left: 0.9rem;
+    //         outline: none;
+         
+
+         &__input-label {
+    //         position: absolute;
+    //         top: 25%;
+             right: 24.5%;
+    //         font-family: "Roboto", sans-serif;
+    //         font-size: 2.2rem;
+    //         color: #929699;
+         }
+    }
+
+     .donate-info__radio-buttons {
+    //     display: flex;
+    //     justify-content: center;
+    //     padding-left: 3rem;
+         margin-bottom: 3rem;
+
+    //     .radio-buttons__item {
+    //         position: relative;
+
+    //         &-input {
+    //         appearance: none;
+    //         outline: none;
+    //         width: 1.6rem;
+    //         height: 1.6rem;
+    //         position: absolute;
+    //         top: 0;
+    //         left: 0;
+    //         border: 1px solid $color-light-orange;
+    //         border-radius: 50%;
+    //         }
+
+    //         &-label {
+    //             @include paragraph;
+    //             color: $color-black-blue;
+    //             margin-right: 5rem;
+    //             padding-left: 2.6rem;
+    //         }
+
+    //         &-input:checked {
+    //             border: 1px solid $color-green;
+    //             background-color: $color-green;
+    //             outline: none;
+    //         }
+
+    }
+}

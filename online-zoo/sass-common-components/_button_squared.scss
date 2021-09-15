@@ -1,0 +1,22 @@
+.button_squared {
+    width: 29.8rem;
+    height: 5.4rem;
+    background: $color-orange-gradient;
+    border: none;
+    border-radius: 0.5rem;
+
+    @include button-text;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    
+    outline: none;
+}
+
+.button_squared:hover {
+    cursor: pointer;
+}
+
+.button_squared:active {
+    background: $color-green;
+}

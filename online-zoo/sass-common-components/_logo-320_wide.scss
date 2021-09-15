@@ -1,0 +1,17 @@
+@media screen and (min-width: 320px) and (max-width: 639px) {
+    .logo_footer {
+        width: 12.8rem;
+        height: fit-content;
+        margin: 0;
+        padding: 0.8rem 0 0 0;
+        font-size: 1.9rem;
+        border: none;
+
+        .logo__bamboo_footer {
+            transform: scale(1);
+            height: 2rem;
+            top: 12%;
+            left: 57%;
+        }
+    }
+}

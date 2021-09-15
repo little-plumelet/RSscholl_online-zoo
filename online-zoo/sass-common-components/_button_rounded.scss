@@ -1,0 +1,25 @@
+@import "./constants";
+@import "./base";
+
+.button_rounded {
+    width: 29.8rem;
+    height: 5.4rem;
+    background: $color-orange-gradient;
+    border: none;
+    border-radius: 2.5rem;
+
+    @include button-text;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    
+    outline: none;
+}
+
+.button_rounded:hover {
+    cursor: pointer;
+}
+
+.button_rounded:active {
+    background: $color-green;
+}

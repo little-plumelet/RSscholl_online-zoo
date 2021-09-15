@@ -1,0 +1,63 @@
+@media screen and (min-width: 640px) and (max-width: 999px) {
+
+    .panda-cam,
+    .eagle-cam,
+    .gorilla-cam,
+    .alligator-cam {
+        margin-bottom: 2rem;
+
+        .wrapper_main-cam {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .wrapper_main-cam-iframe {
+            margin: 0;
+            width: 495px;
+            height: 278px;
+        }
+
+         &__title {
+             top: 3.5rem;
+             font-size: 3.6rem;
+             line-height: 130%;
+        }
+    }
+
+    .more-cam {
+        margin-bottom: 6rem;
+
+        &-container {
+            width: 80%;
+        }
+
+        &-wrapper {
+            position: relative;
+            max-width: 490px;
+        }
+
+        &-list {
+            justify-content: flex-start;
+            
+        
+            &-item {
+                position: relative;
+                width: 180px;
+                height: 140px;
+                margin-right: 3rem;
+            }
+
+            &-item:nth-child(3),
+            &-item:nth-child(4)
+            {
+                display: none;
+            }
+        }
+    }
+
+    .wrapper_cam {
+        position: relative;
+
+    }
+}
